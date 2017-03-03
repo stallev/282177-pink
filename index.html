@@ -5,22 +5,33 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <header>
-      <container>
-        <div class="logo"></div>
-        <nav class="navigation"></nav>
-      </container>
-      <div class="header-content">
-        <div class="header-content__main-image">
-          <div class="header-content__image-hand"></div>
+    <header class="header">
+      <div class="header__main-image">
+        <div class="container">
+          <div class="header__upper">
+            <div class="logo"></div>
+            <nav class="navigation">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Фотографии</a></li>
+                <li><a href="#">Конкурс</a></li>
+                <li><a href="#">Htmlacademy</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="downloads">
-          <div class="downloads__portability variant-for-OS">
-            <div class="downloads__apple"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-            <div class="downloads__android"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-            <div class="downloads__microsoft"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-          <div class="downloads__description"></div>
+        <div class="container">
+          <div class="header__bottom">
+            <div class="page-title page-title--index-page"></div>
+            <div class="header-content__image-hand"></div>
+            <div class="downloads">
+              <div class="downloads__portability variant-for-OS">
+                <div class="downloads__apple"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
+                <div class="downloads__android"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
+                <div class="downloads__microsoft"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
+              <div class="downloads__description"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -28,8 +39,14 @@
     <main>
       <section class="app-features">
         <div class="container">
-          <div class="app-features__tagline tagline"></div>
-          <div class="app-features__tagline tagline"></div>
+          <div class="app-features__tagline tagline">
+            <span class="tagline__element">
+              
+            </span>
+            <span class="tagline__element">
+              
+            </span>
+          </div>
           <div class="app-features__item">
             <h4 class="app-features__effect"></h4>
             <div class="app-features__description">
@@ -93,6 +110,5 @@
         <div class="contact-info__map"></div>
       </section>
     </main>
-
   </body>
 </html>
