@@ -47,44 +47,75 @@
     <section class="history">
       <div class="container">
         <form action="" class="history-form">
-          <fieldset class="history-form__identification">
-            <label for="person-surname">Фамилия</label>
-            <input type="text" id="#person-surname" value="Укажите фамилию *" required>
-            <label for="person-name">Имя</label>
-            <input type="text" id="#person-name" value="Укажите ваше имя *" required>
-            <label for="person-father-name">Отчество</label>
-            <input type="text" id="#person-father-name" value="Ну и отчество тоже">
+          <fieldset class="history-form__identification-data-list">
+            <ul>
+              <li class="history-form__identification-data-item">
+                <label for="person-surname">Фамилия</label>
+                <input type="text" id="#person-surname" value="Укажите фамилию *" required>
+              </li>
+              <li class="history-form__identification-data-item">
+                <label for="person-father-name">Отчество</label>
+                <input type="text" id="#person-father-name" value="Ну и отчество тоже">
+              </li>
+            </ul>
           </fieldset>phone-number
-          <fieldset class="history-form__achivements">
+          <fieldset class="history-form__achivements-list">
             <h3>Ваши безбашенные достижения в путешествии</h3>
-            <input type="checkbox" id="#selfi" checked>
-            <label for="selfi">Сделал селфи с акулой</label>
-            <input type="checkbox" id="#fired-on-beach" checked>
-            <label for="fired-on-beach">Обгорел на пляже</label>
-            <input type="checkbox" id="#looked-chack">
-            <label for="looked-chack">Видел Чака Норриса</label>
-            <input type="checkbox" id="#bought-presents">
-            <label for="bought-presents">Накупил сувениров</label>
-            <input type="checkbox" id="#get-tower" checked>
-            <label for="get-tower">Удержал башню</label>
-            <input type="checkbox" id="#defeated-hotel">
-            <label for="defeated-hotel">Разгромил отель</label>
+            <ul>
+              <li class="history-form__achivements-item">
+                <input type="checkbox" id="#selfi" checked>
+                <label for="selfi">Сделал селфи с акулой</label>
+              </li>
+              <li class="history-form__achivements-item">
+                <input type="checkbox" id="#fired-on-beach" checked>
+                <label for="fired-on-beach">Обгорел на пляже</label>
+              </li>
+              <li class="history-form__achivements-item">
+                <input type="checkbox" id="#looked-chack">
+                <label for="looked-chack">Видел Чака Норриса</label>
+              </li>
+              <li class="history-form__achivements-item">
+                <input type="checkbox" id="#bought-presents">
+                <label for="bought-presents">Накупил сувениров</label>
+              </li>
+              <li class="history-form__achivements-item">
+                <input type="checkbox" id="#get-tower" checked>
+                <label for="get-tower">Удержал башню</label>
+              </li>
+              <li class="history-form__achivements-item">
+                <input type="checkbox" id="#defeated-hotel">
+                <label for="defeated-hotel">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="history-form__person-contacts">
-            <label for="phone-number">Номер телефона</label>
-            <input type="text" id="#phone-number" value="Номер, пожалуйста">
-            <label for="post-address">Адрес почты</label>
-            <input type="text" id="#post-address" value="Введите почту *" required>
+          <fieldset class="history-form__person-contacts-list">
+            <ul>
+              <li class="history-form__person-contacts-item">
+                <label for="phone-number">Номер телефона</label>
+                <input type="text" id="#phone-number" value="Номер, пожалуйста">
+              </li>
+              <li class="history-form__person-contacts-item">
+                <label for="post-address">Адрес почты</label>
+                <input type="text" id="#post-address" value="Введите почту *" required>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="history-form__application-kind">
-            <h3>С каким приложением
-путешествовали?</h3>
-            <input type="radio" id="#fora-iOS" checked>
-            <label for="for-iOS">Pink для iOS</label>
-            <input type="radio" id="#for-android">
-            <label for="for-android">Pink на Android</label>
-            <input type="radio" id="#for-microsoft">
-            <label for="for-microsoft">Windows Phone</label>
+          <fieldset class="history-form__application-kind-list">
+            <h3>С каким приложением путешествовали?</h3>
+            <ul>
+              <li class="history-form__application-kind-item">
+                <input type="radio" id="#fora-iOS" checked>
+                <label for="for-iOS">Pink для iOS</label>
+              </li>
+              <li class="history-form__application-kind-item">
+                <input type="radio" id="#for-android">
+                <label for="for-android">Pink на Android</label>
+              </li>
+              <li class="history-form__application-kind-item">
+                <input type="radio" id="#for-microsoft">
+                <label for="for-microsoft">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="history-form__emotions">
             <h3>Опишите свои эмоции</h3>
