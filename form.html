@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__main-image">
+      <div class="container">
+        <div class="header__upper">
+          <div class="logo"></div>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Конкурс</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__bottom">
+          <div class="page-title page-title--form-page">
+            <h1>
+              Конкурс на самое безбашенное путешестие с Пинк
+            </h1>
+          </div>
+          <div class="header__image-hand"></div>
+          <div class="downloads">
+            <div class="downloads__portability variant-for-OS">
+              <div class="downloads__apple"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
+              <div class="downloads__android"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
+              <div class="downloads__microsoft"><a href="#"><img src="http://placehold.it value=""/150x100" alt=""></a></div>
+            <div class="downloads__description"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="tagline">
+        <p class="tagline__element">Поделитесь свой историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      </div>
+    </div>
+    <section class="history">
+      <div class="container">
+        <form action="https://echo.htmlacademy.ru/" class="history-form">
+          <fieldset class="history-form__identification-data-list">
+            <div class="history-form__identification-data-item">
+              <label for="person-surname">Фамилия</label>
+              <input type="text" id="#person-surname" value="Укажите фамилию *" required>
+            </div>
+            <div class="history-form__identification-data-item">
+              <label for="person-father-name">Отчество</label>
+              <input type="text" id="#person-father-name" value="Ну и отчество тоже">
+            </div>
+          </fieldset>phone-number
+          <fieldset class="history-form__achivements-list">
+            <h3 class="history-form__achivements">
+              Ваши безбашенные достижения в путешествии
+            </h3>
+            <div class="history-form__achivements-item">
+              <input type="checkbox" id="#selfi" checked>
+              <label for="selfi">Сделал селфи с акулой</label>
+            </div>
+            <div class="history-form__achivements-item">
+              <input type="checkbox" id="#fired-on-beach" checked>
+              <label for="fired-on-beach">Обгорел на пляже</label>
+            </div>
+            <div class="history-form__achivements-item">
+              <input type="checkbox" id="#looked-chack">
+              <label for="looked-chack">Видел Чака Норриса</label>
+            </div>
+            <div class="history-form__achivements-item">
+              <input type="checkbox" id="#bought-presents">
+              <label for="bought-presents">Накупил сувениров</label>
+            </div>
+            <div class="history-form__achivements-item">
+              <input type="checkbox" id="#get-tower" checked>
+              <label for="get-tower">Удержал башню</label>
+            </div>
+            <div class="history-form__achivements-item">
+              <input type="checkbox" id="#defeated-hotel">
+              <label for="defeated-hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
+          <fieldset class="history-form__person-contacts-list">
+            <div class="history-form__person-contacts-item">
+              <label for="phone-number">Номер телефона</label>
+              <input type="text" id="#phone-number" value="Номер, пожалуйста">
+            </div>
+            <div class="history-form__person-contacts-item">
+              <label for="post-address">Адрес почты</label>
+              <input type="text" id="#post-address" value="Введите почту *" required>
+            </div>
+          </fieldset>
+          <fieldset class="history-form__application-kind-list">
+            <h3 class="history-form__application-title">
+              С каким приложением путешествовали?
+            </h3>
+            <div class="history-form__application-kind-item">
+              <input type="radio" id="#fora-iOS" checked>
+              <label for="for-iOS">Pink для iOS</label>
+            </div>
+            <div class="history-form__application-kind-item">
+              <input type="radio" id="#for-android">
+              <label for="for-android">Pink на Android</label>
+            </div>
+            <div class="history-form__application-kind-item">
+              <input type="radio" id="#for-microsoft">
+              <label for="for-microsoft">Windows Phone</label>
+            </div>
+          </fieldset>
+          <fieldset class="history-form__emotions">
+            <h3 class="history-form__emotions-title">Опишите свои эмоции</h3>
+            <input type="textarea" value="Можно прям в красках, не стесняясь в выражениях"></fieldset>
+          <fieldset class="history-form__submit">
+            <button type="submit">Отправить форму</button>
+            <span>* - обязательные поля</span>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
+      <div class="logo logo--footer"></div>
+      <div class="footer__social social">
+        <a href="http://twitter.com/" class="social__twitter"><img src="http://placehold.it/150x100" alt=""></a>
+        <a href="http://facebook.com/" class="social__facebook"><img src="http://placehold.it/150x100" alt=""></a>
+        <a href="http://youtube.com/" class="social__youtube"><img src="http://placehold.it/150x100" alt=""></a>
+      </div>
+      <div class="footer__develop">
+        <span class="footer__develop-text">
+          Разработано
+        </span>
+        <span class="footer__develop-image"></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
