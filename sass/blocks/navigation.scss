@@ -1,0 +1,26 @@
+.navigation{
+
+}
+.navigation ul{
+  display: flex;
+  flex-direction: column;
+}
+.navigation li{
+  display: block;
+}
+.navigation a{
+  display: inline-block;
+  height: 62px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #283645;
+}

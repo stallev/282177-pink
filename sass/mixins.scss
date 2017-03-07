@@ -1,0 +1,16 @@
+@mixin index-content-unbold-font() {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 24px;
+	color: $content-font-color;
+}
+@mixin content-H3-bold-font() {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 24px;
+	color: #000;
+}
