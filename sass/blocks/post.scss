@@ -1,0 +1,47 @@
+.post{
+  &__comment-aria{
+    box-sizing: border-box;
+    padding: 20px 15px 23px 15px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__username{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  &__time{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  &__blockquote{
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  &__likes{
+    position: relative;
+    margin-left: 30px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #d22856;
+    text-transform: uppercase;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 13px;
+      top: 7px;
+      left: -25px;
+      background-image: url(/img/icon-heart.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+}

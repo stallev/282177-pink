@@ -1,0 +1,30 @@
+.features{
+  background: #f2f2f2;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url("/img/bg-triangle-white.svg");
+    width: 100%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+  }
+  &__item{
+    @include flex-column;
+    &-title{
+      @include content-H3-bold-font;
+      text-align: center;
+      line-height: 24px;
+    }
+    &-description{
+      @include index-content-unbold-font;
+      text-align: center;
+      line-height: 24px;
+    }
+    &-image{
+      width: 160px;
+      min-height: 280px;
+      align-self: center;
+    }
+  }
+}

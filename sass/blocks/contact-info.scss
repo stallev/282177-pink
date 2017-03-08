@@ -1,0 +1,39 @@
+.contact-info{
+  &__item{
+    @include flex-column;
+    margin: 20px 0;
+  }
+  &__what-to-do{
+    @include content-H3-bold-font;
+    display: block;
+    text-align: center;
+  }
+  &__how-to-do{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #d22856;
+  }
+  &__how-to-do a{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #d22856;
+    text-decoration: none;
+  }
+  &__map{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  &__map::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 35px;
+    background-image: url(/img/bg-triangle-white-footer.svg);
+    background-position: 50% 35px;
+  }
+}

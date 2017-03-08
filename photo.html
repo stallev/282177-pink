@@ -7,108 +7,129 @@
     <title>Photo</title>
   </head>
   <body class="body">
-    <header class="header">
-      <div class="header__main-image">
-        <div class="header__upper">
-          <div class="container">
-            <div class="logo"></div>
-            <button class="navigation__open-close"></button>
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Фотографии</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
-              </ul>
-            </nav>
+  <header class="header">
+    <div class="header__main-image">
+      <div class="header__upper">
+        <div class="container">
+          <div class="header__logo-toggle">
+            <span class="header__logo"></span>
+            <button class="header__toggle"></button>
           </div>
         </div>
-        <div class="container">
-          <div class="header__bottom">
-            <div class="page-title page-title--photo-page">
-              <h1>
-                Фотографии пользователей
-              </h1>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container container--header-bottom">
+        <div class="header__bottom">
+          <div class="page-title page-title--photo-page"></div>
+          <div class="header__image-hand"></div>
+          <div class="downloads">
+            <a class="downloads__default-link" href="#">
+              Скачать приложение
+            </a>
+            <div class="downloads__portability">
+              <div class="downloads__apple">
+                <a class="downloads__apple-link" href="#"></a></div>
+              <div class="downloads__android">
+                <a class="downloads__android-link" href="#"></a></div>
+              <div class="downloads__microsoft">
+                <a class="downloads__microsoft-link" href="#"></a></div>
             </div>
-            <div class="header__image-hand"></div>
-            <div class="downloads">
-              <div class="downloads__portability variant-for-OS">
-                <div class="downloads__apple"><a href="#"></a></div>
-                <div class="downloads__android"><a href="#"></a></div>
-                <div class="downloads__microsoft"><a href="#"></a></div>
-              <div class="downloads__description"></div>
-              </div>
-            </div>
+            <p class="downloads__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
     <main class="main">
       <div class="container">
         <div class="tagline">
-          <p class="tagline__element">Взгляните на фотографии, которые выкладывают пользователи!
+          <p class="tagline__element tagline__element--post-list">
+            Взгляните на фотографии, которые выкладывают пользователи!
           </p>
-          <p class="tagline__element">Видите, как не хватает ваших?
+          <p class="tagline__element tagline__element--post-list">
+            Видите, как не хватает ваших?
           </p>
         </div>
       </div>
       <div class="post main__panorama">
-        <img src="http://placehold.it/150x100" alt="">
-        <div class="post__comment-aria">
-          <span class="post__username">Анна</span>
-          <span class="post__time">(5 минут назад)</span>
-          <blockquote class="post__blockquote">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-          <span class="post__likes">нравится:215</span>
+        <img src="/img/panorama-mobile@1x.jpg" alt="">
+        <div class="container">
+          <div class="post__comment-aria">
+            <span class="post__username">Анна</span>
+            <span class="post__time">(5 минут назад)</span>
+            <blockquote class="post__blockquote">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+            <span class="post__likes">нравится:215</span>
+          </div>
         </div>
       </div>
-      <div class="container">
         <section class="post-list">
           <div class="post post-list__item">
-            <img src="http://placehold.it/150x100" alt="">
-            <div class="post__comment-aria">
-              <span class="post__username">Левон</span>
-              <span class="post__time">(5 часов назад)</span>
-              <blockquote class="post__blockquote">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
-              <span class="post__likes">нравится:356</span>
+            <div class="container">
+              <img src="/img/photo-1-mobile@1x.jpg" alt="">
+              <div class="post__comment-aria">
+                <span class="post__username">Левон</span>
+                <span class="post__time">(5 часов назад)</span>
+                <blockquote class="post__blockquote">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+                <span class="post__likes">нравится:356</span>
+              </div>
             </div>
           </div>
           <div class="post post-list__item">
-            <img src="http://placehold.it/150x100" alt="">
-            <div class="post__comment-aria">
-              <span class="post__username">Антон</span>
-              <span class="post__time">(12 часов назад)</span>
-              <blockquote class="post__blockquote">Соседи будут рады!</blockquote>
-              <span class="post__likes">нравится:666</span>
+            <div class="container">
+              <img src="/img/photo-2-mobile@1x.jpg" alt="">
+              <div class="post__comment-aria">
+                <span class="post__username">Антон</span>
+                <span class="post__time">(12 часов назад)</span>
+                <blockquote class="post__blockquote">Соседи будут рады!</blockquote>
+                <span class="post__likes">нравится:666</span>
+              </div>
             </div>
           </div>
           <div class="post post-list__item">
-            <img src="http://placehold.it/150x100" alt="">
-            <div class="post__comment-aria">
-              <span class="post__username">Борис</span>
-              <span class="post__time">(20 часов назад)</span>
-              <blockquote class="post__blockquote">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
-              <span class="post__likes">нравится:215</span>
+            <div class="container">
+              <img src="/img/photo-3-mobile@1x.jpg" alt="">
+              <div class="post__comment-aria">
+                <span class="post__username">Борис</span>
+                <span class="post__time">(20 часов назад)</span>
+                <blockquote class="post__blockquote">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+                <span class="post__likes">нравится:215</span>
+              </div>
             </div>
           </div>
           <div class="post post-list__item">
-            <img src="http://placehold.it/150x100" alt="">
-            <div class="post__comment-aria">
-              <span class="post__username">Сергей</span>
-              <span class="post__time">(25 часов назад)</span>
-              <blockquote class="post__blockquote">Самая кубанская в мире!</blockquote>
-              <span class="post__likes">нравится:4</span>
+            <div class="container">
+              <img src="/img/photo-4-mobile@1x.jpg" alt="">
+              <div class="post__comment-aria">
+                <span class="post__username">Сергей</span>
+                <span class="post__time">(25 часов назад)</span>
+                <blockquote class="post__blockquote">Самая кубанская в мире!</blockquote>
+                <span class="post__likes">нравится:4</span>
+              </div>
             </div>
           </div>
           <div class="post post-list__item">
-            <img src="http://placehold.it/150x100" alt="">
-            <div class="post__comment-aria">
-              <span class="post__username">Максим</span>
-              <span class="post__time">(40 часов назад)</span>
-              <blockquote class="post__blockquote">Где снег-то?</blockquote>
-              <span class="post__likes">нравится:150</span>
+            <div class="container">
+              <img src="/img/photo-5-mobile@1x.jpg" alt="">
+              <div class="post__comment-aria">
+                <span class="post__username">Максим</span>
+                <span class="post__time">(40 часов назад)</span>
+                <blockquote class="post__blockquote">Где снег-то?</blockquote>
+                <span class="post__likes">нравится:150</span>
+              </div>
             </div>
-            <div class="post post-list__item">
-              <img src="http://placehold.it/150x100" alt="">
+          </div>
+          <div class="post post-list__item">
+            <div class="container">
+              <img src="/img/photo-6-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Надежда</span>
                 <span class="post__time">(45 чвсов назад)</span>
@@ -119,48 +140,46 @@
           </div>
         </section>
         <div class="tagline">
-        <p class="tagline__element">
+        <p class="tagline__element tagline__element--post-list">
         Затмите их всех!
         </p>
-        <p class="tagline__element">
+        <p class="tagline__element tagline__element--post-list">
         Выкладывайте всё, что накопилось в телефоне!
         </p>
       </div>
-      <div class="container container--form-oploading-photo">
-        <section class="form-upload-photo">
+      <section class="upload-photo">
+        <div class="container container--upload-form">
           <form action="https://echo.htmlacademy.ru/" method="post" class="upload-form">
-            <fieldset>
-              <input type="file">
+            <fieldset class="upload-form__fieldset">
+              <input class="upload-form__input" type="file" id="uploadImage">
+              <label class="upload-form__label-upload-image" for="uploadImage"></label>
               <div class="upload-form__edit-controls-list">
-                <a href="#" class="upload-form__control"><img src="http://placehold.it/150x100" alt=""></a>
-                <a href="#" class="upload-form__control"><img src="http://placehold.it/150x100" alt=""></a>
-                <a href="#" class="upload-form__control"><img src="http://placehold.it/150x100" alt=""></a>
+                <a href="#" class="upload-form__control"><img src="/img/icon-editor-crop.svg" alt=""></a>
+                <a href="#" class="upload-form__control"><img src="img/icon-editor-fill.svg" alt=""></a>
+                <a href="#" class="upload-form__control"><img src="/img/icon-editor-contrast.svg" alt=""></a>
               </div>
               <span class="upload-form__scale-control"></span>
             </fieldset>
-            <div class="upload-form__submit">
-              <a href="" class="upload-form__submit" type="submit">Запостить</a>
-              <a href="" class="upload-form__reset" type="reset">Отмена</a>
+            <div class="upload-form__action">
+              <a href="" class="upload-form__action-submit-link" type="submit">Запостить</a>
+              <a href="" class="upload-form__action-reset-link" type="reset">Отмена</a>
             </div>
           </form>
-        </section>
-      </div>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <div class="logo logo--footer"></div>
-        <div class="social footer__social">
-          <a href="http://twitter.com/" class="social__twitter"><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="http://facebook.com/" class="social__facebook"><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="http://youtube.com/" class="social__youtube"><img src="http://placehold.it/150x100" alt=""></a>
-        </div>
-        <div class="footer__develop">
+      <div class="logo logo--footer"></div>
+      <div class="social footer__social">
+        <a href="http://twitter.com/" class="social__twitter"><img src="/img/icon-twitter.svg" alt=""></a>
+        <a href="http://facebook.com/" class="social__facebook"><img src="/img/icon-facebook.svg" alt=""></a>
+        <a href="http://youtube.com/" class="social__youtube"><img src="/img/icon-youtube.svg" alt=""></a>
+      </div>
+      <div class="footer__develop">
           <span class="footer__develop-text">
             Разработано
           </span>
-          <span class="footer__develop-image"></span>
-        </div>
+        <span class="footer__develop-image"></span>
       </div>
     </footer>
   </body>

@@ -1,0 +1,85 @@
+.upload-form{
+  &__fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+  &__input{
+    display: none;
+  }
+  &__label-upload-image{
+    width: 280px;
+    height: 374px;
+    background-image: url(/img/photo-7-mobile@1x.jpg);
+  }
+  &__edit-controls-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  &__control img{
+    display: inline-block;
+    line-height: 50px;
+  }
+  &__scale-control{
+    position: relative;
+    display: block;
+    height: 40px;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 240px;
+      height: 2px;
+      top: 20px;
+      left: 20px;
+      background-color: #283645;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: 16px;
+      left: 180px;
+      border: 2px solid #cd2856;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+  }
+  &__action{
+    display: flex;
+    flex-direction: column;
+    &-submit-link{
+      display: block;
+      width: 100%;
+      height: 54px;
+      box-sizing: border-box;
+      color: #d22856;
+      line-height: 50px;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      border: 3px solid #d22856;
+      border-radius: 25px;
+    }
+    &-reset-link{
+      display: block;
+      width: 100%;
+      height: 54px;
+      box-sizing: border-box;
+      color: #d22856;
+      line-height: 50px;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      border: 3px solid #d22856;
+      border-radius: 25px;
+    }
+  }
+}

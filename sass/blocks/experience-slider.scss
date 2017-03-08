@@ -1,0 +1,17 @@
+.experience-slider{
+  @include flex-column;
+  &__item{
+
+  }
+  &__person-name{
+    @include content-H3-bold-font;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+  }
+  &__person-experience{
+    @include index-content-unbold-font;
+    line-height: 30px;
+    text-align: center;
+  }
+}

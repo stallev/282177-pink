@@ -1,12 +1,53 @@
 .header{
-  
+  background-color: #fff;
   &__main-image{
     min-height: 990px;
     background-image: url("/img/bg-back-mobile@1x.jpg");
     background-position-y: 260px;
     background-repeat: no-repeat;
   }
+  &__logo-toggle{
+    min-height: 70px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background: #283645;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    display: block;
+    width: 80px;
+    height: 25px;
+    background-image: url(/img/logo-pink-white-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  &__toggle{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(/img/icon-menu-cross.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+  }
   &__upper{
-    
+    min-height: 270px;
+    background: #283645;
+  }
+  &__bottom{
+    position: relative;
+  }
+  &__image-hand{
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 290px;
+    bottom: 283px;
+    left: -20px;
+    background-image: url(/img/iphone-5-in-hand-png.png);
+    background-size: auto;
+    z-index: 2;
   }
 }

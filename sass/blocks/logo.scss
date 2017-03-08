@@ -1,5 +1,12 @@
 .logo{
-  min-height: 70px;
-  background: #283645;
-  border-bottom: 1px solid #000;
+  &--footer{
+    box-sizing: border-box;
+    padding-top: 50px;
+    height: 100px;
+    width: 100%;
+    background-image: url(/img/logo-pink-blue-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
 }

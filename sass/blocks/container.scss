@@ -1,0 +1,12 @@
+.container{
+  @include container-mobile;
+  &--header-bottom{
+    background-color: #1d2631;
+  }
+  &--section-container{
+    @include flex-column;
+  }
+  &--upload-form{
+    padding-top: 20px;
+  }
+}
