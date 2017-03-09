@@ -25,10 +25,15 @@
           </ul>
         </nav>
       </div>
-      <div class="container container--header-bottom">
-        <div class="header__bottom">
-          <div class="page-title page-title--form-page"></div>
-          <div class="header__image-hand"></div>
+      <div class="header__bottom">
+        <div class="page-title">
+          <div class="container container--page-title">
+            <h1 class="page-title__text page-title__text--form-page">
+              Конкурс на самое безбашенное путешествие с Пинк
+            </h1>
+          </div>
+        </div>
+        <div class="container container--header-bottom">
           <div class="downloads">
             <a class="downloads__default-link" href="#">
               Скачать приложение
@@ -52,7 +57,7 @@
     <main class="main">
       <div class="container">
         <div class="tagline">
-          <p class="tagline__element">Поделитесь свой историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <p class="tagline__element tagline__element--form-page">Поделитесь свой историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         </div>
       </div>
       <section class="history">
@@ -60,50 +65,54 @@
           <form action="https://echo.htmlacademy.ru/" class="form">
             <fieldset class="form__identification-data-list">
               <div class="form__data-item form__data-item--input-type-text">
-                <label for="person-surname">Фамилия</label>
+                <label for="#person-surname">Фамилия:</label>
                 <input type="text" id="#person-surname" value="Укажите фамилию *" required>
               </div>
               <div class="form__data-item form__data-item--input-type-text">
-                <label for="person-father-name">Отчество</label>
+                <label for="#person-name">Имя:</label>
+                <input type="text" id="#person-name" value="Введите ваше имя * *" required>
+              </div>
+              <div class="form__data-item form__data-item--input-type-text">
+                <label for="#person-father-name">Отчество:</label>
                 <input type="text" id="#person-father-name" value="Ну и отчество тоже">
               </div>
             </fieldset>
             <fieldset class="form__achivements-list">
-              <h3 class="form__achivements">
+              <h3 class="form__achivements-title">
                 Ваши безбашенные достижения в путешествии
               </h3>
               <div class="form__achivements-item form__data-item--input-type-checkbox">
                 <input type="checkbox" id="#selfi" checked>
-                <label for="selfi">Сделал селфи с акулой</label>
+                <label for="#selfi">Сделал селфи с акулой</label>
               </div>
               <div class="form__achivements-item form__data-item--input-type-checkbox">
                 <input type="checkbox" id="#fired-on-beach" checked>
-                <label for="fired-on-beach">Обгорел на пляже</label>
+                <label for="#fired-on-beach">Обгорел на пляже</label>
               </div>
               <div class="form__achivements-item form__data-item--input-type-checkbox">
                 <input type="checkbox" id="#looked-chack">
-                <label for="looked-chack">Видел Чака Норриса</label>
+                <label for="#looked-chack">Видел Чака Норриса</label>
               </div>
               <div class="form__achivements-item form__data-item--input-type-checkbox">
                 <input type="checkbox" id="#bought-presents">
-                <label for="bought-presents">Накупил сувениров</label>
+                <label for="#bought-presents">Накупил сувениров</label>
               </div>
               <div class="form__achivements-item form__data-item--input-type-checkbox">
                 <input type="checkbox" id="#get-tower" checked>
-                <label for="get-tower">Удержал башню</label>
+                <label for="#get-tower">Удержал башню</label>
               </div>
               <div class="form__achivements-item form__data-item--input-type-checkbox">
                 <input type="checkbox" id="#defeated-hotel">
-                <label for="defeated-hotel">Разгромил отель</label>
+                <label for="#defeated-hotel">Разгромил отель</label>
               </div>
             </fieldset>
             <fieldset class="form__person-contacts-list">
-              <div class="form__person-contacts-item ">
-                <label for="phone-number">Номер телефона</label>
+              <div class="form__person-contacts-item form__data-item--input-type-text">
+                <label for="#phone-number">Номер телефона</label>
                 <input type="text" id="#phone-number" value="Номер, пожалуйста">
               </div>
-              <div class="form__person-contacts-item">
-                <label for="post-address">Адрес почты</label>
+              <div class="form__person-contacts-item form__data-item--input-type-text">
+                <label for="#post-address">Адрес почты</label>
                 <input type="text" id="#post-address" value="Введите почту *" required>
               </div>
             </fieldset>
@@ -112,44 +121,43 @@
                 С каким приложением путешествовали?
               </h3>
               <div class="form__application-kind-item form__data-item--input-type-radio">
-                <input type="radio" id="#fora-iOS" checked>
-                <label for="for-iOS">Pink для iOS</label>
+                <input type="radio" id="#for-iOS" checked>
+                <label for="#for-iOS">Pink для iOS</label>
               </div>
               <div class="form__application-kind-item form__data-item--input-type-radio">
                 <input type="radio" id="#for-android">
-                <label for="for-android">Pink на Android</label>
+                <label for="#for-android">Pink на Android</label>
               </div>
               <div class="form__application-kind-item form__data-item--input-type-radio">
                 <input type="radio" id="#for-microsoft">
-                <label for="for-microsoft">Windows Phone</label>
+                <label for="#for-microsoft">Windows Phone</label>
               </div>
             </fieldset>
             <fieldset class="form__emotions">
               <h3 class="form__emotions-title">Опишите свои эмоции</h3>
-              <input type="textarea" value="Можно прям в красках, не стесняясь в выражениях"></fieldset>
+              <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
             <fieldset class="form__submit">
-              <button type="submit">Отправить форму</button>
-              <span>* - обязательные поля</span>
+              <button class="form__submit-button" type="submit">Отправить форму</button>
+              <span class="form__submit-text">* - обязательные поля</span>
             </fieldset>
           </form>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__logo">
-        <div class="logo logo--footer"></div>
-        <div class="social footer__social">
-          <a href="http://twitter.com/" class="social__twitter"><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="http://facebook.com/" class="social__facebook"><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="http://youtube.com/" class="social__youtube"><img src="http://placehold.it/150x100" alt=""></a>
-        </div>
-        <div class="footer__develop">
+  <footer class="footer">
+    <div class="logo logo--footer"></div>
+    <div class="social footer__social">
+      <a href="http://twitter.com/" class="social__twitter"><img src="/img/icon-twitter.svg" alt=""></a>
+      <a href="http://facebook.com/" class="social__facebook"><img src="/img/icon-facebook.svg" alt=""></a>
+      <a href="http://youtube.com/" class="social__youtube"><img src="/img/icon-youtube.svg" alt=""></a>
+    </div>
+    <div class="footer__develop">
           <span class="footer__develop-text">
             Разработано
           </span>
-          <span class="footer__develop-image"></span>
-        </div>
-      </div>
-    </footer>
+      <span class="footer__develop-image"></span>
+    </div>
+  </footer>
   </body>
 </html>

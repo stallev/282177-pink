@@ -1,7 +1,6 @@
 .header{
   background-color: #fff;
   &__main-image{
-    min-height: 990px;
     background-image: url("/img/bg-back-mobile@1x.jpg");
     background-position-y: 260px;
     background-repeat: no-repeat;
@@ -31,6 +30,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
+    border-color: transparent;
+    border-style: none;
   }
   &__upper{
     min-height: 270px;
@@ -45,7 +46,7 @@
     width: 250px;
     height: 290px;
     bottom: 283px;
-    left: -20px;
+    left: 0px;
     background-image: url(/img/iphone-5-in-hand-png.png);
     background-size: auto;
     z-index: 2;

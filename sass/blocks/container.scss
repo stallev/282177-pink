@@ -3,6 +3,12 @@
   &--header-bottom{
     background-color: #1d2631;
   }
+  &--page-title{
+    height: 170px;
+    border: 1px solid transparent;
+    display: table;
+
+  }
   &--section-container{
     @include flex-column;
   }

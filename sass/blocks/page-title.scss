@@ -1,0 +1,21 @@
+.page-title{
+  &--form-page{
+
+  }
+  &__text{
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    &--form-page{
+
+    }
+    &--photo-page{
+
+    }
+  }
+}

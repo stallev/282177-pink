@@ -1,11 +1,13 @@
 .downloads{
   width: 100%;
-  margin-top: 400px;
   min-height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  &--index-page{
+    margin-top: 400px;
+  }
   &__default-link{
     display: block;
     width: 100%;
