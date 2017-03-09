@@ -1,15 +1,15 @@
 .price-table{
+  width: 840px;
+  margin: 40px 0;
+  left: 50%;
+  transform: translateX(-33%);
   &__row-titles{
     height: 100px;
-    display: flex;
-    width: 280px;
+    width: 840px;
   }
   &__column-title{
-    width: 280px;
+    width: 840px;
     height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-sizing: border-box;
     padding: 18px 0;
     background-color: #283645;
@@ -18,7 +18,7 @@
   &__feature-smiley,
   &__feature-comments{
     height: 60px;
-    width: 280px;
+    width: 840px;
     border-bottom: 2px solid #e5e5e5;
     border-left: 2px solid #e5e5e5;
     border-right: 2px solid #e5e5e5;
