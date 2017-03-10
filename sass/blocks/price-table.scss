@@ -17,30 +17,28 @@
   &__feature-filtr,
   &__feature-smiley,
   &__feature-comments{
+    @include small-content-font-lh30;
     height: 60px;
     width: 840px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $input-border-color;
     border-top: 0;
     border-collapse: separate;
     box-sizing: border-box;
-    background-color: #ffffff;
-    font-size: 14px;
-    line-height: 30px;
+    background-color: $body-color;
     padding: 15px 20px;
-    color: #283645;
   }
   &__version-name{
     display: block;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-    color: #ffffff;
+    color: $body-color;
   }
   &__version-price{
     display: block;
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
-    color: #ffffff;
+    color: $body-color;
   }
 }

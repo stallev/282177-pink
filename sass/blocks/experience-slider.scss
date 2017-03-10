@@ -10,8 +10,7 @@
     display: block;
   }
   &__person-experience{
-    @include index-content-unbold-font;
-    line-height: 30px;
+    @include small-content-font-lh30;
     text-align: center;
   }
 }

@@ -6,14 +6,11 @@
   color: $content-font-color;
 }
 @mixin content-H3-bold-font() {
-  margin: 0;
-  margin-top: 10px;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  line-height: 24px;
   font-style: normal;
   font-weight: bold;
   color: #000;
-
 }
 @mixin container-mobile() {
   padding: 0 20px;
@@ -22,4 +19,22 @@
 @mixin flex-column() {
   display: flex;
   flex-direction: column;
+}
+@mixin small-content-font-lh24() {
+  font-size: $content-font-small-size14;
+  color: $content-font-color;
+  line-height: $content-line-height-small-size24;
+  font-weight: normal;
+}
+@mixin medium-content-font() {
+  font-size: $content-font-medium-size18;
+  color: $content-font-color;
+  line-height: $content-line-height-large-size30;
+  font-weight: normal;
+}
+@mixin small-content-font-lh30() {
+  font-size: $content-font-small-size14;
+  color: $content-font-color;
+  line-height: $content-line-height-large-size30;
+  font-weight: normal;
 }

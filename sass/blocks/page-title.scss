@@ -1,6 +1,5 @@
 .page-title{
   &--form-page{
-
   }
   &__text{
     display: table-cell;
@@ -9,13 +8,9 @@
     line-height: 30px;
     font-size: 24px;
     font-weight: 300;
-    color: #ffffff;
+    color: $body-color;
     text-align: center;
-    &--form-page{
-
-    }
     &--photo-page{
-
     }
   }
 }

@@ -2,15 +2,13 @@
   &__comment-aria{
     box-sizing: border-box;
     padding: 20px 15px 23px 15px;
-    background-color: #f2f2f2;
+    background-color: $section-bg-grey-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   &__username{
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: bold;
+    @include content-H3-bold-font;
   }
   &__time{
     font-size: 12px;
@@ -18,11 +16,9 @@
     line-height: 24px;
   }
   &__blockquote{
+    @include small-content-font-lh24;
     width: 100%;
     margin: 0;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: normal;
   }
   &__likes{
     position: relative;
@@ -30,7 +26,7 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: normal;
-    color: #d22856;
+    color: $pink-color;
     text-transform: uppercase;
     &::before{
       position: absolute;

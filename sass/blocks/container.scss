@@ -1,7 +1,7 @@
 .container{
   @include container-mobile;
   &--header-bottom{
-    background-color: #1d2631;
+    background-color: $header-bottob-color;
   }
   &--page-title{
     height: 170px;

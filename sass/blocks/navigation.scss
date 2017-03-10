@@ -1,7 +1,6 @@
 .navigation{
   &__list{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
   &__item{
     display: block;
@@ -16,8 +15,8 @@
     font-size: 18px;
     line-height: 61px;
     font-weight: bold;
-    color: #fff;
-    border-bottom: 1px solid #000;
+    color: $body-color;
+    border-bottom: 1px solid $black-color;
     text-decoration: none;
     text-transform: uppercase;
   }
