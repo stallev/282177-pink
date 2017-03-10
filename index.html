@@ -91,7 +91,9 @@
       <section class="recalls">
         <div class="container">
           <div class="experience-slider">
-            <div class="experience-slider__controls"></div>
+            <input type="radio" class="experience-slider__radio-item" id="slide1" name="recall" checked>
+            <input type="radio" class="experience-slider__radio-item" id="slide2" name="recall">
+            <input type="radio" class="experience-slider__radio-item" id="slide3" name="recall">
             <div class="experience-slider__item">
               <span class="experience-slider__person-name">
                 Николай Петров
@@ -103,12 +105,29 @@
               </div>
             </div>
             <div class="experience-slider__item">
-              <span class="experience-slider__person-name"></span>
-              <div class="experience-slider__person-experience"></div>
+              <span class="experience-slider__person-name">
+                Никита Иванов
+              </span>
+              <div class="experience-slider__person-experience">
+                <p>
+                  Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </div>
             </div>
             <div class="experience-slider__item">
-              <span class="experience-slider__person-name"></span>
-              <div class="experience-slider__person-experience"></div>
+              <span class="experience-slider__person-name">
+                Игорь Сидоров
+              </span>
+              <div class="experience-slider__person-experience">
+                <p>
+                  Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </div>
+            </div>
+            <div class="experience-slider__controls">
+              <label for="slide1" class="experience-slider__label-item"></label>
+              <label for="slide2" class="experience-slider__label-item"></label>
+              <label for="slide3" class="experience-slider__label-item"></label>
             </div>
           </div>
         </div>
@@ -165,6 +184,14 @@
               </td>
             </tr>
           </table>
+          </div>
+          <input type="radio" class="prices__radio-item" id="prices-slide1" name="price-variant" checked>
+          <input type="radio" class="prices__radio-item" id="prices-slide2" name="price-variant">
+          <input type="radio" class="prices__radio-item" id="prices-slide3" name="price-variant">
+          <div class="prices__controls">
+            <label for="prices-slide1" class="prices__label-item"></label>
+            <label for="prices-slide2" class="prices__label-item"></label>
+            <label for="prices-slide3" class="prices__label-item"></label>
           </div>
         </div>
       </section>

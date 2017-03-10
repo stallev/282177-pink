@@ -1,7 +1,9 @@
 .experience-slider{
   @include flex-column;
+  position: relative;
   &__item{
-
+    display: none;
+    margin-bottom: 50px;
   }
   &__person-name{
     @include content-H3-bold-font;
@@ -13,4 +15,40 @@
     @include small-content-font-lh30;
     text-align: center;
   }
+  &__controls{
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    width: 100px;
+    height: 20px;
+  }
+  &__label-item{
+    margin-right: 12px;
+    display: inline-block;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $slider-toggle-control;
+      border-radius: 50%;
+    }
+  }
+  &__radio-item{
+    visibility: hidden;
+  }
+}
+#slide1:checked ~ .experience-slider__label-item:nth-of-type(1)::before,
+#slide2:checked ~ .experience-slider__label-item:nth-of-type(2)::before,
+#slide3:checked ~ .experience-slider__label-item:nth-of-type(3)::before {
+  width: 6px;
+  height: 6px;
+  background-color: $grey-textarea-border-color;
+  border: 2px solid $content-font-color;
+}
+
+#slide1:checked ~ .experience-slider__item:nth-of-type(1),
+#slide2:checked ~ .experience-slider__item:nth-of-type(2),
+#slide3:checked ~ .experience-slider__item:nth-of-type(3) {
+  display: block;
 }

@@ -1,3 +1,12 @@
 .prices{
   background: $section-bg-grey-color;
 }
+#prices-slide1:checked ~ .price-table {
+  transform: translateX(0);
+}
+#prices-slide2:checked ~ .price-table {
+  transform: translateX(-33%);
+}
+#prices-slide3:checked ~ .price-table {
+  transform: translateX(-67%);
+}
