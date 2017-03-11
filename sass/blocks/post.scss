@@ -1,0 +1,43 @@
+.post{
+  &__comment-aria{
+    box-sizing: border-box;
+    padding: 20px 15px 23px 15px;
+    background-color: $section-bg-grey-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__username{
+    @extend %content-H3-bold-font;
+  }
+  &__time{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: $line-height-sm24;
+  }
+  &__blockquote{
+    @extend %small-content-font-lh24;
+    width: 100%;
+    margin: 0;
+  }
+  &__likes{
+    position: relative;
+    margin-left: 30px;
+    font-size: 12px;
+    line-height: $line-height-sm24;
+    font-weight: normal;
+    color: $pink-color;
+    text-transform: uppercase;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 13px;
+      top: 7px;
+      left: -25px;
+      background-image: url(../img/icon-heart.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+}

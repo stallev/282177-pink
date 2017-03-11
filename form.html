@@ -1,146 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Form</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Form</title>
+  </head>
+  <body class="body">
   <header class="header">
-    <div class="header__main-image">
+    <div class="header__upper">
       <div class="container">
-        <div class="header__upper">
-          <div class="logo"></div>
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Конкурс</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
-            </ul>
-          </nav>
+        <div class="header__logo-toggle">
+          <span class="header__logo"></span>
+          <button class="header__toggle"></button>
         </div>
       </div>
-      <div class="container">
-        <div class="header__bottom">
-          <div class="page-title page-title--form-page">
-            <h1>
-              Конкурс на самое безбашенное путешестие с Пинк
-            </h1>
-          </div>
-          <div class="header__image-hand"></div>
-          <div class="downloads">
-            <div class="downloads__portability variant-for-OS">
-              <div class="downloads__apple"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-              <div class="downloads__android"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-              <div class="downloads__microsoft"><a href="#"><img src="http://placehold.it value=""/150x100" alt=""></a></div>
-            <div class="downloads__description"></div>
-            </div>
-          </div>
-        </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+          <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+          <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__bottom header__bottom--form-page">
+      <div class="page-title page-title--form-page">
+        <h1 class="page-title__text page-title__text--photo-page">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
       </div>
     </div>
   </header>
-  <main class="main">
-    <div class="container">
-      <div class="tagline">
-        <p class="tagline__element">Поделитесь свой историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-      </div>
-    </div>
-    <section class="history">
+    <main class="main">
       <div class="container">
-        <form action="https://echo.htmlacademy.ru/" class="history-form">
-          <fieldset class="history-form__identification-data-list">
-            <div class="history-form__identification-data-item">
-              <label for="person-surname">Фамилия</label>
-              <input type="text" id="#person-surname" value="Укажите фамилию *" required>
-            </div>
-            <div class="history-form__identification-data-item">
-              <label for="person-father-name">Отчество</label>
-              <input type="text" id="#person-father-name" value="Ну и отчество тоже">
-            </div>
-          </fieldset>phone-number
-          <fieldset class="history-form__achivements-list">
-            <h3 class="history-form__achivements">
-              Ваши безбашенные достижения в путешествии
-            </h3>
-            <div class="history-form__achivements-item">
-              <input type="checkbox" id="#selfi" checked>
-              <label for="selfi">Сделал селфи с акулой</label>
-            </div>
-            <div class="history-form__achivements-item">
-              <input type="checkbox" id="#fired-on-beach" checked>
-              <label for="fired-on-beach">Обгорел на пляже</label>
-            </div>
-            <div class="history-form__achivements-item">
-              <input type="checkbox" id="#looked-chack">
-              <label for="looked-chack">Видел Чака Норриса</label>
-            </div>
-            <div class="history-form__achivements-item">
-              <input type="checkbox" id="#bought-presents">
-              <label for="bought-presents">Накупил сувениров</label>
-            </div>
-            <div class="history-form__achivements-item">
-              <input type="checkbox" id="#get-tower" checked>
-              <label for="get-tower">Удержал башню</label>
-            </div>
-            <div class="history-form__achivements-item">
-              <input type="checkbox" id="#defeated-hotel">
-              <label for="defeated-hotel">Разгромил отель</label>
-            </div>
-          </fieldset>
-          <fieldset class="history-form__person-contacts-list">
-            <div class="history-form__person-contacts-item">
-              <label for="phone-number">Номер телефона</label>
-              <input type="text" id="#phone-number" value="Номер, пожалуйста">
-            </div>
-            <div class="history-form__person-contacts-item">
-              <label for="post-address">Адрес почты</label>
-              <input type="text" id="#post-address" value="Введите почту *" required>
-            </div>
-          </fieldset>
-          <fieldset class="history-form__application-kind-list">
-            <h3 class="history-form__application-title">
-              С каким приложением путешествовали?
-            </h3>
-            <div class="history-form__application-kind-item">
-              <input type="radio" id="#fora-iOS" checked>
-              <label for="for-iOS">Pink для iOS</label>
-            </div>
-            <div class="history-form__application-kind-item">
-              <input type="radio" id="#for-android">
-              <label for="for-android">Pink на Android</label>
-            </div>
-            <div class="history-form__application-kind-item">
-              <input type="radio" id="#for-microsoft">
-              <label for="for-microsoft">Windows Phone</label>
-            </div>
-          </fieldset>
-          <fieldset class="history-form__emotions">
-            <h3 class="history-form__emotions-title">Опишите свои эмоции</h3>
-            <input type="textarea" value="Можно прям в красках, не стесняясь в выражениях"></fieldset>
-          <fieldset class="history-form__submit">
-            <button type="submit">Отправить форму</button>
-            <span>* - обязательные поля</span>
-          </fieldset>
-        </form>
+        <div class="tagline">
+          <p class="tagline__element tagline__element--form-page">Поделитесь свой историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        </div>
       </div>
-    </section>
-  </main>
+      <section class="history">
+        <div class="container">
+          <form action="https://echo.htmlacademy.ru/" class="form">
+            <fieldset class="form__identification-data-list">
+              <div class="field-item">
+                <label for="#person-surname">Фамилия:</label>
+                <input type="text" id="#person-surname" value="Укажите фамилию *" required>
+              </div>
+              <div class="field-item">
+                <label for="#person-name">Имя:</label>
+                <input type="text" id="#person-name" value="Введите ваше имя * *" required>
+              </div>
+              <div class="field-item">
+                <label for="#person-father-name">Отчество:</label>
+                <input type="text" id="#person-father-name" value="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="form__achivements-list">
+              <h3 class="form__achivements-title">
+                Ваши безбашенные достижения в путешествии
+              </h3>
+              <div class="checkbox-item">
+                <input type="checkbox" id="#selfi" checked>
+                <label for="#selfi">Сделал селфи с акулой</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="#fired-on-beach" checked>
+                <label for="#fired-on-beach">Обгорел на пляже</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="#looked-chack">
+                <label for="#looked-chack">Видел Чака Норриса</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="#bought-presents">
+                <label for="#bought-presents">Накупил сувениров</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="#get-tower" checked>
+                <label for="#get-tower">Удержал башню</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="#defeated-hotel">
+                <label for="#defeated-hotel">Разгромил отель</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__person-contacts-list">
+              <div class="field-item">
+                <label for="#phone-number">Номер телефона</label>
+                <input type="text" id="#phone-number" value="Номер, пожалуйста">
+              </div>
+              <div class="field-item">
+                <label for="#post-address">Адрес почты</label>
+                <input type="text" id="#post-address" value="Введите почту *" required>
+              </div>
+            </fieldset>
+            <fieldset class="form__application-kind-list">
+              <h3 class="form__application-title">
+                С каким приложением путешествовали?
+              </h3>
+              <div class="radio-item">
+                <input type="radio" id="#for-iOS" name="OS-variant" checked>
+                <label for="#for-iOS">Pink для iOS</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="#for-android" name="OS-variant">
+                <label for="#for-android">Pink на Android</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="#for-microsoft" name="OS-variant">
+                <label for="#for-microsoft">Windows Phone</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__textarea-block">
+              <h3 class="form__textarea-block-title">Опишите свои эмоции</h3>
+              <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <fieldset class="form__submit">
+              <button class="form__submit-button" type="submit">Отправить форму</button>
+              <span class="form__submit-text">* - обязательные поля</span>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <div class="logo logo--footer"></div>
-      <div class="footer__social social">
-        <a href="http://twitter.com/" class="social__twitter"><img src="http://placehold.it/150x100" alt=""></a>
-        <a href="http://facebook.com/" class="social__facebook"><img src="http://placehold.it/150x100" alt=""></a>
-        <a href="http://youtube.com/" class="social__youtube"><img src="http://placehold.it/150x100" alt=""></a>
-      </div>
-      <div class="footer__develop">
-        <span class="footer__develop-text">
-          Разработано
-        </span>
-        <span class="footer__develop-image"></span>
-      </div>
+    <div class="logo logo--footer"></div>
+    <div class="social footer__social">
+      <a href="http://twitter.com/" class="social__twitter"></a>
+      <a href="http://facebook.com/" class="social__facebook"></a>
+      <a href="http://youtube.com/" class="social__youtube"></a>
+    </div>
+    <div class="footer__develop">
+          <span class="footer__develop-text">
+            Разработано
+          </span>
+      <span class="footer__develop-image"></span>
     </div>
   </footer>
-</body>
+  </body>
 </html>

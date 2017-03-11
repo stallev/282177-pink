@@ -1,0 +1,22 @@
+.container{
+  @extend %container-mobile;
+  &--header-bottom{
+    background-color: $header-bottob-color;
+  }
+  &--page-title{
+    height: 170px;
+    border: 1px solid transparent;
+    display: table;
+
+  }
+  &--section-container{
+    @extend %flex-column;
+  }
+  &--upload-form{
+    padding-top: 20px;
+  }
+  &--prices{
+    box-sizing: border-box;
+    border: 1px solid transparent;
+  }
+}

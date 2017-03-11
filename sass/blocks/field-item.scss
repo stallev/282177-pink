@@ -1,0 +1,21 @@
+.field-item{
+  margin-bottom: 17px;
+  & label{
+    margin-left: 20px;
+    margin-bottom: 7px;
+    font-size: $font-size-sm14;
+    line-height: $line-height-lg30;
+    color: $pink-color;
+    text-transform: uppercase;
+  }
+  & input{
+    @extend %medium-content-font;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 63px;
+    padding: 16px 22px;
+    border: 2px solid $input-border-color;
+    border-radius: 2px;
+  }
+}

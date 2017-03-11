@@ -1,0 +1,12 @@
+.page-title{
+  display: flex;
+  &__text{
+    margin: auto;
+    box-sizing: border-box;
+    line-height: $line-height-lg30;
+    font-size: $font-size-md24;
+    font-weight: 300;
+    color: $body-color;
+    text-align: center;
+  }
+}

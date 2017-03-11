@@ -1,0 +1,32 @@
+.features{
+  background: $section-bg-grey-color;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-triangle-white.svg");
+    width: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__item{
+    @extend %flex-column;
+    &-title{
+      @extend %content-H3-bold-font;
+      margin: 0;
+      margin-top: 10px;
+      text-align: center;
+      line-height: $line-height-sm24;
+    }
+    &-description{
+      @extend %small-content-font-lh24;
+      text-align: center;
+    }
+    &-image{
+      position: relative;
+      width: 160px;
+      min-height: 280px;
+      align-self: center;
+    }
+  }
+}

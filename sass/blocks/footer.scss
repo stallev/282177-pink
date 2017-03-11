@@ -1,0 +1,29 @@
+.footer{
+  min-height: 285px;
+  @extend %flex-column;
+  align-items: center;
+  &__social{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__develop{
+    height: 85px;
+    width: 130px;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 35px;
+    justify-content: space-between;
+    &-text{
+      display: block;
+      @extend %small-content-font-lh24;
+    }
+    &-image{
+      display: block;
+      width: 29px;
+      height: 36px;
+      background-image: url(../img/htmlacademy.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

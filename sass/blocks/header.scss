@@ -1,0 +1,64 @@
+.header{
+  background-color: $white-font-color;
+  &__main-image{
+
+  }
+  &__logo-toggle{
+    min-height: 70px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background: $content-font-color;
+    border-bottom: 1px solid $body-color;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    display: block;
+    width: 80px;
+    height: 25px;
+    background-image: url(../img/logo-pink-white-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  &__toggle{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/icon-menu-cross.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+  }
+  &__upper{
+    min-height: 270px;
+    background: $content-font-color;
+  }
+  &__bottom{
+    @extend %container-mobile;
+    position: relative;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-color: $header-bottob-color;
+    &--index-page{
+      padding-top: 400px;
+    }
+    &--photo-page,
+    &--form-page{
+      min-height: 170px;
+    }
+  }
+  &__image-hand{
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 290px;
+    bottom: 283px;
+    left: 0;
+    background-image: url(../img/iphone-hand-mobile@1x.png);
+    background-size: auto;
+    z-index: 2;
+  }
+}

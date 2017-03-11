@@ -1,0 +1,33 @@
+%content-H3-bold-font{
+  font-size: $font-size-md18;
+  line-height: $line-height-sm24;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+}
+%container-mobile{
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+%flex-column{
+  display: flex;
+  flex-direction: column;
+}
+%small-content-font-lh24{
+  font-size: $font-size-sm14;
+  color: $content-font-color;
+  line-height: $line-height-sm24;
+  font-weight: normal;
+}
+%medium-content-font{
+  font-size: $font-size-md18;
+  color: $content-font-color;
+  line-height: $line-height-lg30;
+  font-weight: normal;
+}
+%small-content-font-lh30{
+  font-size: $font-size-sm14;
+  color: $content-font-color;
+  line-height: $line-height-lg30;
+  font-weight: normal;
+}

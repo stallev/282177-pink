@@ -1,0 +1,21 @@
+.tagline{
+  @extend %flex-column;
+  justify-content: center;
+  margin: 40px 0;
+  &__element{
+    font-size: $font-size-md24;
+    font-weight: 300;
+    color: $content-font-color;
+    text-align: center;
+    margin: 0;
+    &--features{
+      margin: 10px 0;
+    }
+    &--post-list{
+      @extend %small-content-font-lh30;
+    }
+    &--form-page{
+      @extend %small-content-font-lh30;
+    }
+  }
+}

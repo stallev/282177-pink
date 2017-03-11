@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <div class="header__main-image">
+      <div class="header__upper">
         <div class="container">
-          <div class="header__upper">
-            <div class="logo"></div>
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
-            </ul>
-            </nav>
+          <div class="header__logo-toggle">
+            <span class="header__logo"></span>
+            <button class="header__toggle"></button>
           </div>
         </div>
-        <div class="container">
-          <div class="header__bottom">
-            <div class="page-title page-title--index-page"></div>
-            <div class="header__image-hand"></div>
-            <div class="downloads">
-              <div class="downloads__portability variant-for-OS">
-                <div class="downloads__apple"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-                <div class="downloads__android"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-                <div class="downloads__microsoft"><a href="#"><img src="http://placehold.it/150x100" alt=""></a></div>
-              <div class="downloads__description"></div>
-              </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+            <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+            <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__bottom header__bottom--index-page">
+        <div class="header__image-hand"></div>
+        <div class="container container--header-bottom">
+          <div class="downloads downloads--index-page">
+            <a class="downloads__default-link" href="#">
+              Скачать приложение
+            </a>
+            <div class="downloads__portability">
+              <div class="downloads__apple">
+                <a class="downloads__apple-link" href="#"></a></div>
+              <div class="downloads__android">
+                <a class="downloads__android-link" href="#"></a></div>
+              <div class="downloads__microsoft">
+                <a class="downloads__microsoft-link" href="#"></a></div>
             </div>
+            <p class="downloads__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
         </div>
       </div>
     </header>
     <main>
+      <div class="container">
+        <div class="tagline features__tagline">
+          <p class="tagline__element tagline__element--features">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="tagline__element tagline__element--features">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
+      </div>
       <section class="features">
-        <div class="container">
-          <div class="tagline">
-            <p class="tagline__element">
-              Устали от серости мегаполиса?
-            </p>
-            <p class="tagline__element">
-              Нам есть, что вам предложить!
-            </p>
-          </div>
+        <div class="container container--section-container">
           <div class="features__item">
             <h3 class="features__item-title">Поднимает настроение
             </h3>
@@ -70,13 +82,15 @@
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
-          <div class="features__item"><img src="http://placehold.it/150x100" alt=""></div>
+          <div class="features__item-image"><img src="img/iphone-screen-mobile@1x.png" alt=""></div>
         </div>
       </section>
       <section class="recalls">
         <div class="container">
           <div class="experience-slider">
-            <div class="experience-slider__controls"></div>
+            <input type="radio" class="experience-slider__radio-item" id="slide1" name="recall" checked>
+            <input type="radio" class="experience-slider__radio-item" id="slide2" name="recall">
+            <input type="radio" class="experience-slider__radio-item" id="slide3" name="recall">
             <div class="experience-slider__item">
               <span class="experience-slider__person-name">
                 Николай Петров
@@ -88,100 +102,131 @@
               </div>
             </div>
             <div class="experience-slider__item">
-              <span class="experience-slider__person-name"></span>
-              <div class="experience-slider__person-experience"></div>
+              <span class="experience-slider__person-name">
+                Никита Иванов
+              </span>
+              <div class="experience-slider__person-experience">
+                <p>
+                  Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </div>
             </div>
             <div class="experience-slider__item">
-              <span class="experience-slider__person-name"></span>
-              <div class="experience-slider__person-experience"></div>
+              <span class="experience-slider__person-name">
+                Игорь Сидоров
+              </span>
+              <div class="experience-slider__person-experience">
+                <p>
+                  Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </div>
+            </div>
+            <div class="experience-slider__controls">
+              <label for="slide1" class="experience-slider__label-item"></label>
+              <label for="slide2" class="experience-slider__label-item"></label>
+              <label for="slide3" class="experience-slider__label-item"></label>
             </div>
           </div>
         </div>
       </section>
       <section class="prices">
-        <div class="container">
+        <div class="container container--prices">
           <div class="price-table">
             <table>
-              <tr>
-                <th class="price-table__column-title">
-                  <span class="price-table__version-name">Value</span>
-                  <span class="price-table__version-price">5 USD</span>
-                </th>
-                <th class="price-table__column-title">
-                  <span class="price-table__version-name">Value</span>
-                  <span class="price-table__version-price">5 USD</span>
-                </th>
-                <th class="price-table__column-title">
-                  <span class="price-table__version-name">Value</span>
-                  <span class="price-table__version-price">5 USD</span>
-                </th>
-              </tr>
-              <tr>
-                <td class="price-table__filtr-feature">
-                  Розовый фильтр
-                </td>>
-                <td class="price-table__filtr-feature">
-                  Розовый фильтр
-                </td>>
-                <td class="price-table__filtr-feature">
-                  Розовый фильтр
-                </td>>
-              </tr>
-              <tr>
-                <td class="price-table__smiley-feature">
-                  Смайлики
-                </td>
-                <td class="price-table__smiley-feature">
-                  Смайлики
-                </td>
-                <td class="price-table__smiley-feature">
-                  Смайлики
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__comments-feature">
-                  Комментарии
-                </td>
-                <td class="price-table__comments-feature">
-                  Комментарии
-                </td>
-                <td class="price-table__comments-feature">
-                  Комментарии
-                </td>
-              </tr>
-            </table>
+            <tr class="price-table__row-titles">
+              <th class="price-table__column-title">
+                <span class="price-table__version-name">Value</span>
+                <span class="price-table__version-price">5 USD</span>
+              </th>
+              <th class="price-table__column-title">
+                <span class="price-table__version-name">Value</span>
+                <span class="price-table__version-price">5 USD</span>
+              </th>
+              <th class="price-table__column-title">
+                <span class="price-table__version-name">Value</span>
+                <span class="price-table__version-price">5 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="price-table__feature-filtr">
+                Розовый фильтр
+              </td>
+              <td class="price-table__feature-filtr">
+                Розовый фильтр
+              </td>
+              <td class="price-table__feature-filtr">
+                Розовый фильтр
+              </td>
+            </tr>
+            <tr>
+              <td class="price-table__feature-smiley">
+                Смайлики
+              </td>
+              <td class="price-table__feature-smiley">
+                Смайлики
+              </td>
+              <td class="price-table__feature-smiley">
+                Смайлики
+              </td>
+            </tr>
+            <tr>
+              <td class="price-table__feature-comments">
+                Комментарии
+              </td>
+              <td class="price-table__feature-comments">
+                Комментарии
+              </td>
+              <td class="price-table__feature-comments">
+                Комментарии
+              </td>
+            </tr>
+          </table>
+          </div>
+          <input type="radio" class="prices__radio-item" id="prices-slide1" name="price-variant" checked>
+          <input type="radio" class="prices__radio-item" id="prices-slide2" name="price-variant">
+          <input type="radio" class="prices__radio-item" id="prices-slide3" name="price-variant">
+          <div class="prices__controls">
+            <label for="prices-slide1" class="prices__label-item"></label>
+            <label for="prices-slide2" class="prices__label-item"></label>
+            <label for="prices-slide3" class="prices__label-item"></label>
           </div>
         </div>
       </section>
       <section class="contact-info">
-        <div class="container">
+        <div class="container container--section-container">
+          <div class="tagline">
+            <p class="tagline__element">
+              Остались вопросы?
+            </p>
+            <p class="tagline__element">
+              Свяжитесь с нами!
+            </p>
+          </div>
           <div class="contact-info__item">
-            <span class="contact-info__what-to-do">
+            <span class="contact-info__item-title">
               Звоните
             </span>
-            <span class="contact-info__how-to-do">
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </span>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="contact-info__item">
-            <span class="contact-info__what-to-do">
+            <span class="contact-info__item-title">
               Пишите
             </span>
-            <span class="contact-info__how-to-do">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </span>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contact-info__item">
-            <span class="contact-info__what-to-do">
+            <span class="contact-info__item-title">
               Приезжайте в гости
             </span>
-            <span class="contact-info__how-to-do">
+            <span class="contact-info__content">
               ул. Большая Конюшенная, 19/8
             </span>
           </div>
         </div>
-        <div class="contact-info__map"></div>
       </section>
     </main>
+    <div class="contact-info__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616366473!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488977597231" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </body>
 </html>

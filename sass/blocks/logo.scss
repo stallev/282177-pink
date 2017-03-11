@@ -1,0 +1,12 @@
+.logo{
+  &--footer{
+    box-sizing: border-box;
+    padding-top: 50px;
+    height: 100px;
+    width: 100%;
+    background-image: url(../img/logo-pink-blue-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+}

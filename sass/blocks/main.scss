@@ -1,0 +1,24 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  &__panorama{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "Панорама дня";
+      width: 140px;
+      height: 35px;
+      padding: 5px 20px;
+      right: 20px;
+      box-sizing: border-box;
+      background-color: $pink-color;
+      color: $body-color;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: $line-height-sm24;
+    }
+  }
+  &__panorama img{
+    width: 100%;
+  }
+}
