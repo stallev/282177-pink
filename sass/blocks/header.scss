@@ -1,9 +1,7 @@
 .header{
   background-color: $white-font-color;
   &__main-image{
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position-y: 260px;
-    background-repeat: no-repeat;
+
   }
   &__logo-toggle{
     min-height: 70px;
@@ -38,7 +36,19 @@
     background: $content-font-color;
   }
   &__bottom{
+    @extend %container-mobile;
     position: relative;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-color: $header-bottob-color;
+    &--index-page{
+      padding-top: 400px;
+    }
+    &--photo-page,
+    &--form-page{
+      min-height: 170px;
+    }
   }
   &__image-hand{
     position: absolute;

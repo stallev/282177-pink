@@ -1,16 +1,12 @@
 .page-title{
-  &--form-page{
-  }
+  display: flex;
   &__text{
-    display: table-cell;
-    vertical-align: middle;
+    margin: auto;
     box-sizing: border-box;
     line-height: 30px;
     font-size: 24px;
     font-weight: 300;
     color: $body-color;
     text-align: center;
-    &--photo-page{
-    }
   }
 }
