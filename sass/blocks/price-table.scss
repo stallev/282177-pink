@@ -18,7 +18,7 @@
   &__feature-filtr,
   &__feature-smiley,
   &__feature-comments{
-    @include small-content-font-lh30;
+    @extend %small-content-font-lh30;
     height: 60px;
     width: 840px;
     box-sizing: border-box;

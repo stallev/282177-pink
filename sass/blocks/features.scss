@@ -6,20 +6,20 @@
     content: "";
     background-image: url("../img/bg-triangle-white.svg");
     width: 100%;
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-repeat: no-repeat;
   }
   &__item{
-    @include flex-column;
+    @extend %flex-column;
     &-title{
-      @include content-H3-bold-font;
+      @extend %content-H3-bold-font;
       margin: 0;
       margin-top: 10px;
       text-align: center;
       line-height: 24px;
     }
     &-description{
-      @include small-content-font-lh24;
+      @extend %small-content-font-lh24;
       text-align: center;
     }
     &-image{

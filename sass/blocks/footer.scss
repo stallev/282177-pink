@@ -1,6 +1,6 @@
 .footer{
   min-height: 285px;
-  @include flex-column;
+  @extend %flex-column;
   align-items: center;
   &__social{
     display: flex;
@@ -15,7 +15,7 @@
     justify-content: space-between;
     &-text{
       display: block;
-      @include small-content-font-lh24;
+      @extend %small-content-font-lh24;
     }
     &-image{
       display: block;

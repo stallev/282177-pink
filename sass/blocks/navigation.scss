@@ -1,6 +1,6 @@
-.navigation{
+.nav{
   &__list{
-    @include flex-column;
+    @extend %flex-column;
   }
   &__item{
     display: block;

@@ -1,10 +1,10 @@
 .contact-info{
   &__item{
-    @include flex-column;
+    @extend %flex-column;
     margin: 20px 0;
   }
   &__what-to-do{
-    @include content-H3-bold-font;
+    @extend %content-H3-bold-font;
     display: block;
     text-align: center;
     margin-bottom: 5px;

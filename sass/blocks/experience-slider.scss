@@ -1,18 +1,18 @@
 .experience-slider{
-  @include flex-column;
+  @extend %flex-column;
   position: relative;
   &__item{
     display: none;
     margin-bottom: 50px;
   }
   &__person-name{
-    @include content-H3-bold-font;
+    @extend %content-H3-bold-font;
     line-height: 30px;
     text-align: center;
     display: block;
   }
   &__person-experience{
-    @include small-content-font-lh30;
+    @extend %small-content-font-lh30;
     text-align: center;
   }
   &__controls{

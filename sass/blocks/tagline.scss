@@ -1,5 +1,5 @@
 .tagline{
-  @include flex-column;
+  @extend %flex-column;
   justify-content: center;
   margin: 40px 0;
   &__element{
@@ -12,10 +12,10 @@
       margin: 10px 0;
     }
     &--post-list{
-      @include small-content-font-lh30;
+      @extend %small-content-font-lh30;
     }
     &--form-page{
-      @include small-content-font-lh30;
+      @extend %small-content-font-lh30;
     }
   }
 }
