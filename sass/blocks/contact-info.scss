@@ -3,23 +3,17 @@
     @extend %flex-column;
     margin: 20px 0;
   }
-  &__what-to-do{
+  &__item-title{
     @extend %content-H3-bold-font;
     display: block;
     text-align: center;
     margin-bottom: 5px;
   }
-  &__how-to-do{
+  & a,
+  &__content{
     display: block;
     text-align: center;
-    font-size: 24px;
-    font-weight: 300;
-    color: $pink-color;
-  }
-  &__how-to-do a{
-    display: block;
-    text-align: center;
-    font-size: 24px;
+    font-size: $font-size-md24;
     font-weight: 300;
     color: $pink-color;
     text-decoration: none;

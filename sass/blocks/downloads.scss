@@ -13,7 +13,7 @@
     color: #ffffff;
     line-height: 50px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: $font-size-md18;
     text-align: center;
     text-decoration: none;
     border: 3px solid #fff;
@@ -45,8 +45,8 @@
     background-position: center;
   }
   &__description{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: $font-size-sm14;
+    line-height: $line-height-sm24;
     font-weight: 300;
     color: #ffffff;
     text-align: center;

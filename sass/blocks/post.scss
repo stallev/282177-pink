@@ -13,7 +13,7 @@
   &__time{
     font-size: 12px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: $line-height-sm24;
   }
   &__blockquote{
     @extend %small-content-font-lh24;
@@ -24,7 +24,7 @@
     position: relative;
     margin-left: 30px;
     font-size: 12px;
-    line-height: 24px;
+    line-height: $line-height-sm24;
     font-weight: normal;
     color: $pink-color;
     text-transform: uppercase;

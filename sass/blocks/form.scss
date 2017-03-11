@@ -1,63 +1,4 @@
 .form{
-  &__data-item{
-    &--input-type-text{
-      margin-bottom: 17px;
-      & label{
-        margin-left: 20px;
-        margin-bottom: 7px;
-        font-size: 14px;
-        line-height: 30px;
-        color: $pink-color;
-        text-transform: uppercase;
-      }
-      & input{
-        @extend %medium-content-font;
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        height: 63px;
-        padding: 16px 22px;
-        border: 2px solid $input-border-color;
-        border-radius: 2px;
-      }
-    }
-    &--input-type-checkbox{
-      margin-bottom: 42px;
-      & input{
-        visibility: hidden;
-        position: relative;
-        &::before{
-          position: absolute;
-          visibility: visible;
-          content: '';
-          left: 0;
-          top: -11px;
-          width: 37px;
-          height: 37px;
-          box-sizing: border-box;
-          border: 2px solid $input-border-color;
-          border-radius: 2px;
-          background-color: $body-color;
-        }
-      }
-      & label{
-        @extend %medium-content-font;
-        margin-left: 45px;
-      }
-    }
-    &--input-type-radio{
-      display: flex;
-      margin-bottom: 37px;
-      & label{
-        @extend %medium-content-font;
-        display: block;
-        margin-left: 35px;
-      }
-      & input{
-        display: block;
-      }
-    }
-  }
   &__achivements-title,
   &__application-title{
     margin: 40px 25px;
@@ -75,7 +16,7 @@
     padding-top: 20px;
     padding-bottom: 15px;
   }
-  &__emotions{
+  &__textarea-block{
     &-title{
       margin: 34px 0 11px 0;
     }
@@ -91,7 +32,7 @@
     }
   }
   & h3{
-    font-size: 14px;
+    font-size: $font-size-sm14;
     font-weight: normal;
     line-height: 18px;
     color: $pink-color;
@@ -116,8 +57,8 @@
       border-radius: 2px;
       border-color: $green-button-color;
       border-style: none;
-      font-size: 18px;
-      line-height: 30px;
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
       background-color: $green-button-color;
       color: $body-color;
       text-transform: uppercase;

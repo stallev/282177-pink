@@ -1,0 +1,12 @@
+.radio-item{
+  display: flex;
+  margin-bottom: 37px;
+  & label{
+    @extend %medium-content-font;
+    display: block;
+    margin-left: 35px;
+  }
+  & input{
+    display: block;
+  }
+}

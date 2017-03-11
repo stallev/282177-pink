@@ -15,7 +15,7 @@
       color: $body-color;
       font-weight: bold;
       font-size: 12px;
-      line-height: 24px;
+      line-height: $line-height-sm24;
     }
   }
   &__panorama img{

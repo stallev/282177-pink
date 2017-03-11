@@ -7,7 +7,7 @@
   }
   &__person-name{
     @extend %content-H3-bold-font;
-    line-height: 30px;
+    line-height: $line-height-lg30;
     text-align: center;
     display: block;
   }

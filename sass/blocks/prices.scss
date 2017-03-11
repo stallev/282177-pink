@@ -1,4 +1,5 @@
 .prices{
+  overflow: hidden;
   background: $section-bg-grey-color;
 }
 #prices-slide1:checked ~ .price-table {
