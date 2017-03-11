@@ -2,6 +2,7 @@
   width: 840px;
   margin: 40px 0;
   left: 50%;
+  border-collapse: collapse;
   transform: translateX(-33%);
   &__row-titles{
     height: 100px;
@@ -20,9 +21,6 @@
     @include small-content-font-lh30;
     height: 60px;
     width: 840px;
-    border: 2px solid $input-border-color;
-    border-top: 0;
-    border-collapse: separate;
     box-sizing: border-box;
     background-color: $body-color;
     padding: 15px 20px;
