@@ -1,5 +1,6 @@
 .page-title{
   display: flex;
+  box-sizing: border-box;
   &__text{
     margin: auto;
     box-sizing: border-box;
@@ -8,5 +9,24 @@
     font-weight: 300;
     color: $body-color;
     text-align: center;
+    &--index-page{
+      display: none;
+    }
+  }
+}
+@media (min-width: $tablet-width) {
+  .page-title{
+    &__text{
+      &--index-page{
+        display: block;
+        padding: 0 50px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    &--index-page{
+      width: 300px;
+      margin-bottom: 25px;
+    }
   }
 }

@@ -19,3 +19,11 @@
     }
   }
 }
+@media (min-width: $tablet-width) {
+  .tagline{
+    &__element{
+      font-size: $font-size-lg40;
+      font-weight: 300;
+    }
+  }
+}

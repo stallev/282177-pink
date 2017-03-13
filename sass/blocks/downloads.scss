@@ -1,5 +1,4 @@
 .downloads{
-  width: 100%;
   min-height: 270px;
   display: flex;
   flex-direction: column;
@@ -50,5 +49,18 @@
     font-weight: 300;
     color: #ffffff;
     text-align: center;
+  }
+}
+@media (min-width: $tablet-width) {
+  .downloads{
+    width: 300px;
+    &__default-link{
+      font-size: $font-size-md18;
+      margin-bottom: 20px;
+    }
+    &__description{
+      font-size: $font-size-md18;
+      line-height: $line-height-sm24;
+    }
   }
 }

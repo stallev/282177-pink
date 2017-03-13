@@ -1,6 +1,7 @@
 .container{
-  @extend %container-mobile;
+  @extend %container;
   &--header-bottom{
+    @extend %flex-column;
     background-color: $header-bottob-color;
   }
   &--page-title{
@@ -18,5 +19,12 @@
   &--prices{
     box-sizing: border-box;
     border: 1px solid transparent;
+  }
+}
+@media (min-width: $tablet-width) {
+  .container{
+    &--header-bottom{
+      background-color: transparent;
+    }
   }
 }

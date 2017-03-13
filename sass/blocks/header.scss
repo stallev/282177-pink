@@ -1,9 +1,7 @@
 .header{
   background-color: $white-font-color;
-  &__main-image{
-
-  }
   &__logo-toggle{
+    @extend %container;
     min-height: 70px;
     padding-top: 20px;
     box-sizing: border-box;
@@ -36,12 +34,12 @@
     background: $content-font-color;
   }
   &__bottom{
-    @extend %container-mobile;
     position: relative;
     background-image: url(../img/bg-back-mobile@1x.jpg);
     background-position-y: 0;
     background-repeat: no-repeat;
     background-color: $header-bottob-color;
+    background-size: 100%;
     &--index-page{
       padding-top: 400px;
     }
@@ -51,14 +49,35 @@
     }
   }
   &__image-hand{
+    &-wrapper{
+      position: relative;
+    }
     position: absolute;
     content: "";
     width: 250px;
     height: 290px;
-    bottom: 283px;
-    left: 0;
+    bottom: 0;
+    left: -20px;
     background-image: url(../img/iphone-hand-mobile@1x.png);
-    background-size: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: 2;
+  }
+}
+@media (min-width: $tablet-width) {
+  .header{
+    &__bottom{
+      &--index-page{
+        height: 615px;
+        padding-top: 90px;
+        box-sizing: border-box;
+      }
+    }
+    &__image-hand{
+      width: 470px;
+      height: 550px;
+      bottom: -383px;
+      left: 150px;
+    }
   }
 }

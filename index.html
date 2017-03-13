@@ -9,24 +9,31 @@
   <body class="body">
     <header class="header">
       <div class="header__upper">
-        <div class="container">
+        <div class="header__upper-wrapper">
           <div class="header__logo-toggle">
             <span class="header__logo"></span>
             <button class="header__toggle"></button>
           </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+              <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+              <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+              <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
-            <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="header__bottom header__bottom--index-page">
-        <div class="header__image-hand"></div>
         <div class="container container--header-bottom">
+          <div class="page-title page-title--index-page">
+            <h1 class="page-title__text page-title__text--index-page">
+              Взгляните на жизнь иначе
+            </h1>
+          </div>
+          <div class="header__image-hand-wrapper">
+            <div class="header__image-hand"></div>
+          </div>
           <div class="downloads downloads--index-page">
             <a class="downloads__default-link" href="#">
               Скачать приложение
@@ -65,6 +72,9 @@
             <p class="features__item-description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
+            <div class="features__item-image">
+              <img src="img/iphone-screen-mobile@1x.png" alt="">
+            </div>
           </div>
           <div class="features__item">
             <h3 class="features__item-title">
@@ -73,6 +83,9 @@
             <p class="features__item-description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
+            <div class="features__item-image">
+              <img src="img/iphone-screen-mobile@1x.png" alt="">
+            </div>
           </div>
           <div class="features__item">
             <h3 class="features__item-title">
@@ -81,12 +94,33 @@
             <p class="features__item-description">
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
+            <div class="features__item-image">
+              <img src="img/iphone-screen-mobile@1x.png" alt="">
+            </div>
           </div>
-          <div class="features__item-image"><img src="img/iphone-screen-mobile@1x.png" alt=""></div>
         </div>
       </section>
-      <section class="recalls">
+      <section class="effect">
         <div class="container">
+          <div class="effect-research">
+            <img src="#" alt="" class="effect-research__image">
+            <div class="effect-research__post">
+              <div class="effect-research__post-title">
+                <h2 class="effect-research__post-title-text">
+                  Эффект на 24 часа
+                </h2>
+              </div>
+              <p class="effect-research__post-description">
+                Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!
+              </p>
+              <a href="#" class="effect-research__post-link">
+                Узнать больше об исследовании
+              </a>
+            </div>
+          </div>
           <div class="experience-slider">
             <input type="radio" class="experience-slider__radio-item" id="slide1" name="recall" checked>
             <input type="radio" class="experience-slider__radio-item" id="slide2" name="recall">

@@ -1,4 +1,5 @@
 .features{
+  @extend %flex-column;
   background: $section-bg-grey-color;
   position: relative;
   &::before{
@@ -11,6 +12,7 @@
   }
   &__item{
     @extend %flex-column;
+    position: relative;
     &-title{
       @extend %content-H3-bold-font;
       margin: 0;
@@ -23,10 +25,38 @@
       text-align: center;
     }
     &-image{
+      display: none;
       position: relative;
       width: 160px;
       min-height: 280px;
       align-self: center;
     }
+  }
+}
+.features__item:nth-last-child(1)>div.features__item-image{
+  display: block;
+}
+@media (min-width: $tablet-width) {
+  .features__item:nth-last-child(1)>div.features__item-image{
+    position: absolute;
+    display: block;
+    width: 270px;
+    height: 590px;
+    right: 350px;
+    bottom: -140px;
+  }
+  .features{
+    &__item{
+      margin-left: 300px;
+      &-description{
+        text-align: left;
+      }
+      &-image{
+        & img{
+          width: 100%;
+        }
+      }
+    }
+    padding-bottom: 40px;
   }
 }
