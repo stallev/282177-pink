@@ -5,6 +5,9 @@
     display: none;
     margin-bottom: 50px;
   }
+  &__about-person{
+    display: none;
+  }
   &__person-name{
     @extend %content-H3-bold-font;
     line-height: $line-height-lg30;
@@ -50,5 +53,31 @@
 #slide1:checked ~ .experience-slider__item:nth-of-type(1),
 #slide2:checked ~ .experience-slider__item:nth-of-type(2),
 #slide3:checked ~ .experience-slider__item:nth-of-type(3) {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-width) {
+  .experience-slider{
+    &__item{
+
+    }
+    &__about-person{
+      display: block;
+      text-align: center;
+      font-size: $font-size-sm14;
+      line-height: $line-height-lg30;
+    }
+    &__person-name{
+
+    }
+    &__person-experience{
+
+    }
+    &__controls{
+      top: 210px;
+      left: 270px;
+      width: 100px;
+      height: 20px;
+    }
+  }
 }

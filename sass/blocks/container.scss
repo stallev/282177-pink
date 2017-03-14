@@ -20,11 +20,26 @@
     box-sizing: border-box;
     border: 1px solid transparent;
   }
+  &--footer-container{
+    @extend %flex-column;
+    align-items: center;
+  }
 }
 @media (min-width: $tablet-width) {
   .container{
     &--header-bottom{
       background-color: transparent;
+    }
+    &--contact-info{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &--footer-container{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

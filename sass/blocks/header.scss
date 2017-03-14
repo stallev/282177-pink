@@ -1,11 +1,10 @@
 .header{
-  background-color: $white-font-color;
+  background: $content-font-color;
   &__logo-toggle{
     @extend %container;
     min-height: 70px;
     padding-top: 20px;
     box-sizing: border-box;
-    background: $content-font-color;
     border-bottom: 1px solid $body-color;
     display: flex;
     justify-content: space-between;
@@ -78,6 +77,31 @@
       height: 550px;
       bottom: -383px;
       left: 150px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .header{
+    &__upper{
+      min-height: 110px;
+      opacity: 0.2;
+      &-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        box-sizing: border-box;
+        padding: 0 130px;
+      }
+    }
+    &__logo-toggle{
+      width: 150px;
+    }
+    &__toggle{
+      display: none;
+    }
+    &__bottom{
+      padding-top: 0;
+      background-position-y: -100px;
     }
   }
 }

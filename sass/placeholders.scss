@@ -40,5 +40,8 @@
   }
 }
 @media (min-width: $desctop-width) {
-
+  %container{
+    width: 1200px;
+    padding: 0 130px;
+  }
 }
