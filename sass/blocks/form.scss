@@ -3,12 +3,13 @@
   &__application-title{
     margin: 40px 25px;
   }
-  &__achivements-list{
-    border: 1px solid transparent;
-    background-color: $section-bg-grey-color;
-  }
+  &__achivements-list,
   &__application-kind-list{
-    background-color: $section-bg-grey-color;
+    border: 1px solid transparent;
+    &-wrapper{
+      padding-top: 30px;
+      background-color: $section-bg-grey-color;
+    }
   }
   &__person-contacts-list{
     border: 1px solid transparent;
@@ -17,6 +18,11 @@
     padding-bottom: 15px;
   }
   &__textarea-block{
+    border: 1px solid transparent;
+    &-wrapper{
+      padding-top: 35px;
+      box-sizing: border-box;
+    }
     &-title{
       margin: 34px 0 11px 0;
     }
@@ -32,16 +38,16 @@
     }
   }
   & legend{
+    display: block;
     font-size: $font-size-sm14;
     font-weight: normal;
     line-height: 18px;
     color: $pink-color;
     text-transform: uppercase;
     text-align: center;
-    border: 0 solid transparent;
+    border: none;
   }
   & fieldset{
-    padding-left: 0;
     padding-right: 0;
   }
   &__submit{
@@ -71,6 +77,104 @@
       margin-top: 35px;
       text-transform: uppercase;
       text-align: center;
+    }
+  }
+}
+@media (min-width: $tablet-width) {
+  .form{
+    &__achivements-list,
+    &__application-kind-list,
+    &__textarea-block{
+      display: block;
+      border: 2px solid $input-border-color;
+      &-wrapper{
+        background-color: inherit;
+      }
+    }
+    &__application-kind-list{
+      padding-bottom: 55px;
+    }
+    &__submit{
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 180px;
+      &-button{
+        display: inline-block;
+        height: 63px;
+        width: 300px;
+      }
+      &-text{
+        display: inline-block;
+      }
+    }
+    &__textarea-block{
+      padding: 50px 60px;
+      box-sizing: border-box;
+      & textarea{
+        width: 500px;
+      }
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+     &__identification-data-list{
+       &-wrapper{
+         order: 5;
+       }
+     }
+    &__achivements-list{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      &-wrapper{
+        width: 100%;
+        order: 8;
+      }
+    }
+    &__person-contacts-list{
+      display: flex;
+      justify-content: space-around;
+      &-wrapper{
+        width: 100%;
+        order: 7;
+      }
+      & div{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      & label{
+        order: 5;
+      }
+    }
+    &__application-kind-list{
+      &-wrapper{
+        order: 6;
+      }
+    }
+    &__textarea-block{
+      height: 220px;
+      padding: 20px 60px;
+      &-wrapper{
+        width: 100%;
+        order: 9;
+      }
+      & textarea{
+        width: 820px;
+        height: 130px;
+      }
+    }
+    &__submit{
+      &-wrapper{
+        width: 100%;
+        order: 10;
+      }
     }
   }
 }

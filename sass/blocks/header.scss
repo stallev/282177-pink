@@ -84,7 +84,7 @@
   .header{
     &__upper{
       min-height: 110px;
-      background: $content-font-colorRGBA;
+      background: rgba(0, 0, 0, 0.3);
       &-wrapper{
         display: flex;
         justify-content: space-between;
@@ -125,7 +125,7 @@
     }
     &__image-hand{
       height: 650px;
-      bottom: -497px;
+      bottom: -466px;
       left: 413px;
     }
   }

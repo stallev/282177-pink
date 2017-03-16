@@ -28,8 +28,10 @@
       display: none;
       position: relative;
       width: 160px;
+      height: 200px;
       min-height: 280px;
       align-self: center;
+      overflow: hidden;
     }
   }
 }
@@ -40,11 +42,12 @@
   .features__item:nth-last-child(1)>div.features__item-image{
     display: block;
     width: 270px;
-    height: 590px;
+    height: 486px;
     right: 350px;
-    bottom: -140px;
+    bottom: 0;
   }
   .features{
+    padding-top: 110px;
     &__item{
       margin-left: 300px;
       &-description{
@@ -65,8 +68,9 @@
     display: block;
     width: 190px;
     right: 59px;
-    bottom: 169px;
-    height: auto;
+    bottom: 213px;
+    height: 200px;
+    overflow: hidden;
   }
   .features{
 
@@ -87,7 +91,7 @@
         display: block;
         width: 190px;
         right: 59px;
-        bottom: 169px;
+        bottom: 213px;
         & img{
           width: 190px;
 
