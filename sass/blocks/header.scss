@@ -1,5 +1,9 @@
 .header{
   background: $content-font-color;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   &__logo-toggle{
     @extend %container;
     min-height: 70px;
@@ -34,11 +38,8 @@
   }
   &__bottom{
     position: relative;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position-y: 0;
-    background-repeat: no-repeat;
+
     background-color: $header-bottob-color;
-    background-size: 100%;
     &--index-page{
       padding-top: 400px;
     }
@@ -53,7 +54,7 @@
     }
     position: absolute;
     content: "";
-    width: auto;
+    width: 250px;
     height: 290px;
     bottom: 0;
     left: -20px;
@@ -66,6 +67,7 @@
 @media (min-width: $tablet-width) {
   .header{
     &__bottom{
+      background-color: transparent;
       &--index-page{
         height: 615px;
         padding-top: 90px;

@@ -16,6 +16,14 @@
       line-height: $line-height-lg30;
     }
   }
+  &--before-features{
+    min-height: 210px;
+    padding: 30px 0;
+  }
+  &--before-contacts{
+    min-height: 130px;
+    padding: 40px 0;
+  }
   &--before-form{
     min-height: 170px;
   }
