@@ -1,5 +1,13 @@
 .post-list{
   &__item{
+    width: 280px;
     margin-top: 30px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .post-list{
+    &__item{
+      width: 300px;
+    }
   }
 }

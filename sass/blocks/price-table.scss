@@ -40,3 +40,13 @@
     color: $body-color;
   }
 }
+@media (min-width: $tablet-width) {
+  .price-table{
+    transform: translateX(0);
+  }
+}
+@media (min-width: $desctop-width) {
+  .price-table{
+    transform: translateX(0);
+  }
+}

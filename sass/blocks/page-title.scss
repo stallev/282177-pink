@@ -30,3 +30,15 @@
     }
   }
 }
+@media (min-width: $desctop-width) {
+  .page-title{
+    &--index-page{
+      margin: 0;
+    }
+    &__text{
+      width: 380px;
+      line-height: $line-height-slg70;
+      font-size: $font-size-slg50;
+    }
+  }
+}

@@ -5,6 +5,9 @@
   .effect-research{
     display: flex;
     position: relative;
+    min-height: 400px;
+    padding: 90px 0;
+    box-sizing: border-box;
     & img{
       position: absolute;
       display: block;
@@ -32,6 +35,13 @@
         font-weight: normal;
         color: $content-font-color;
       }
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .effect-research{
+    &__post{
+      margin-left: 370px;
     }
   }
 }
