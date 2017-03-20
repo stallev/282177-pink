@@ -22,6 +22,7 @@
   &--prices{
     box-sizing: border-box;
     border: 1px solid transparent;
+    overflow: hidden;
   }
   &--contact-info{
     @extend %flex-column;

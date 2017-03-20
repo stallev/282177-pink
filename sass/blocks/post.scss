@@ -47,8 +47,11 @@
 }
 @media (min-width: $tablet-width) {
   .post{
-    &__comment-aria{
-
+    &__likes{
+      margin-left: 0;
+      &::before{
+        left: 240px;
+      }
     }
   }
 }

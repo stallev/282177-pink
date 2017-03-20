@@ -42,8 +42,8 @@
         <div class="container">
           <form action="https://echo.htmlacademy.ru/" class="form">
 
-            <div class="form__identification-data-list-wrapper">
-              <fieldset class="form__identification-data-list">
+            <div class="form__identification-data-list-outer-wrapper">
+              <div class="form__identification-data-list">
                 <div class="field-item">
                   <label for="#person-surname">Фамилия:</label>
                   <input type="text" id="#person-surname" value="Укажите фамилию *" required>
@@ -56,13 +56,13 @@
                   <label for="#person-father-name">Отчество:</label>
                   <input type="text" id="#person-father-name" value="Ну и отчество тоже">
                 </div>
-              </fieldset>
+              </div>
             </div>
-            <div class="form__achivements-list-wrapper">
-              <fieldset class="form__achivements-list">
-                <legend class="form__achivements-title">
+            <div class="form__achivements-list-outer-wrapper">
+              <div class="form__achivements-list">
+                <h3 class="form__achivements-title">
                   Ваши безбашенные достижения в путешествии
-                </legend>
+                </h3>
                 <div class="checkbox-item">
                   <input type="checkbox" id="#selfi" checked>
                   <label for="#selfi">Сделал селфи с акулой</label>
@@ -87,10 +87,13 @@
                   <input type="checkbox" id="#defeated-hotel">
                   <label for="#defeated-hotel">Разгромил отель</label>
                 </div>
-              </fieldset>
+              </div>
             </div>
-            <div class="form__person-contacts-list-wrapper">
-              <fieldset class="form__person-contacts-list">
+            <div class="form__person-contacts-list-outer-wrapper">
+              <div class="form__person-contacts-list">
+                <h3 class="form__person-contacts-title">
+                  Контактная информация
+                </h3>
                 <div class="field-item">
                   <label for="#phone-number">Номер телефона</label>
                   <input type="text" id="#phone-number" value="Номер, пожалуйста">
@@ -99,13 +102,13 @@
                   <label for="#post-address">Адрес почты</label>
                   <input type="text" id="#post-address" value="Введите почту *" required>
                 </div>
-              </fieldset>
+              </div>
             </div>
-            <div class="form__application-kind-list-wrapper">
-              <fieldset class="form__application-kind-list">
-                <legend class="form__application-title">
+            <div class="form__application-kind-list-outer-wrapper">
+              <div class="form__application-kind-list">
+                <h3 class="form__application-title">
                   С каким приложением путешествовали?
-                </legend>
+                </h3>
                 <div class="radio-item">
                   <input type="radio" id="#for-iOS" name="OS-variant" checked>
                   <label for="#for-iOS">Pink для iOS</label>
@@ -118,19 +121,19 @@
                   <input type="radio" id="#for-microsoft" name="OS-variant">
                   <label for="#for-microsoft">Windows Phone</label>
                 </div>
-              </fieldset>
+              </div>
             </div>
-            <div class="form__textarea-block-wrapper">
-              <fieldset class="form__textarea-block">
-                <legend class="form__textarea-block-title">Опишите свои эмоции</legend>
+            <div class="form__textarea-block-outer-wrapper">
+              <div class="form__textarea-block">
+                <h3 class="form__textarea-block-title">Опишите свои эмоции</h3>
                 <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </fieldset>
+              </div>
             </div>
-            <div class="form__submit-wrapper">
-              <fieldset class="form__submit">
+            <div class="form__submit-outer-wrapper">
+              <div class="form__submit">
                 <button class="form__submit-button" type="submit">Отправить форму</button>
                 <span class="form__submit-text">* - обязательные поля</span>
-              </fieldset>
+              </div>
             </div>
           </form>
         </div>

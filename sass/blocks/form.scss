@@ -6,7 +6,7 @@
   &__achivements-list,
   &__application-kind-list{
     border: 1px solid transparent;
-    &-wrapper{
+    &-outer-wrapper{
       padding-top: 30px;
       background-color: $section-bg-grey-color;
     }
@@ -16,10 +16,13 @@
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 15px;
+    &-title{
+      display: none;
+    }
   }
   &__textarea-block{
     border: 1px solid transparent;
-    &-wrapper{
+    &-outer-wrapper{
       padding-top: 35px;
       box-sizing: border-box;
     }
@@ -37,7 +40,7 @@
       padding: 18px 20px;
     }
   }
-  & legend{
+  & h3{
     display: block;
     font-size: $font-size-sm14;
     font-weight: normal;
@@ -47,9 +50,7 @@
     text-align: center;
     border: none;
   }
-  & fieldset{
-    padding-right: 0;
-  }
+
   &__submit{
     display: flex;
     flex-direction: column;
@@ -82,17 +83,75 @@
 }
 @media (min-width: $tablet-width) {
   .form{
+    display: flex;
+    flex-direction: column;
     &__achivements-list,
     &__application-kind-list,
+    &__person-contacts-list,
     &__textarea-block{
+      position: relative;
       display: block;
       border: 2px solid $input-border-color;
-      &-wrapper{
+      border-radius: 3px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      &-outer-wrapper{
         background-color: inherit;
+      }
+    }
+    h3{
+      position: absolute;
+      margin: 0;
+      top: -11px;
+      background-color: $body-color;
+    }
+    &__identification-data-list{
+      &-outer-wrapper{
+        order: 5;
+      }
+    }
+    &__achivements-list{
+      &-outer-wrapper{
+        order: 8;
+      }
+      & h3{
+        left: 148px;
+      }
+    }
+    &__person-contacts-list{
+      &-outer-wrapper{
+        order: 7;
+      }
+      & h3{
+        display: block;
+        left: 208px;
+      }
+    }
+    &__application-kind-list{
+      &-outer-wrapper{
+        order: 6;
+      }
+      & h3{
+        left: 148px;
+      }
+    }
+    &__textarea-block{
+      &-outer-wrapper{
+        order: 9;
+      }
+      & h3{
+        left: 208px;
+      }
+    }
+    &__submit{
+      &-outer-wrapper{
+        order: 10;
       }
     }
     &__application-kind-list{
       padding-bottom: 55px;
+      padding-left: 100px;
     }
     &__submit{
       flex-direction: row;
@@ -118,52 +177,77 @@
 }
 @media (min-width: $desctop-width) {
   .form{
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
      &__identification-data-list{
-       &-wrapper{
-         order: 5;
-       }
+
      }
     &__achivements-list{
       display: flex;
       flex-wrap: wrap;
       align-content: space-around;
-      &-wrapper{
+      padding-left: 60px;
+      padding-top: 55px;
+      &-outer-wrapper{
         width: 100%;
-        order: 8;
+      }
+      & h3{
+        left: 280px;
+      }
+      & div{
+        width: 280px;
+        padding-right: 20px;
+        box-sizing: border-box;
       }
     }
+    &__achivements-list,
+    &__application-kind-list,
+    &__textarea-block{
+      position: relative;
+      border: 2px solid $input-border-color;
+    }
+
     &__person-contacts-list{
       display: flex;
       justify-content: space-around;
-      &-wrapper{
+      padding-top: 40px;
+      &-outer-wrapper{
         width: 100%;
-        order: 7;
+      }
+      & h3{
+        left: 340px;
       }
       & div{
         width: 370px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 0;
       }
       & label{
         order: 5;
       }
     }
     &__application-kind-list{
-      &-wrapper{
-        order: 6;
+      width: 435px;
+      padding-left: 80px;
+      padding-top: 60px;
+      & h3{
+        left: 65px;
+      }
+      &-outer-wrapper{
+        padding-top: 0;
       }
     }
     &__textarea-block{
       height: 220px;
-      padding: 20px 60px;
-      &-wrapper{
+      padding: 40px 60px;
+      &-outer-wrapper{
         width: 100%;
-        order: 9;
+      }
+      & h3{
+        left: 340px;
       }
       & textarea{
         width: 820px;
@@ -171,9 +255,8 @@
       }
     }
     &__submit{
-      &-wrapper{
+      &-outer-wrapper{
         width: 100%;
-        order: 10;
       }
     }
   }

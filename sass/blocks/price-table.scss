@@ -4,6 +4,7 @@
   left: 50%;
   border-collapse: collapse;
   transform: translateX(-33%);
+  overflow: hidden;
   &__column-titles{
     height: 100px;
     width: 840px;
@@ -21,7 +22,7 @@
         content: "";
         width: 60px;
         height: 60px;
-        right: 72px;
+        right: 233px;
         top: 0px;
         background-image: url("../img/bg-hit.svg");
         background-size: auto;
@@ -30,7 +31,7 @@
       &::after{
         position: absolute;
         content: "Хит";
-        right: 91px;
+        right: 250px;
         top: 16px;
         text-transform: uppercase;
         color: #ffffff;
