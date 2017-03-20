@@ -1,6 +1,8 @@
 .post{
-
+  display: flex;
+  flex-direction: column;
   &__comment-aria{
+    height: 100%;
     box-sizing: border-box;
     padding: 20px 15px 23px 15px;
     background-color: $section-bg-grey-color;

@@ -6,3 +6,8 @@
     min-height: 510px;
   }
 }
+@media (min-width: $desctop-width) {
+  .upload-photo{
+    background-color: $body-color;
+  }
+}

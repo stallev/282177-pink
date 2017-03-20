@@ -73,6 +73,10 @@
         padding-top: 90px;
         box-sizing: border-box;
       }
+      &--photo-page,
+      &--form-page{
+        min-height: 330px;
+      }
     }
     &__image-hand{
       width: 470px;

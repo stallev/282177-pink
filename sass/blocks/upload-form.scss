@@ -1,5 +1,5 @@
 .upload-form{
-  &__fieldset{
+  &__inner-wrapper{
     @extend %flex-column;
     padding: 0;
     border: 0;
@@ -73,23 +73,86 @@
 }
 @media (min-width: $tablet-width) {
   .upload-form{
-    &__fieldset{
+    &__inner-wrapper{
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
+      height: 400px;
+      justify-content: space-between;
     }
     &__span-upload-image{
       width: 300px;
       height: 400px;
       background-repeat: no-repeat;
       background-size: contain;
+      margin-right: 40px;
     }
     &__edit-controls-list{
-      width: 300px;
+      display: flex;
+      flex-direction: column;
+      width: auto;
       height: 200px;
+      padding-top: 0;
+    }
+    &__control{
+      display: block;
+      height: 70px;
+      width: 100%;
+      padding: 25px 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid $grey-border-control-color;
+    }
+    &__control img{
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
+    &__scale-control{
+      display: none;
     }
     &__action{
-      width: 300px;
-      height: 140px;
+      width: auto;
+      min-height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &-submit-link,
+      &-reset-link{
+        width: 260px;
+        margin: 0;
+      }
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .upload-form{
+    &__inner-wrapper{
+      padding: 60px 80px;
+      background-color: $section-bg-grey-color;
+    }
+    &__control{
+      display: block;
+      height: 70px;
+      width: 100%;
+      padding: 12.5px 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid $grey-border-control-color;
+    }
+    &__control img{
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+    &__action{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 0;
+      &-submit-link,
+      &-reset-link{
+        width: 185px;
+        margin: 0;
+      }
     }
   }
 }
