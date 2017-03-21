@@ -1,5 +1,5 @@
 .body{
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
 }
@@ -11,5 +11,5 @@ ul, li{
   padding: 0;
 }
 div{
-  outline: 1px solid green;
+  //outline: 1px solid green;
 }

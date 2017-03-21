@@ -1,13 +1,14 @@
 .header{
-  background-color: $white-font-color;
-  &__main-image{
-
-  }
+  background: $content-font-color;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   &__logo-toggle{
+    @extend %container;
     min-height: 70px;
     padding-top: 20px;
     box-sizing: border-box;
-    background: $content-font-color;
     border-bottom: 1px solid $body-color;
     display: flex;
     justify-content: space-between;
@@ -36,11 +37,8 @@
     background: $content-font-color;
   }
   &__bottom{
-    @extend %container-mobile;
     position: relative;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position-y: 0;
-    background-repeat: no-repeat;
+
     background-color: $header-bottob-color;
     &--index-page{
       padding-top: 400px;
@@ -51,14 +49,90 @@
     }
   }
   &__image-hand{
+    &-wrapper{
+      position: relative;
+    }
     position: absolute;
     content: "";
     width: 250px;
     height: 290px;
-    bottom: 283px;
-    left: 0;
+    bottom: 0;
+    left: -20px;
     background-image: url(../img/iphone-hand-mobile@1x.png);
-    background-size: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: 2;
+  }
+}
+@media (min-width: $tablet-width) {
+  .header{
+    &__bottom{
+      background-color: transparent;
+      &--index-page{
+        height: 615px;
+        padding-top: 90px;
+        box-sizing: border-box;
+      }
+      &--photo-page,
+      &--form-page{
+        min-height: 330px;
+      }
+    }
+    &__image-hand{
+      width: 470px;
+      height: 550px;
+      bottom: -383px;
+      left: 150px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .header{
+    &__upper{
+      min-height: 110px;
+      background: rgba(0, 0, 0, 0.3);
+      &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 1200px;
+        padding: 0 130px;
+        box-sizing: border-box;
+      }
+    }
+    &__logo-toggle{
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 150px;
+      height: 110px;
+    }
+    &__logo{
+      margin: auto;
+      width: 100%;
+      height: 50px;
+      background-image: url(../img/logo-pink-blue-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+    &__toggle{
+      display: none;
+    }
+    &__bottom{
+      padding-top: 0;
+      background-position-y: -100px;
+      &--index-page{
+        display: flex;
+      }
+      &--photo-page,
+      &--form-page{
+        min-height: 280px;
+      }
+    }
+    &__image-hand{
+      height: 650px;
+      bottom: -466px;
+      left: 413px;
+    }
   }
 }

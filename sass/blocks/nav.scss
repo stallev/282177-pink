@@ -21,3 +21,20 @@
     text-transform: uppercase;
   }
 }
+@media (min-width: $desctop-width) {
+  .nav{
+    &__list{
+      flex-direction: row;
+      width: 620px;
+      height: 110px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__link{
+      height: auto;
+      font-weight: normal;
+      line-height: 110px;
+      text-transform: none;
+    }
+  }
+}

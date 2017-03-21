@@ -1,3 +1,13 @@
 .upload-photo{
   background-color: $section-bg-grey-color;
 }
+@media (min-width: $tablet-width) {
+  .upload-photo{
+    min-height: 510px;
+  }
+}
+@media (min-width: $desctop-width) {
+  .upload-photo{
+    background-color: $body-color;
+  }
+}

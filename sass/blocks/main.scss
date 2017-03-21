@@ -22,3 +22,22 @@
     width: 100%;
   }
 }
+@media (min-width: $tablet-width) {
+  .main{
+    &__panorama{
+      & img{
+        height: 510px;
+      }
+    }
+  }
+}
+@media (min-width: $tablet-width) {
+  .main{
+    &__panorama{
+      & img{
+        height: 510px;
+      }
+    }
+  }
+}
+

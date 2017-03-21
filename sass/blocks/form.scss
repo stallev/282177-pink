@@ -3,20 +3,29 @@
   &__application-title{
     margin: 40px 25px;
   }
-  &__achivements-list{
-    border: 1px solid transparent;
-    background-color: $section-bg-grey-color;
-  }
+  &__achivements-list,
   &__application-kind-list{
-    background-color: $section-bg-grey-color;
+    border: 1px solid transparent;
+    &-outer-wrapper{
+      padding-top: 30px;
+      background-color: $section-bg-grey-color;
+    }
   }
   &__person-contacts-list{
     border: 1px solid transparent;
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 15px;
+    &-title{
+      display: none;
+    }
   }
   &__textarea-block{
+    border: 1px solid transparent;
+    &-outer-wrapper{
+      padding-top: 35px;
+      box-sizing: border-box;
+    }
     &-title{
       margin: 34px 0 11px 0;
     }
@@ -32,17 +41,16 @@
     }
   }
   & h3{
+    display: block;
     font-size: $font-size-sm14;
     font-weight: normal;
     line-height: 18px;
     color: $pink-color;
     text-transform: uppercase;
     text-align: center;
+    border: none;
   }
-  & fieldset{
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   &__submit{
     display: flex;
     flex-direction: column;
@@ -70,6 +78,186 @@
       margin-top: 35px;
       text-transform: uppercase;
       text-align: center;
+    }
+  }
+}
+@media (min-width: $tablet-width) {
+  .form{
+    display: flex;
+    flex-direction: column;
+    &__achivements-list,
+    &__application-kind-list,
+    &__person-contacts-list,
+    &__textarea-block{
+      position: relative;
+      display: block;
+      border: 2px solid $input-border-color;
+      border-radius: 3px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      &-outer-wrapper{
+        background-color: inherit;
+      }
+    }
+    h3{
+      position: absolute;
+      margin: 0;
+      top: -11px;
+      background-color: $body-color;
+    }
+    &__identification-data-list{
+      &-outer-wrapper{
+        order: 5;
+      }
+    }
+    &__achivements-list{
+      &-outer-wrapper{
+        order: 8;
+      }
+      & h3{
+        left: 148px;
+      }
+    }
+    &__person-contacts-list{
+      &-outer-wrapper{
+        order: 7;
+      }
+      & h3{
+        display: block;
+        left: 208px;
+      }
+    }
+    &__application-kind-list{
+      &-outer-wrapper{
+        order: 6;
+      }
+      & h3{
+        left: 148px;
+      }
+    }
+    &__textarea-block{
+      &-outer-wrapper{
+        order: 9;
+      }
+      & h3{
+        left: 208px;
+      }
+    }
+    &__submit{
+      &-outer-wrapper{
+        order: 10;
+      }
+    }
+    &__application-kind-list{
+      padding-bottom: 55px;
+      padding-left: 100px;
+    }
+    &__submit{
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 180px;
+      &-button{
+        display: inline-block;
+        height: 63px;
+        width: 300px;
+      }
+      &-text{
+        display: inline-block;
+      }
+    }
+    &__textarea-block{
+      padding: 50px 60px;
+      box-sizing: border-box;
+      & textarea{
+        width: 500px;
+      }
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .form{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     &__identification-data-list{
+
+     }
+    &__achivements-list{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      padding-left: 60px;
+      padding-top: 55px;
+      &-outer-wrapper{
+        width: 100%;
+      }
+      & h3{
+        left: 280px;
+      }
+      & div{
+        width: 280px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+    }
+    &__achivements-list,
+    &__application-kind-list,
+    &__textarea-block{
+      position: relative;
+      border: 2px solid $input-border-color;
+    }
+
+    &__person-contacts-list{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 40px;
+      &-outer-wrapper{
+        width: 100%;
+      }
+      & h3{
+        left: 340px;
+      }
+      & div{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+      }
+      & label{
+        order: 5;
+      }
+    }
+    &__application-kind-list{
+      width: 435px;
+      padding-left: 80px;
+      padding-top: 60px;
+      & h3{
+        left: 65px;
+      }
+      &-outer-wrapper{
+        padding-top: 0;
+      }
+    }
+    &__textarea-block{
+      height: 220px;
+      padding: 40px 60px;
+      &-outer-wrapper{
+        width: 100%;
+      }
+      & h3{
+        left: 340px;
+      }
+      & textarea{
+        width: 820px;
+        height: 130px;
+      }
+    }
+    &__submit{
+      &-outer-wrapper{
+        width: 100%;
+      }
     }
   }
 }

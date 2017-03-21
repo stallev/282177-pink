@@ -9,24 +9,31 @@
   <body class="body">
     <header class="header">
       <div class="header__upper">
-        <div class="container">
+        <div class="header__upper-wrapper">
           <div class="header__logo-toggle">
             <span class="header__logo"></span>
             <button class="header__toggle"></button>
           </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+              <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+              <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+              <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
-            <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="header__bottom header__bottom--index-page">
-        <div class="header__image-hand"></div>
         <div class="container container--header-bottom">
+          <div class="page-title page-title--index-page">
+            <h1 class="page-title__text page-title__text--index-page">
+              Взгляните на жизнь иначе
+            </h1>
+          </div>
+          <div class="header__image-hand-wrapper">
+            <div class="header__image-hand"></div>
+          </div>
           <div class="downloads downloads--index-page">
             <a class="downloads__default-link" href="#">
               Скачать приложение
@@ -48,7 +55,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="tagline features__tagline">
+        <div class="tagline tagline--before-features">
           <p class="tagline__element tagline__element--features">
             Устали от серости мегаполиса?
           </p>
@@ -58,13 +65,16 @@
         </div>
       </div>
       <section class="features">
-        <div class="container container--section-container">
+        <div class="container container--features-container">
           <div class="features__item">
             <h3 class="features__item-title">Поднимает настроение
             </h3>
             <p class="features__item-description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
+            <div class="features__item-image">
+              <img src="img/iphone-screen-mobile@1x.png" alt="">
+            </div>
           </div>
           <div class="features__item">
             <h3 class="features__item-title">
@@ -73,6 +83,9 @@
             <p class="features__item-description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
+            <div class="features__item-image">
+              <img src="img/iphone-screen-mobile@1x.png" alt="">
+            </div>
           </div>
           <div class="features__item">
             <h3 class="features__item-title">
@@ -81,17 +94,41 @@
             <p class="features__item-description">
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
+            <div class="features__item-image">
+              <img src="img/iphone-screen-mobile@1x.png" alt="">
+            </div>
           </div>
-          <div class="features__item-image"><img src="img/iphone-screen-mobile@1x.png" alt=""></div>
         </div>
       </section>
-      <section class="recalls">
+      <section class="effect">
         <div class="container">
+          <div class="effect-research">
+            <img src="#" alt="" class="effect-research__image">
+            <div class="effect-research__post">
+              <div class="effect-research__post-title">
+                <h2 class="effect-research__post-title-text">
+                  Эффект на 24 часа
+                </h2>
+              </div>
+              <p class="effect-research__post-description">
+                Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!
+              </p>
+              <a href="#" class="effect-research__post-link">
+                Узнать больше об исследовании
+              </a>
+            </div>
+          </div>
           <div class="experience-slider">
             <input type="radio" class="experience-slider__radio-item" id="slide1" name="recall" checked>
             <input type="radio" class="experience-slider__radio-item" id="slide2" name="recall">
             <input type="radio" class="experience-slider__radio-item" id="slide3" name="recall">
             <div class="experience-slider__item">
+              <span class="experience-slider__about-person">
+                25 лет, водитель трамвая
+              </span>
               <span class="experience-slider__person-name">
                 Николай Петров
               </span>
@@ -102,6 +139,9 @@
               </div>
             </div>
             <div class="experience-slider__item">
+              <span class="experience-slider__about-person">
+                25 лет, водитель трамвая
+              </span>
               <span class="experience-slider__person-name">
                 Никита Иванов
               </span>
@@ -112,6 +152,9 @@
               </div>
             </div>
             <div class="experience-slider__item">
+              <span class="experience-slider__about-person">
+                25 лет, водитель трамвая
+              </span>
               <span class="experience-slider__person-name">
                 Игорь Сидоров
               </span>
@@ -133,51 +176,64 @@
         <div class="container container--prices">
           <div class="price-table">
             <table>
-            <tr class="price-table__row-titles">
-              <th class="price-table__column-title">
+            <tr class="price-table__column-titles">
+              <th class="price-table__column-title price-table__column-title--hidden">
                 <span class="price-table__version-name">Value</span>
                 <span class="price-table__version-price">5 USD</span>
               </th>
               <th class="price-table__column-title">
-                <span class="price-table__version-name">Value</span>
-                <span class="price-table__version-price">5 USD</span>
+                <span class="price-table__version-name">База</span>
+                <span class="price-table__version-price">1.99 USD</span>
+              </th>
+              <th class="price-table__column-title price-table__column-title--hit">
+                <span class="price-table__version-name">Стандарт</span>
+                <span class="price-table__version-price">3.99 USD</span>
               </th>
               <th class="price-table__column-title">
-                <span class="price-table__version-name">Value</span>
-                <span class="price-table__version-price">5 USD</span>
+                <span class="price-table__version-name">Анлим</span>
+                <span class="price-table__version-price">9.99 USD</span>
               </th>
             </tr>
             <tr>
-              <td class="price-table__feature-filtr">
+              <td class="price-table__row-title">
                 Розовый фильтр
               </td>
-              <td class="price-table__feature-filtr">
-                Розовый фильтр
+              <td class="price-table__feature-filtr price-table--flag-yes">
+
               </td>
-              <td class="price-table__feature-filtr">
-                Розовый фильтр
+              <td class="price-table__feature-filtr price-table--flag-yes">
+
+              </td>
+              <td class="price-table__feature-filtr price-table--flag-yes">
+
               </td>
             </tr>
             <tr>
-              <td class="price-table__feature-smiley">
+              <td class="price-table__row-title">
                 Смайлики
               </td>
-              <td class="price-table__feature-smiley">
-                Смайлики
+              <td class="price-table__feature-smiley price-table--flag-no">
+
               </td>
-              <td class="price-table__feature-smiley">
-                Смайлики
+              <td class="price-table__feature-smiley price-table--flag-yes">
+
+              </td>
+              <td class="price-table__feature-smiley price-table--flag-yes">
+
               </td>
             </tr>
             <tr>
-              <td class="price-table__feature-comments">
+              <td class="price-table__row-title">
                 Комментарии
               </td>
-              <td class="price-table__feature-comments">
-                Комментарии
+              <td class="price-table__feature-comments price-table--flag-no">
+
               </td>
-              <td class="price-table__feature-comments">
-                Комментарии
+              <td class="price-table__feature-comments price-table--flag-no">
+
+              </td>
+              <td class="price-table__feature-comments price-table--flag-yes">
+
               </td>
             </tr>
           </table>
@@ -193,15 +249,15 @@
         </div>
       </section>
       <section class="contact-info">
-        <div class="container container--section-container">
-          <div class="tagline">
-            <p class="tagline__element">
-              Остались вопросы?
-            </p>
-            <p class="tagline__element">
-              Свяжитесь с нами!
-            </p>
-          </div>
+        <div class="tagline tagline--before-contacts">
+          <p class="tagline__element">
+            Остались вопросы?
+          </p>
+          <p class="tagline__element">
+            Свяжитесь с нами!
+          </p>
+        </div>
+        <div class="container container--contact-info">
           <div class="contact-info__item">
             <span class="contact-info__item-title">
               Звоните
@@ -223,10 +279,26 @@
             </span>
           </div>
         </div>
+        <div class="contact-info__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616366473!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488977597231" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
-    <div class="contact-info__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616366473!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488977597231" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+    <footer class="footer footer--index-page">
+      <div class="container container--footer-container">
+        <div class="logo logo--footer"></div>
+        <div class="social footer__social">
+          <a href="http://twitter.com/" class="social__twitter"></a>
+          <a href="http://facebook.com/" class="social__facebook"></a>
+          <a href="http://youtube.com/" class="social__youtube"></a>
+        </div>
+        <div class="footer__develop">
+          <span class="footer__develop-text">
+            Разработано
+          </span>
+          <span class="footer__develop-image"></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

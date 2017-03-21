@@ -19,3 +19,28 @@
     border-radius: 2px;
   }
 }
+@media (min-width: $tablet-width) {
+  .field-item{
+    margin-bottom: 50px;
+    & label{
+      display: inline-block;
+      width: auto;
+      margin-right: 20px;
+    }
+    & input{
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .field-item{
+    margin-bottom: 50px;
+    & label{
+      display: inline-block;
+    }
+    & input{
+      display: inline-block;
+    }
+  }
+}

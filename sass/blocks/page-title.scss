@@ -1,5 +1,6 @@
 .page-title{
   display: flex;
+  box-sizing: border-box;
   &__text{
     margin: auto;
     box-sizing: border-box;
@@ -8,5 +9,44 @@
     font-weight: 300;
     color: $body-color;
     text-align: center;
+    &--index-page{
+      display: none;
+    }
+  }
+}
+@media (min-width: $tablet-width) {
+  .page-title{
+    &__text{
+      line-height: $line-height-slg70;
+      font-size: $font-size-slg50;
+      &--index-page{
+        display: block;
+        padding: 0 50px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+      &--photo-page{
+        width: 620px;
+      }
+    }
+    &--index-page{
+      width: 300px;
+      margin-bottom: 25px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .page-title{
+    &--index-page{
+      margin: 0;
+    }
+    &__text{
+      width: 380px;
+      line-height: $line-height-slg70;
+      font-size: $font-size-slg50;
+      &--photo-page{
+        width: 780px;
+      }
+    }
   }
 }

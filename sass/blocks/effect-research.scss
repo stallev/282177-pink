@@ -1,0 +1,50 @@
+.effect-research{
+  display: none;
+}
+@media (min-width: $tablet-width) {
+  .effect-research{
+    display: flex;
+    position: relative;
+    min-height: 400px;
+    padding: 90px 0;
+    box-sizing: border-box;
+    & img{
+      position: absolute;
+      display: block;
+      width: 240px;
+      height: 200px;
+      background-color: #dddddd;
+    }
+    &__post{
+      display: flex;
+      flex-direction: column;
+      margin-left: 300px;
+      &-title {
+        width: 55%;
+        &-text {
+          margin-top: 20px;
+          margin-bottom: 0;
+          font-size: $font-size-lg30;
+          font-weight: bold;
+          line-height: $line-height-lg36;
+        }
+      }
+      &-description{
+        font-size: $font-size-sm14;
+        line-height: $line-height-sm24;
+        font-weight: normal;
+        color: $content-font-color;
+      }
+      &-link{
+        color: $pink-color;
+      }
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .effect-research{
+    &__post{
+      margin-left: 370px;
+    }
+  }
+}

@@ -9,20 +9,20 @@
   <body class="body">
     <header class="header">
       <div class="header__upper">
-        <div class="container">
+        <div class="header__upper-wrapper">
           <div class="header__logo-toggle">
             <span class="header__logo"></span>
             <button class="header__toggle"></button>
           </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+              <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+              <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+              <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
-            <li class="nav__item"><a class="nav__link" href="http://htmlacademy.ru/">htmlacademy</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="header__bottom header__bottom--photo-page">
         <div class="page-title page-title--photo-page">
@@ -34,7 +34,7 @@
     </header>
     <main class="main">
       <div class="container">
-        <div class="tagline">
+        <div class="tagline tagline--before-post-list">
           <p class="tagline__element tagline__element--post-list">
             Взгляните на фотографии, которые выкладывают пользователи!
           </p>
@@ -46,7 +46,7 @@
       <div class="post main__panorama">
         <img src="img/panorama-mobile@1x.jpg" alt="">
         <div class="container">
-          <div class="post__comment-aria">
+          <div class="post__comment-aria post__comment-aria--panorama">
             <span class="post__username">Анна</span>
             <span class="post__time">(5 минут назад)</span>
             <blockquote class="post__blockquote">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
@@ -55,8 +55,8 @@
         </div>
       </div>
         <section class="post-list">
-          <div class="post post-list__item">
-            <div class="container">
+          <div class="container container--post-list">
+            <div class="post post-list__item">
               <img src="img/photo-1-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Левон</span>
@@ -65,9 +65,7 @@
                 <span class="post__likes">нравится:356</span>
               </div>
             </div>
-          </div>
-          <div class="post post-list__item">
-            <div class="container">
+            <div class="post post-list__item">
               <img src="img/photo-2-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Антон</span>
@@ -76,9 +74,7 @@
                 <span class="post__likes">нравится:666</span>
               </div>
             </div>
-          </div>
-          <div class="post post-list__item">
-            <div class="container">
+            <div class="post post-list__item">
               <img src="img/photo-3-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Борис</span>
@@ -87,9 +83,7 @@
                 <span class="post__likes">нравится:215</span>
               </div>
             </div>
-          </div>
-          <div class="post post-list__item">
-            <div class="container">
+            <div class="post post-list__item">
               <img src="img/photo-4-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Сергей</span>
@@ -98,9 +92,7 @@
                 <span class="post__likes">нравится:4</span>
               </div>
             </div>
-          </div>
-          <div class="post post-list__item">
-            <div class="container">
+            <div class="post post-list__item">
               <img src="img/photo-5-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Максим</span>
@@ -109,9 +101,7 @@
                 <span class="post__likes">нравится:150</span>
               </div>
             </div>
-          </div>
-          <div class="post post-list__item">
-            <div class="container">
+            <div class="post post-list__item">
               <img src="img/photo-6-mobile@1x.jpg" alt="">
               <div class="post__comment-aria">
                 <span class="post__username">Надежда</span>
@@ -122,7 +112,7 @@
             </div>
           </div>
         </section>
-        <div class="tagline">
+        <div class="tagline  tagline--after-post-list">
         <p class="tagline__element tagline__element--post-list">
         Затмите их всех!
         </p>
@@ -133,36 +123,39 @@
       <section class="upload-photo">
         <div class="container container--upload-form">
           <form action="https://echo.htmlacademy.ru/" method="post" class="upload-form">
-            <fieldset class="upload-form__fieldset">
+            <div class="upload-form__inner-wrapper">
               <input class="upload-form__input" type="file" id="uploadImage">
-              <label class="upload-form__label-upload-image" for="uploadImage"></label>
+              <span class="upload-form__span-upload-image"></span>
               <div class="upload-form__edit-controls-list">
                 <a href="#" class="upload-form__control"><img src="img/icon-editor-crop.svg" alt=""></a>
                 <a href="#" class="upload-form__control"><img src="img/icon-editor-fill.svg" alt=""></a>
                 <a href="#" class="upload-form__control"><img src="img/icon-editor-contrast.svg" alt=""></a>
               </div>
               <span class="upload-form__scale-control"></span>
-            </fieldset>
-            <div class="upload-form__action">
-              <a href="" class="upload-form__action-submit-link" type="submit">Запостить</a>
-              <a href="" class="upload-form__action-reset-link" type="reset">Отмена</a>
+              <div class="upload-form__action">
+                <a href="" class="upload-form__action-submit-link" type="submit">Запостить</a>
+                <a href="" class="upload-form__action-reset-link" type="reset">Отмена</a>
+              </div>
             </div>
+
           </form>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="logo logo--footer"></div>
-      <div class="social footer__social">
-        <a href="http://twitter.com/" class="social__twitter"></a>
-        <a href="http://facebook.com/" class="social__facebook"></a>
-        <a href="http://youtube.com/" class="social__youtube"></a>
-      </div>
-      <div class="footer__develop">
+      <div class="container container--footer-container">
+        <div class="logo logo--footer"></div>
+        <div class="social footer__social">
+          <a href="http://twitter.com/" class="social__twitter"></a>
+          <a href="http://facebook.com/" class="social__facebook"></a>
+          <a href="http://youtube.com/" class="social__youtube"></a>
+        </div>
+        <div class="footer__develop">
           <span class="footer__develop-text">
             Разработано
           </span>
-        <span class="footer__develop-image"></span>
+          <span class="footer__develop-image"></span>
+        </div>
       </div>
     </footer>
   </body>

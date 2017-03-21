@@ -1,6 +1,7 @@
 .container{
-  @extend %container-mobile;
+  @extend %container;
   &--header-bottom{
+    @extend %flex-column;
     background-color: $header-bottob-color;
   }
   &--page-title{
@@ -9,14 +10,78 @@
     display: table;
 
   }
-  &--section-container{
+  &--features-container{
     @extend %flex-column;
   }
   &--upload-form{
     padding-top: 20px;
   }
+  &--post-list{
+    @extend %flex-column;
+  }
   &--prices{
     box-sizing: border-box;
     border: 1px solid transparent;
+    overflow: hidden;
+  }
+  &--contact-info{
+    @extend %flex-column;
+  }
+  &--footer-container{
+    @extend %flex-column;
+    align-items: center;
+  }
+}
+@media (min-width: $tablet-width) {
+  .container{
+    &--header-bottom{
+      background-color: transparent;
+    }
+    &--contact-info{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &--footer-container{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--post-list{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &--upload-form{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .container{
+    &--header-bottom{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 510px;
+      margin: auto;
+    }
+    &--features-container{
+      flex-direction: row;
+    }
+    &--contact-info{
+      min-height: 160px;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &--post-list{
+
+    }
+    &--upload-form{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }

@@ -1,7 +1,5 @@
 .footer{
   min-height: 285px;
-  @extend %flex-column;
-  align-items: center;
   &__social{
     display: flex;
     justify-content: space-between;
@@ -25,5 +23,23 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
+  &--index-page{
+    display: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .footer{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    &--index-page{
+      display: block;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .footer{
+    padding-top: 60px;
   }
 }
