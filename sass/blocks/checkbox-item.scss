@@ -7,7 +7,7 @@
       position: absolute;
       visibility: visible;
       content: '';
-      left: 0;
+      left: 19px;
       top: -11px;
       width: 37px;
       height: 37px;
@@ -19,14 +19,51 @@
   }
   & label{
     @extend %medium-content-font;
+    position: relative;
     margin-left: 45px;
+    &::before{
+      position: absolute;
+      content: '';
+      display: none;
+      left: -31px;
+      top: 11px;
+      width: 23px;
+      height: 3px;
+      box-sizing: border-box;
+      background-color: $pink-color;
+      transform: rotate(-45deg)
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      display: none;
+      left: -35px;
+      top: 15px;
+      width: 9px;
+      height: 3px;
+      box-sizing: border-box;
+      background-color: $pink-color;
+      transform: rotate(45deg)
+    }
   }
+}
+input[type="checkbox"]:checked + label::before{
+  display: block;
+}
+input[type="checkbox"]:checked + label::after{
+  display: block;
 }
 @media (min-width: $tablet-width) {
   .checkbox-item{
     margin-bottom: 50px;
     & label{
       margin-left: 105px;
+      &::before{
+        left: -50px;
+      }
+      &::after{
+        left: -54px;
+      }
     }
     & input{
       &::before{
@@ -37,9 +74,17 @@
 }
 @media (min-width: $desctop-width) {
   .checkbox-item{
-    width: 260px;
+    width: 280px;
+    padding-right: 20px;
+    box-sizing: border-box;
     & label{
       margin-left: 40px;
+      &::before{
+        left: -44px;
+      }
+      &::after{
+        left: -48px;
+      }
     }
     & input{
       &::before{
