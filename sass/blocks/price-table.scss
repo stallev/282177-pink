@@ -12,7 +12,6 @@
   &__column-title{
     position: relative;
     width: 840px;
-    height: 100px;
     box-sizing: border-box;
     padding: 18px 0;
     background-color: #283645;
@@ -110,7 +109,37 @@
     transform: translateX(0);
     & td,
     & th{
-      width: 25%;
+      width: 153px;
+    }
+    & td{
+      height: 45px;
+      background-color: $body-color;
+      box-sizing: border-box;
+      font-size: $font-size-sm14;
+      line-height: $line-height-lg30;
+      padding: 7px 0 7px 15px;
+    }
+    &__column-titles{
+      height: 80px;
+    }
+    &__column-title{
+      padding: 0;
+      &--hit{
+        &::before{
+          right: 92px;
+        }
+        &::after{
+          right: 111px;
+        }
+      }
+    }
+    &__version-name{
+      font-size: $font-size-sm16;
+      line-height: $line-height-lg30;
+    }
+    &__version-price{
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
     }
     &__column-title{
       &--hidden{
@@ -124,8 +153,8 @@
     &__feature-filtr,
     &__feature-smiley,
     &__feature-comments{
-      background-size: 30px auto;
-      background-position: 210px 15px;
+      background-size: 25px auto;
+      background-position: 54px 10px;
       &::before{
         display: none;
       }
@@ -136,5 +165,43 @@
   .price-table{
     width: 100%;
     transform: translateX(0);
+    & td,
+    & th{
+      width: 234px;
+    }
+    & td{
+      height: 60px;
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
+      padding: 15px 0 15px 25px;
+    }
+    &__column-titles{
+      height: 100px;
+    }
+    &__column-title{
+      padding: 0;
+      &--hit{
+        &::before{
+          right: 172px;
+        }
+        &::after{
+          right: 189px;
+        }
+      }
+    }
+    &__version-name{
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
+    }
+    &__version-price{
+      font-size: $font-size-md24;
+      line-height: $line-height-lg30;
+    }
+    &__feature-filtr,
+    &__feature-smiley,
+    &__feature-comments{
+      background-size: 30px auto;
+      background-position: 99px 20px;
+    }
   }
 }

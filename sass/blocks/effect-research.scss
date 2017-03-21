@@ -35,6 +35,9 @@
         font-weight: normal;
         color: $content-font-color;
       }
+      &-link{
+        color: $pink-color;
+      }
     }
   }
 }
@@ -42,9 +45,6 @@
   .effect-research{
     &__post{
       margin-left: 370px;
-      &-link{
-        color: $pink-color;
-      }
     }
   }
 }

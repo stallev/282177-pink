@@ -57,6 +57,8 @@
 }
 @media (min-width: $desctop-width) {
   .post{
-
+    & img{
+      height: 400px;
+    }
   }
 }
