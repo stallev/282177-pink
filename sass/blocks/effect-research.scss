@@ -42,6 +42,9 @@
   .effect-research{
     &__post{
       margin-left: 370px;
+      &-link{
+        color: $pink-color;
+      }
     }
   }
 }
