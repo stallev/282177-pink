@@ -1,19 +1,19 @@
 .price-table{
-  width: 840px;
   margin: 40px 0;
+  padding-bottom: 32px;
+  width: 799px;
   left: 50%;
   border-collapse: collapse;
-  transform: translateX(-33%);
+  transform: translateX(-32%);
   overflow: hidden;
   &__column-titles{
     height: 100px;
-    width: 840px;
   }
   &__column-title{
     position: relative;
-    width: 840px;
+    width: 300px;
     box-sizing: border-box;
-    padding: 18px 0;
+    padding: 9px 0 18px;
     background-color: #283645;
     &--hit{
       &::before{
@@ -21,7 +21,7 @@
         content: "";
         width: 60px;
         height: 60px;
-        right: 233px;
+        right: 223px;
         top: 0px;
         background-image: url("../img/bg-hit.svg");
         background-size: auto;
@@ -30,7 +30,7 @@
       &::after{
         position: absolute;
         content: "Хит";
-        right: 250px;
+        right: 239px;
         top: 16px;
         text-transform: uppercase;
         color: #ffffff;
@@ -56,14 +56,14 @@
     padding: 15px 20px;
     background-size: 30px auto;
     background-repeat: no-repeat;
-    background-position: 210px 15px;
+    background-position: 232px 15px;
     &::before{
       position: absolute;
       display: block;
       width: 150px;
       height: 30px;
-      top: 17px;
-      left: 30px;
+      top: 11px;
+      left: 25px;
       text-transform: uppercase;
     }
   }
@@ -97,6 +97,7 @@
   }
   &__version-price{
     display: block;
+    padding-top: 3px;
     font-size: $font-size-md24;
     line-height: $line-height-lg30;
     font-weight: 300;

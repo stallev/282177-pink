@@ -12,6 +12,8 @@
   }
   &--features-container{
     @extend %flex-column;
+    padding: 80px 0 0;
+    margin-bottom: -11px;
   }
   &--upload-form{
     padding-top: 20px;

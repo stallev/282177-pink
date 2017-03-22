@@ -17,12 +17,13 @@
     }
   }
   &--before-features{
-    min-height: 210px;
-    padding: 30px 0;
+    min-height: 215px;
+    padding: 40px 0 33px;
+    justify-content: space-between;
   }
   &--before-contacts{
     min-height: 130px;
-    padding: 40px 0;
+    padding: 44px 0 29px;
   }
   &--before-form{
     min-height: 170px;

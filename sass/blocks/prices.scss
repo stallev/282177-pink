@@ -1,6 +1,7 @@
 .prices{
   overflow: hidden;
   background: $section-bg-grey-color;
+  padding-top: 50px;
 }
 #prices-slide1:checked ~ .price-table {
   transform: translateX(0);

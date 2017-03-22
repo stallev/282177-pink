@@ -1,6 +1,7 @@
 .experience-slider{
   @extend %flex-column;
   position: relative;
+  padding-bottom: 19px;
   &__item{
     display: none;
     margin-bottom: 50px;
@@ -21,13 +22,13 @@
   }
   &__controls{
     position: absolute;
-    top: 250px;
-    left: 120px;
+    top: 280px;
+    left: 111px;
     width: 100px;
     height: 20px;
   }
   &__label-item{
-    margin-right: 12px;
+    margin-right: 19px;
     display: inline-block;
     &::before{
       position: absolute;
