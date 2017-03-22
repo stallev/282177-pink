@@ -39,7 +39,8 @@
   &__bottom{
     position: relative;
     &--index-page{
-      padding-top: 400px;
+      margin-top: 400px;
+      background-color: $header-bottob-color;
     }
     &--photo-page,
     &--form-page{
@@ -54,7 +55,7 @@
     content: "";
     width: 250px;
     height: 290px;
-    bottom: 0;
+    bottom: -14px;
     left: -20px;
     background-image: url(../img/iphone-hand-mobile@1x.png);
     background-size: 100%;
@@ -69,6 +70,7 @@
       &--index-page{
         height: 615px;
         padding-top: 90px;
+        margin-top: 0;
         box-sizing: border-box;
       }
       &--photo-page,

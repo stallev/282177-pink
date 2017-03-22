@@ -4,6 +4,7 @@
   &__item{
     display: none;
     margin-bottom: 50px;
+    flex-direction: column;
   }
   &__about-person{
     display: none;
@@ -54,12 +55,11 @@
 #slide2:checked ~ .experience-slider__item:nth-of-type(2),
 #slide3:checked ~ .experience-slider__item:nth-of-type(3) {
   display: flex;
-  flex-direction: column;
 }
 @media (min-width: $tablet-width) {
   .experience-slider{
     &__item{
-
+      flex-direction: column-reverse;
     }
     &__about-person{
       display: block;
@@ -86,6 +86,18 @@
     min-height: 400px;
     box-sizing: border-box;
     padding: 100px 75px;
+    &__about-person{
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
+    }
+    &__person-experience{
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
+    }
+    &__person-name{
+      font-size: $font-size-md24;
+      line-height: $line-height-lg30;
+    }
     &__controls{
       top: 323px;
       left: 446px;

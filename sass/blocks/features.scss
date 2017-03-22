@@ -68,12 +68,11 @@
     display: block;
     width: 190px;
     right: 59px;
-    bottom: 213px;
+    bottom: 276px;
     height: 200px;
     overflow: hidden;
   }
   .features{
-
     &__item{
       min-height: 560px;
       box-sizing: border-box;
@@ -82,6 +81,11 @@
       padding-top: 360px;
       padding-left: 36px;
       padding-right: 36px;
+      &-title{
+        margin-bottom: 12px;
+        font-size: $font-size-lg30;
+        line-height: $line-height-lg30;
+      }
       &-description{
         text-align: center;
         font-size: $font-size-md18;
@@ -91,7 +95,7 @@
         display: block;
         width: 190px;
         right: 59px;
-        bottom: 213px;
+        bottom: 276px;
         & img{
           width: 190px;
 
