@@ -68,7 +68,7 @@
     &__bottom{
       background-color: transparent;
       &--index-page{
-        height: 615px;
+        height: 618px;
         padding-top: 90px;
         margin-top: 0;
         box-sizing: border-box;
@@ -79,10 +79,13 @@
       }
     }
     &__image-hand{
-      width: 470px;
+      width: 442px;
       height: 550px;
-      bottom: -383px;
-      left: 150px;
+      bottom: -390px;
+      left: 171px;
+    }
+    &__toggle{
+      background-position: 3px -20px;
     }
   }
 }

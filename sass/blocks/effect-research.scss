@@ -6,7 +6,7 @@
     display: flex;
     position: relative;
     min-height: 400px;
-    padding: 90px 0;
+    padding: 73px 0 90px;
     box-sizing: border-box;
     & img{
       position: absolute;
@@ -18,7 +18,7 @@
     &__post{
       display: flex;
       flex-direction: column;
-      margin-left: 300px;
+      margin-left: 312px;
       &-title {
         width: 55%;
         &-text {
@@ -36,6 +36,7 @@
         color: $content-font-color;
       }
       &-link{
+        font-size: $font-size-sm14;
         color: $pink-color;
       }
     }

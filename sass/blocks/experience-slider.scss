@@ -59,6 +59,10 @@
 }
 @media (min-width: $tablet-width) {
   .experience-slider{
+    padding-top: 15px;
+    &__radio-item{
+      display: none;
+    }
     &__item{
       flex-direction: column-reverse;
     }
@@ -69,13 +73,16 @@
       line-height: $line-height-lg30;
     }
     &__person-name{
-
+      margin-top: 17px;
+      font-size: $font-size-md20;
+      line-height: $line-height-lg30;
     }
     &__person-experience{
-
+      font-size: $font-size-md18;
+      line-height: $line-height-lg30;
     }
     &__controls{
-      top: 210px;
+      top: 240px;
       left: 285px;
       width: 100px;
       height: 20px;

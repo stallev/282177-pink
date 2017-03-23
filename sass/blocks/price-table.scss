@@ -94,6 +94,7 @@
     line-height: $line-height-lg30;
     font-weight: bold;
     color: $body-color;
+    text-transform: uppercase;
   }
   &__version-price{
     display: block;
@@ -107,6 +108,7 @@
 @media (min-width: $tablet-width) {
   .price-table{
     width: 100%;
+    padding-bottom: 22px;
     transform: translateX(0);
     & td,
     & th{
@@ -118,7 +120,7 @@
       box-sizing: border-box;
       font-size: $font-size-sm14;
       line-height: $line-height-lg30;
-      padding: 7px 0 7px 15px;
+      padding: 2px 0 7px 12px;
     }
     &__column-titles{
       height: 80px;
@@ -128,9 +130,14 @@
       &--hit{
         &::before{
           right: 92px;
+          top: -11px;
+          width: 59px;
+          height: 119px;
         }
         &::after{
-          right: 111px;
+          right: 119px;
+          top: 11px;
+          font-size: $font-size-sm14;
         }
       }
     }
@@ -139,10 +146,12 @@
       line-height: $line-height-lg30;
     }
     &__version-price{
+      padding-top: 0;
       font-size: $font-size-md18;
       line-height: $line-height-lg30;
     }
     &__column-title{
+      overflow: hidden;
       &--hidden{
         display: block;
         visibility: hidden;
@@ -155,7 +164,7 @@
     &__feature-smiley,
     &__feature-comments{
       background-size: 25px auto;
-      background-position: 54px 10px;
+      background-position: 62px 10px;
       &::before{
         display: none;
       }

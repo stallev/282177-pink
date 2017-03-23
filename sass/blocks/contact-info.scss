@@ -39,9 +39,11 @@
 }
 @media (min-width: $tablet-width) {
   .contact-info{
+    padding-top: 9px;
     &__item{
       width: 300px;
       box-sizing: border-box;
+      margin: 5px 5px 42px;
       padding: 0 40px;
     }
     &__map{
@@ -59,6 +61,9 @@
         background-repeat: no-repeat;
       }
     }
+  }
+  .contact-info__item:nth-last-of-type(1){
+    margin-bottom: 25px;
   }
 }
 @media (min-width: $desctop-width) {

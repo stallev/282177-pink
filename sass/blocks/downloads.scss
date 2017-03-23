@@ -22,7 +22,7 @@
     border-radius: 25px;
   }
   &__portability{
-    width: 210px;
+    width: 215px;
     display: flex;
     justify-content: space-between;
   }
@@ -57,13 +57,17 @@
 @media (min-width: $tablet-width) {
   .downloads{
     width: 300px;
+    padding: 26px 0 3px;
     &__default-link{
       font-size: $font-size-md18;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+    &__portability{
     }
     &__description{
       font-size: $font-size-md18;
       line-height: $line-height-sm24;
+      margin: 0;
     }
   }
 }

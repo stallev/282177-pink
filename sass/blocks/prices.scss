@@ -12,3 +12,16 @@
 #prices-slide3:checked ~ .price-table {
   transform: translateX(-67%);
 }
+@media (min-width: $tablet-width) {
+  .prices{
+    padding-top: 45px;
+    &__radio-item{
+      display: none;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .prices{
+    padding-top: 40px;
+  }
+}
