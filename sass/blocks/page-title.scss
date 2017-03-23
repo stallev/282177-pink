@@ -41,8 +41,12 @@
     }
     &__text{
       width: 380px;
-      line-height: $line-height-slg70;
+      line-height: $line-height-slg60;
       font-size: $font-size-slg50;
+      &--index-page{
+        padding: 0 30px;
+      }
+
       &--photo-page{
         width: 780px;
       }

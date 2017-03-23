@@ -42,5 +42,9 @@
 @media (min-width: $desctop-width) {
   .footer{
     padding-top: 40px;
+    &__develop{
+      font-size: $font-size-md18;
+      line-height: $line-height-sm18;
+    }
   }
 }

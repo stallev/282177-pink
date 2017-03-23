@@ -74,23 +74,25 @@
     display: block;
     width: 190px;
     right: 59px;
-    bottom: 276px;
+    bottom: 308px;
     height: 200px;
     overflow: hidden;
   }
   .features{
+    padding-top: 0;
     &__item{
       min-height: 560px;
       box-sizing: border-box;
       width: 313px;
       margin: 0;
-      padding-top: 360px;
+      padding-top: 350px;
       padding-left: 36px;
       padding-right: 36px;
       &-title{
-        margin-bottom: 12px;
+        margin-bottom: 6px;
         font-size: $font-size-lg30;
         line-height: $line-height-lg30;
+        text-align: center;
       }
       &-description{
         text-align: center;
@@ -101,7 +103,7 @@
         display: block;
         width: 190px;
         right: 59px;
-        bottom: 276px;
+        bottom: 308px;
         & img{
           width: 190px;
 

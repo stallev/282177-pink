@@ -89,11 +89,12 @@
     }
     &--before-features{
       min-height: 330px;
-      padding: 50px 0;
+      justify-content: flex-start;
+      padding: 72px 0;
     }
     &--before-contacts{
       min-height: 225px;
-      padding: 40px 0;
+      padding: 58px 0 52px;
     }
     &--before-form{
       min-height: 220px;

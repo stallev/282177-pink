@@ -71,3 +71,17 @@
     }
   }
 }
+@media (min-width: $desctop-width) {
+  .downloads{
+    padding: 0;
+    &__default-link{
+      margin-bottom: 14px;
+      margin-top: -20px;
+      font-size: $font-size-md21;
+      line-height: 47px;
+    }
+    &__description{
+      margin-bottom: 11px;
+    }
+  }
+}

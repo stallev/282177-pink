@@ -84,9 +84,11 @@
   }
   &--flag-yes{
     background-image: url("../img/icon-yes.svg");
+    background-position: 62px 10px;
   }
   &--flag-no{
     background-image: url("../img/icon-no.svg");
+    background-position: 62px 10px;
   }
   &__version-name{
     display: block;
@@ -121,6 +123,12 @@
       font-size: $font-size-sm14;
       line-height: $line-height-lg30;
       padding: 2px 0 7px 12px;
+    }
+    &--flag-yes{
+      background-position: 62px 10px;
+    }
+    &--flag-no{
+      background-position: 62px 10px;
     }
     &__column-titles{
       height: 80px;
@@ -164,7 +172,6 @@
     &__feature-smiley,
     &__feature-comments{
       background-size: 25px auto;
-      background-position: 62px 10px;
       &::before{
         display: none;
       }
@@ -174,6 +181,7 @@
 @media (min-width: $desctop-width) {
   .price-table{
     width: 100%;
+    margin: 102px 0 66px;
     transform: translateX(0);
     & td,
     & th{
@@ -183,7 +191,15 @@
       height: 60px;
       font-size: $font-size-md18;
       line-height: $line-height-lg30;
-      padding: 15px 0 15px 25px;
+      padding: 11px 0 15px 18px;
+    }
+    &--flag-yes{
+      background-size: 32px auto;
+      background-position: 101px 16px;
+    }
+    &--flag-no{
+      background-size: 25px auto;
+      background-position: 100px 12px;
     }
     &__column-titles{
       height: 100px;
@@ -207,11 +223,6 @@
       font-size: $font-size-md24;
       line-height: $line-height-lg30;
     }
-    &__feature-filtr,
-    &__feature-smiley,
-    &__feature-comments{
-      background-size: 30px auto;
-      background-position: 99px 20px;
-    }
+
   }
 }

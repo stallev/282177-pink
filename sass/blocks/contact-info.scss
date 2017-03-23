@@ -69,16 +69,22 @@
 @media (min-width: $desctop-width) {
   .contact-info{
     &__item{
-      width: 300px;
+      align-items: center;
+      width: 302px;
       box-sizing: border-box;
-      padding: 0 40px;
+      padding: 0px 44px 0;
+      margin: 7px 1px 0 -4px;
+    }
+    & a,
+    &__content{
+      padding: 21px 0 0;
     }
     &__map{
       width: 1200px;
-      height: 380px;
+      min-height: 511px;
       margin: 0 auto;
       & iframe{
-        height: 380px;
+        min-height: 504px;
       }
       &::before{
         width: 100%;
@@ -90,5 +96,8 @@
   }
   .contact-info__item:nth-last-of-type(2){
     order: 4;
+  }
+  .contact-info__item:nth-last-of-type(1){
+    margin-bottom: 0;
   }
 }

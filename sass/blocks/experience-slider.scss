@@ -91,14 +91,26 @@
 }
 @media (min-width: $desctop-width) {
   .experience-slider{
+    position: relative;
     min-height: 400px;
     box-sizing: border-box;
-    padding: 100px 75px;
+    padding: 208px 75px 0;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 150px;
+      top: 50px;
+      font-size: $font-size-lg40;
+    }
+    &__item{
+      margin-bottom: 46px;
+    }
     &__about-person{
       font-size: $font-size-md18;
       line-height: $line-height-lg30;
     }
     &__person-experience{
+      padding: 11px 20px 0;
       font-size: $font-size-md18;
       line-height: $line-height-lg30;
     }

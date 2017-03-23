@@ -44,8 +44,23 @@
 }
 @media (min-width: $desctop-width) {
   .effect-research{
+    padding: 40px;
     &__post{
-      margin-left: 370px;
+      margin-left: 327px;
+      padding-top: 71px;
+      &-title{
+        width: 70%;
+      }
+      &-description{
+        padding: 4px 1px;
+        font-size: $font-size-md18;
+        line-height: $line-height-lg30;
+      }
+      &-link{
+        padding-top: 8px;
+        font-size: $font-size-md18;
+        line-height: $line-height-lg30;
+      }
     }
   }
 }

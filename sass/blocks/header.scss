@@ -122,10 +122,11 @@
       display: none;
     }
     &__bottom{
-      padding-top: 0;
+      margin-top: -125px;
       background-position-y: -100px;
       &--index-page{
         display: flex;
+        min-height: 870px;
       }
       &--photo-page,
       &--form-page{
@@ -134,8 +135,9 @@
     }
     &__image-hand{
       height: 650px;
-      bottom: -466px;
-      left: 413px;
+      width: 560px;
+      bottom: -421px;
+      left: 363px;
     }
   }
 }
