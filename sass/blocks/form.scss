@@ -118,14 +118,17 @@
       }
     }
     &__achivements-list{
+      padding-top: 55px;
+      padding-bottom: 46px;
       &-outer-wrapper{
         order: 8;
       }
       & h3{
-        left: 148px;
+        left: 120px;
       }
     }
     &__person-contacts-list{
+      margin-bottom: 45px;
       &-outer-wrapper{
         order: 7;
       }
@@ -136,6 +139,7 @@
     }
     &__application-kind-list{
       &-outer-wrapper{
+        padding-top: 19px;
         order: 6;
       }
       & h3{
@@ -147,7 +151,7 @@
         order: 9;
       }
       & h3{
-        left: 208px;
+        left: 216px;
       }
     }
     &__submit{
@@ -156,13 +160,15 @@
       }
     }
     &__application-kind-list{
-      padding-bottom: 55px;
-      padding-left: 100px;
+      padding-top: 56px;
+      padding-bottom: 58px;
+      padding-left: 61px;
     }
     &__submit{
       flex-direction: row;
       justify-content: space-between;
-      min-height: 180px;
+      min-height: 69px;
+      margin-bottom: 28px;
       &-button{
         display: inline-block;
         height: 63px;
@@ -170,13 +176,15 @@
       }
       &-text{
         display: inline-block;
+        margin-top: 6px;
       }
     }
     &__textarea-block{
-      padding: 50px 60px;
+      padding: 43px 60px;
       box-sizing: border-box;
       & textarea{
         width: 500px;
+        height: 195px;
       }
     }
   }

@@ -40,3 +40,17 @@
 input[name="OS-variant"]:checked + label::after{
   display: block;
 }
+@media (min-width: $tablet-width) {
+  .radio-item{
+    margin-bottom: 45px;
+    & label{
+      margin-left: 57px;
+      &::before{
+        left: -58px;
+      }
+      &::after{
+        left: -47px;
+      }
+    }
+  }
+}

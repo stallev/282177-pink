@@ -55,9 +55,9 @@ input[type="checkbox"]:checked + label::after{
 }
 @media (min-width: $tablet-width) {
   .checkbox-item{
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     & label{
-      margin-left: 105px;
+      margin-left: 103px;
       &::before{
         left: -50px;
       }
