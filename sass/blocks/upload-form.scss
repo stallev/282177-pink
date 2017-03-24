@@ -136,21 +136,27 @@
 @media (min-width: $desctop-width) {
   .upload-form{
     &__inner-wrapper{
-      padding: 60px 80px;
+      padding: 56px 48px 55px 80px;
       background-color: $section-bg-grey-color;
+    }
+    &__span-upload-image{
+      margin-right: 47px;
+    }
+    &__edit-controls-list{
+      height: 197px;
     }
     &__control{
       display: block;
       height: 70px;
       width: 100%;
-      padding: 12.5px 0;
+      padding: 0;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
     }
     &__control img{
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: auto;
     }
     &__action{
       flex-direction: row;

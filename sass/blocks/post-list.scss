@@ -12,3 +12,11 @@
     }
   }
 }
+@media (min-width: $desctop-width) {
+  .post-list{
+    margin-bottom: 0;
+    &__item{
+      width: 300px;
+    }
+  }
+}
