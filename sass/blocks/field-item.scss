@@ -50,12 +50,25 @@
 }
 @media (min-width: $desctop-width) {
   .field-item{
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     & label{
       display: inline-block;
+      margin-right: 14px;
     }
     & input{
       display: inline-block;
+    }
+    &--contacts{
+      padding: 20px 0 0;
+      width: 370px;
+      margin-bottom: -3px;
+      & input{
+        margin-bottom: 9px;
+        width: 312px;
+      }
+      & label{
+        margin-left: 18px;
+      }
     }
   }
 }

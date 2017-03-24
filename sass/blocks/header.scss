@@ -130,10 +130,13 @@
         display: flex;
         min-height: 870px;
       }
-      &--photo-page,
-      &--form-page{
+      &--photo-page{
         margin-top: 61px;
         min-height: 216px;
+      }
+      &--form-page{
+        margin-top: 61px;
+        min-height: 223px;
       }
     }
     &__image-hand{

@@ -200,6 +200,7 @@
       align-content: space-around;
       padding-left: 60px;
       padding-top: 55px;
+      margin-bottom: 29px;
       &-outer-wrapper{
         width: 100%;
       }
@@ -216,16 +217,18 @@
 
     &__person-contacts-list{
       display: flex;
-      justify-content: space-around;
-      padding-top: 40px;
+      justify-content: space-between;
+      padding-top: 17px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-bottom: 29px;
       &-outer-wrapper{
         width: 100%;
       }
       & h3{
-        left: 340px;
+        left: 368px;
       }
       & div{
-        width: 370px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -237,10 +240,10 @@
     }
     &__application-kind-list{
       width: 435px;
-      padding-left: 80px;
-      padding-top: 60px;
+      padding-left: 74px;
+      padding-top: 56px;
       & h3{
-        left: 65px;
+        left: 55px;
       }
       &-outer-wrapper{
         padding-top: 0;
@@ -249,11 +252,12 @@
     &__textarea-block{
       height: 220px;
       padding: 40px 60px;
+      margin-bottom: 0;
       &-outer-wrapper{
         width: 100%;
       }
       & h3{
-        left: 340px;
+        left: 375px;
       }
       & textarea{
         width: 820px;
@@ -263,8 +267,13 @@
     &__submit{
       min-height: 110px;
       align-items: flex-end;
+      padding-top: 11px;
+      margin-bottom: 0;
       &-outer-wrapper{
         width: 100%;
+      }
+      &-text{
+        margin-top: 0;
       }
     }
   }
