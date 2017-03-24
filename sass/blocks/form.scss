@@ -1,21 +1,26 @@
 .form{
-  &__achivements-title,
+  &__achivements-title{
+    margin: 20px 25px 43px;
+  }
   &__application-title{
-    margin: 20px 25px 30px;
+    margin: 20px 25px 38px;
   }
   &__achivements-list,
   &__application-kind-list{
     border: 1px solid transparent;
     &-outer-wrapper{
-      padding-top: 30px;
+      padding-top: 16px;
       background-color: $section-bg-grey-color;
     }
+  }
+  &__identification-data-list{
+    margin-bottom: 44px;
   }
   &__person-contacts-list{
     border: 1px solid transparent;
     box-sizing: border-box;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 27px;
     & h3{
       display: none;
     }
@@ -23,11 +28,11 @@
   &__textarea-block{
     border: 1px solid transparent;
     &-outer-wrapper{
-      padding-top: 35px;
+      padding-top: 1px;
       box-sizing: border-box;
     }
     &-title{
-      margin: 34px 0 11px 0;
+      margin: 35px 0 13px 0;
     }
     & textarea{
       @extend %medium-content-font;
@@ -56,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 0 16px;
     &-button{
       display: block;
       height: 63px;
@@ -74,7 +80,7 @@
       text-align: center;
     }
     &-text{
-      @extend %medium-content-font;
+      @extend %small-content-font-lh30;
       margin-top: 35px;
       text-transform: uppercase;
       text-align: center;

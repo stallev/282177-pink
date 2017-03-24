@@ -42,9 +42,11 @@
       margin-top: 400px;
       background-color: $header-bottob-color;
     }
-    &--photo-page,
-    &--form-page{
+    &--photo-page{
       min-height: 167px;
+    }
+    &--form-page{
+      min-height: 169px;
     }
   }
   &__image-hand{

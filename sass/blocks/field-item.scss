@@ -12,9 +12,10 @@
     @extend %medium-content-font;
     display: block;
     width: 100%;
+    margin-top: 5px;
     box-sizing: border-box;
     height: 63px;
-    padding: 16px 22px;
+    padding: 16px 17px;
     border: 2px solid $input-border-color;
     border-radius: 2px;
   }

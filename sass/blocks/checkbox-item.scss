@@ -1,5 +1,5 @@
 .checkbox-item{
-  margin-bottom: 42px;
+  margin-bottom: 52px;
   & input{
     visibility: hidden;
     position: relative;
@@ -7,7 +7,7 @@
       position: absolute;
       visibility: visible;
       content: '';
-      left: 19px;
+      left: -2px;
       top: -11px;
       width: 37px;
       height: 37px;
@@ -20,12 +20,12 @@
   & label{
     @extend %medium-content-font;
     position: relative;
-    margin-left: 45px;
+    margin-left: 49px;
     &::before{
       position: absolute;
       content: '';
       display: none;
-      left: -31px;
+      left: -57px;
       top: 11px;
       width: 23px;
       height: 3px;
@@ -37,7 +37,7 @@
       position: absolute;
       content: '';
       display: none;
-      left: -35px;
+      left: -61px;
       top: 15px;
       width: 9px;
       height: 3px;

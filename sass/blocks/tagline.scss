@@ -34,7 +34,9 @@
     margin-bottom: 44px;
   }
   &--before-form{
-    min-height: 170px;
+    min-height: 169px;
+    justify-content: flex-start;
+    padding: 48px 0 0;
     font-size: $font-size-md24;
   }
 }
