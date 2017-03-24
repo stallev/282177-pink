@@ -95,32 +95,36 @@
       display: flex;
       flex-direction: column;
       width: auto;
-      height: 200px;
+      height: 222px;
       padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
     }
     &__control{
       display: block;
-      height: 70px;
+      min-height: 64px;
       width: 100%;
-      padding: 25px 0;
+      padding-top: 0;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
     }
     &__control img{
       display: block;
-      width: 25px;
-      height: 25px;
+      width: 27px;
+      height: 27px;
     }
     &__scale-control{
       display: none;
     }
     &__action{
       width: auto;
-      min-height: 140px;
+      min-height: 133px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      padding-right: 10px;
+      padding-bottom: 0;
       &-submit-link,
       &-reset-link{
         width: 260px;

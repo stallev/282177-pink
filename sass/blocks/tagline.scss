@@ -46,6 +46,7 @@
       &--post-list{
         font-size: $font-size-md18;
         line-height: $line-height-lg30;
+        word-spacing: 5px;
       }
       &--form-page{
         font-size: $font-size-md18;
@@ -53,7 +54,8 @@
       }
     }
     &--before-post-list{
-      min-height: 150px;
+      min-height: 231px;
+      padding: 14px 34px 0;
     }
     &--after-post-list{
       min-height: 110px;
