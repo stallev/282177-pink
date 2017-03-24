@@ -1,6 +1,9 @@
 .post{
   display: flex;
   flex-direction: column;
+  & img{
+
+  }
   &__comment-aria{
     height: 100%;
     box-sizing: border-box;

@@ -19,7 +19,9 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 11px;
+    padding-left: 17px;
+    padding-right: 25px;
   }
   &__control img{
     display: inline-block;
@@ -29,6 +31,7 @@
     position: relative;
     display: block;
     height: 40px;
+    margin-bottom: 55px;
     &::before{
       position: absolute;
       content: "";
@@ -53,6 +56,7 @@
   &__action{
     display: flex;
     flex-direction: column;
+    padding-bottom: 24px;
     &-submit-link,
     &-reset-link{
       display: block;

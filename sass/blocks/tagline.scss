@@ -3,13 +3,13 @@
   justify-content: center;
   box-sizing: border-box;
   &__element{
-    font-size: $font-size-md24;
     font-weight: 300;
     color: $content-font-color;
     text-align: center;
     margin: 0;
     &--post-list{
       @extend %small-content-font-lh30;
+      padding: 0 9px;
     }
     &--form-page{
       font-size: $font-size-sm14;
@@ -20,13 +20,22 @@
     min-height: 215px;
     padding: 40px 0 33px;
     justify-content: space-between;
+    font-size: $font-size-md24;
   }
   &--before-contacts{
     min-height: 130px;
     padding: 44px 0 29px;
+    font-size: $font-size-md24;
+  }
+  &--before-post-list{
+    min-height: 185px;
+  }
+  &--after-post-list{
+    margin-bottom: 44px;
   }
   &--before-form{
     min-height: 170px;
+    font-size: $font-size-md24;
   }
 }
 @media (min-width: $tablet-width) {

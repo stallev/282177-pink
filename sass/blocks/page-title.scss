@@ -12,6 +12,11 @@
     &--index-page{
       display: none;
     }
+    &--photo-page,
+    &--form-page{
+      width: 200px;
+    }
+
   }
 }
 @media (min-width: $tablet-width) {

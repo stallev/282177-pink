@@ -1,5 +1,6 @@
 .footer{
   min-height: 285px;
+  padding-top: 10px;
   &__social{
     display: flex;
     justify-content: space-between;
@@ -9,7 +10,7 @@
     width: 130px;
     display: flex;
     box-sizing: border-box;
-    padding-top: 35px;
+    padding-top: 38px;
     justify-content: space-between;
     &-text{
       display: block;
@@ -43,8 +44,10 @@
   .footer{
     padding-top: 40px;
     &__develop{
-      font-size: $font-size-md18;
-      line-height: $line-height-sm18;
+      &-text{
+        font-size: $font-size-md18;
+        line-height: $line-height-sm18;
+      }
     }
   }
 }
