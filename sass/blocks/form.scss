@@ -5,18 +5,18 @@
   &__application-title{
     margin: 20px 25px 38px;
   }
-  &__achivements-list,
-  &__application-kind-list{
+  &__achivements,
+  &__application-kind{
     border: 1px solid transparent;
-    &-outer-wrapper{
+    &-wrapper{
       padding-top: 16px;
       background-color: $section-bg-grey-color;
     }
   }
-  &__identification-data-list{
+  &__identification{
     margin-bottom: 44px;
   }
-  &__person-contacts-list{
+  &__person-contacts{
     border: 1px solid transparent;
     box-sizing: border-box;
     padding-top: 20px;
@@ -27,7 +27,7 @@
   }
   &__textarea-block{
     border: 1px solid transparent;
-    &-outer-wrapper{
+    &-wrapper{
       padding-top: 1px;
       box-sizing: border-box;
     }
@@ -91,9 +91,9 @@
   .form{
     display: flex;
     flex-direction: column;
-    &__achivements-list,
-    &__application-kind-list,
-    &__person-contacts-list,
+    &__achivements,
+    &__application-kind,
+    &__person-contacts,
     &__textarea-block{
       position: relative;
       display: block;
@@ -102,7 +102,7 @@
       padding-top: 20px;
       margin-bottom: 20px;
       box-sizing: border-box;
-      &-outer-wrapper{
+      &-wrapper{
         background-color: inherit;
       }
     }
@@ -112,24 +112,24 @@
       top: -11px;
       background-color: $body-color;
     }
-    &__identification-data-list{
-      &-outer-wrapper{
+    &__identification{
+      &-wrapper{
         order: 5;
       }
     }
-    &__achivements-list{
+    &__achivements{
       padding-top: 55px;
       padding-bottom: 46px;
-      &-outer-wrapper{
+      &-wrapper{
         order: 8;
       }
       & h3{
         left: 120px;
       }
     }
-    &__person-contacts-list{
+    &__person-contacts{
       margin-bottom: 45px;
-      &-outer-wrapper{
+      &-wrapper{
         order: 7;
       }
       & h3{
@@ -137,8 +137,8 @@
         left: 208px;
       }
     }
-    &__application-kind-list{
-      &-outer-wrapper{
+    &__application-kind{
+      &-wrapper{
         padding-top: 19px;
         order: 6;
       }
@@ -147,7 +147,7 @@
       }
     }
     &__textarea-block{
-      &-outer-wrapper{
+      &-wrapper{
         order: 9;
       }
       & h3{
@@ -155,11 +155,11 @@
       }
     }
     &__submit{
-      &-outer-wrapper{
+      &-wrapper{
         order: 10;
       }
     }
-    &__application-kind-list{
+    &__application-kind{
       padding-top: 56px;
       padding-bottom: 58px;
       padding-left: 61px;
@@ -194,35 +194,35 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    &__achivements-list{
+    &__achivements{
       display: flex;
       flex-wrap: wrap;
       align-content: space-around;
       padding-left: 60px;
       padding-top: 55px;
       margin-bottom: 29px;
-      &-outer-wrapper{
+      &-wrapper{
         width: 100%;
       }
       & h3{
         left: 280px;
       }
     }
-    &__achivements-list,
-    &__application-kind-list,
+    &__achivements,
+    &__application-kind,
     &__textarea-block{
       position: relative;
       border: 2px solid $input-border-color;
     }
 
-    &__person-contacts-list{
+    &__person-contacts{
       display: flex;
       justify-content: space-between;
       padding-top: 17px;
       padding-left: 60px;
       padding-right: 60px;
       margin-bottom: 29px;
-      &-outer-wrapper{
+      &-wrapper{
         width: 100%;
       }
       & h3{
@@ -238,14 +238,14 @@
         order: 5;
       }
     }
-    &__application-kind-list{
+    &__application-kind{
       width: 435px;
       padding-left: 74px;
       padding-top: 56px;
       & h3{
         left: 55px;
       }
-      &-outer-wrapper{
+      &-wrapper{
         padding-top: 0;
       }
     }
@@ -253,7 +253,7 @@
       height: 220px;
       padding: 40px 60px;
       margin-bottom: 0;
-      &-outer-wrapper{
+      &-wrapper{
         width: 100%;
       }
       & h3{
@@ -269,7 +269,7 @@
       align-items: flex-end;
       padding-top: 11px;
       margin-bottom: 0;
-      &-outer-wrapper{
+      &-wrapper{
         width: 100%;
       }
       &-text{
