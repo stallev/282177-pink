@@ -7,7 +7,7 @@
   }
   &__develop{
     height: 85px;
-    width: 130px;
+    width: 120px;
     display: flex;
     box-sizing: border-box;
     padding-top: 38px;
@@ -56,6 +56,7 @@
       padding-top: 30px;
     }
     &__develop{
+      width: 150px;
       &-text{
         font-size: $font-size-md18;
         line-height: $line-height-sm18;
