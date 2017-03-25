@@ -7,9 +7,8 @@
   &__logo-toggle{
     @extend %container;
     min-height: 70px;
-    padding-top: 20px;
+    padding: 49px 41px 42px;
     box-sizing: border-box;
-    border-bottom: 1px solid $body-color;
     display: flex;
     justify-content: space-between;
   }
@@ -43,10 +42,10 @@
       background-color: $header-bottob-color;
     }
     &--photo-page{
-      min-height: 167px;
+      padding: 26px 0 81px;
     }
     &--form-page{
-      min-height: 169px;
+      padding: 26px 0 20px;
     }
   }
   &__image-hand{
@@ -70,20 +69,21 @@
     &__bottom{
       background-color: transparent;
       &--index-page{
-        height: 618px;
         padding-top: 90px;
         margin-top: 0;
         box-sizing: border-box;
       }
-      &--photo-page,
       &--form-page{
-        min-height: 326px;
+        padding: 68px 0 80px;
+      }
+      &--photo-page{
+        padding: 26px 0 19px;
       }
     }
     &__image-hand{
       width: 442px;
       height: 550px;
-      bottom: -390px;
+      bottom: -331px;
       left: 171px;
     }
     &__toggle{
@@ -124,11 +124,10 @@
       display: none;
     }
     &__bottom{
-      margin-top: -125px;
-      background-position-y: -100px;
       &--index-page{
         display: flex;
-        min-height: 870px;
+        padding-top: 61px;
+        padding-bottom: 92px;
       }
       &--photo-page{
         margin-top: 61px;

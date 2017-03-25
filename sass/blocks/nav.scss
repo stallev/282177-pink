@@ -13,9 +13,10 @@
     vertical-align: middle;
     font-family: "Open Sans", sans-serif;
     font-size: $font-size-md18;
-    line-height: 61px;
+    line-height: 62px;
     font-weight: bold;
     color: $body-color;
+    border-top: 1px solid $nav-border-top-link-color;
     border-bottom: 1px solid $black-color;
     text-decoration: none;
     text-transform: uppercase;
