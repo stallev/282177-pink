@@ -30,9 +30,7 @@
     @extend %flex-column;
   }
   &--desctop-form{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+
   }
   &--footer-container{
     @extend %flex-column;
@@ -101,9 +99,7 @@
       padding: 0;
     }
     &--desctop-form{
-      width: 1200px;
-      padding: 0 130px;
-      margin: 0 auto;
+
     }
     &--upload-form{
       padding-top: 0;
