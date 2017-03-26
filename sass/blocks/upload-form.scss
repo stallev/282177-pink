@@ -1,5 +1,9 @@
 .upload-form{
-  &__inner-wrapper{
+  @extend %flex-column;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  &__actions-block{
     @extend %flex-column;
     padding: 0;
     border: 0;
@@ -78,7 +82,11 @@
 }
 @media (min-width: $tablet-width) {
   .upload-form{
-    &__inner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-between;
+    &__actions-block{
       display: flex;
       flex-wrap: wrap;
       height: 400px;
@@ -134,9 +142,10 @@
 }
 @media (min-width: $desctop-width) {
   .upload-form{
-    &__inner-wrapper{
-      padding: 56px 48px 55px 80px;
-      background-color: $section-bg-grey-color;
+    padding: 56px 48px 55px 80px;
+    background-color: $section-bg-grey-color;
+    &__actions-block{
+
     }
     &__span-upload-image{
       margin-right: 47px;
@@ -144,17 +153,41 @@
     &__edit-controls-list{
     }
     &__control{
+      position: relative;
       display: block;
       width: 100%;
       padding: 0;
-      padding-top: 3px;
-      padding-bottom: 26px;
+      padding-top: 0px;
+      padding-bottom: 13px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
-      & img{
-        margin-top: -5px;
-        width: 40px;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 355px;
+        height: 2px;
+        top: 35px;
+        left: 60px;
+        background-color: $content-font-color;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        top: 31px;
+        left: 180px;
+        border: 2px solid $pink-color;
+        border-radius: 50%;
+        background-color: $section-bg-grey-color;
+      }
+      & svg{
+        margin-top: 15px;
+        width: 35px;
         height: auto;
+      }
+      &-btn{
+        fill: $pink-color;
       }
     }
     &__action{
