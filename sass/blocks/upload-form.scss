@@ -27,9 +27,10 @@
     padding-left: 17px;
     padding-right: 25px;
   }
-  &__control img{
-    display: inline-block;
-    line-height: 50px;
+  &__control {
+    &-btn{
+      fill: $pink-color;
+    }
   }
   &__scale-control{
     position: relative;
@@ -185,9 +186,6 @@
         margin-top: 15px;
         width: 35px;
         height: auto;
-      }
-      &-btn{
-        fill: $pink-color;
       }
     }
     &__action{
