@@ -20,6 +20,13 @@
     text-decoration: none;
     border: 3px solid #fff;
     border-radius: 25px;
+    &:hover{
+      background-color: $body-color;
+      color: $pink-color;
+    }
+    &:active{
+      color: $pink-colorRGBA;
+    }
   }
   &__portability{
     width: 215px;

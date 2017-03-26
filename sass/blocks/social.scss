@@ -11,6 +11,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+    &:hover{
+      border-color: $content-font-color;
+    }
+    &:active{
+      opacity: 0.5;
+    }
   }
   &__twitter{
     background-image: url(../img/icon-twitter.svg);

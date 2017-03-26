@@ -18,6 +18,12 @@
     padding: 16px 17px;
     border: 2px solid $input-border-color;
     border-radius: 2px;
+    &:hover{
+      border-color: $content-font-color;
+    }
+    &:active{
+      border-color: $pink-color;
+    }
   }
 }
 @media (min-width: $tablet-width) {
@@ -61,7 +67,7 @@
       right: calc(0%);
       top: 25px;
       background-position: center center;
-      background-size: cover;
+      background-size: 28px auto;
       background-repeat: no-repeat;
     }
   }
@@ -72,7 +78,7 @@
   }
   .field-item--contacts:nth-of-type(2){
     &::before{
-      background-image: url(../img/phone.svg);
+      background-image: url(../img/icon_mail.svg);
     }
   }
 }

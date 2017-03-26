@@ -30,6 +30,9 @@
     background-color: transparent;
     border-color: transparent;
     border-style: none;
+    &-cross{
+      fill: $body-color;
+    }
   }
   &__upper{
     min-height: 270px;
@@ -64,6 +67,12 @@
     z-index: 2;
   }
 }
+.header__toggle:hover ~ .header__toggle-cross{
+  fill: $pink-color;
+}
+.header__toggle:active ~ .header__toggle-cross{
+  fill: $pink-colorRGBA;
+}
 @media (min-width: $tablet-width) {
   .header{
     &__bottom{
@@ -95,7 +104,7 @@
   .header{
     &__upper{
       min-height: 110px;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.5);
       &-wrapper{
         display: flex;
         justify-content: space-between;

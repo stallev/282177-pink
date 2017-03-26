@@ -18,6 +18,15 @@
     color: $pink-color;
     text-decoration: none;
   }
+  & a{
+    &:hover{
+      color: $content-font-color;
+      text-decoration: underline;
+    }
+    &:active{
+      color: $content-font-colorRGBA;
+    }
+  }
   &__map{
     position: relative;
     width: 100%;

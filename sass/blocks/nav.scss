@@ -27,15 +27,26 @@
     &__list{
       flex-direction: row;
       width: 620px;
-      height: 110px;
       justify-content: space-between;
       align-items: center;
     }
+    &__item{
+      padding: 40px 0;
+    }
     &__link{
       height: auto;
+      line-height: $line-height-lg30;
+      border: 0;
+      border-bottom: 0;
       font-weight: normal;
-      line-height: 110px;
       text-transform: capitalize;
+      &:hover{
+        color: $pink-color;
+      }
+      &:active{
+        color: $pink-color;
+        border-bottom: 2px solid $pink-color;
+      }
     }
   }
 }

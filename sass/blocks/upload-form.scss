@@ -95,14 +95,13 @@
       display: flex;
       flex-direction: column;
       width: auto;
-      height: 222px;
       padding-top: 0;
       padding-left: 0;
       padding-bottom: 0;
+      padding-right: 0;
     }
     &__control{
       display: block;
-      min-height: 64px;
       width: 100%;
       padding-top: 0;
       box-sizing: border-box;
@@ -143,20 +142,20 @@
       margin-right: 47px;
     }
     &__edit-controls-list{
-      height: 197px;
     }
     &__control{
       display: block;
-      height: 70px;
       width: 100%;
       padding: 0;
+      padding-top: 3px;
+      padding-bottom: 26px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
-    }
-    &__control img{
-      display: block;
-      width: 45px;
-      height: auto;
+      & img{
+        margin-top: -5px;
+        width: 40px;
+        height: auto;
+      }
     }
     &__action{
       flex-direction: row;

@@ -78,6 +78,7 @@
 @media (min-width: $desctop-width) {
   .post{
     &__comment-aria{
+      height: calc(100% - 400px);
       &--panorama{
         & .post__likes{
           top: 20px;
