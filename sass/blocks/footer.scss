@@ -16,13 +16,19 @@
       display: block;
       @extend %small-content-font-lh24;
     }
-    &-image{
+    & svg{
       display: block;
-      width: 29px;
-      height: 36px;
-      background-image: url(../img/htmlacademy.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
+      width: 27px;
+      height: 34px;
+    }
+    &-image{
+      fill: $pink-color;
+      &:hover{
+        fill: $content-font-color;
+      }
+      &:active{
+        fill: $slider-toggle-control;
+      }
     }
   }
   &--index-page{

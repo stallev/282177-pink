@@ -8,7 +8,7 @@
     height: 53px;
     border: 3px solid $gray-border-color;
     border-radius: 50%;
-    background-position: center;
+    background-position: 54% 42%;
     background-repeat: no-repeat;
     background-size: auto;
     &:hover{
@@ -18,19 +18,22 @@
       opacity: 0.5;
     }
   }
+  &__image{
+    fill: $pink-color;
+  }
   &__twitter{
-    background-image: url(../img/icon-twitter.svg);
+    padding: 17px 15px;
   }
   &__facebook{
-    background-image: url(../img/icon-facebook.svg);
+    padding: 14px 19px;
   }
   &__youtube{
-    background-image: url(../img/icon-youtube.svg);
+    padding: 16px 18px;
   }
 }
 @media (min-width: $tablet-width) {
   .social{
-    margin-right: 34px;
+    margin-right: 54px;
   }
 }
 @media (min-width: $desctop-width) {
