@@ -12,6 +12,8 @@
   }
   &--features-container{
     @extend %flex-column;
+    padding-top: 80px;
+    margin-bottom: -11px;
   }
   &--upload-form{
     padding-top: 20px;
@@ -27,6 +29,9 @@
   &--contact-info{
     @extend %flex-column;
   }
+  &--desctop-form{
+
+  }
   &--footer-container{
     @extend %flex-column;
     align-items: center;
@@ -36,6 +41,12 @@
   .container{
     &--header-bottom{
       background-color: transparent;
+    }
+    &--features-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 67px;
     }
     &--contact-info{
       display: flex;
@@ -55,7 +66,7 @@
     }
     &--upload-form{
       padding-top: 60px;
-      padding-bottom: 60px;
+      padding-bottom: 55px;
     }
   }
 }
@@ -65,18 +76,29 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      min-height: 510px;
+      min-height: 593px;
       margin: auto;
+      padding-top: 35px;
+      box-sizing: border-box;
     }
     &--features-container{
       flex-direction: row;
+      padding-top: 0;
     }
     &--contact-info{
-      min-height: 160px;
-      justify-content: space-around;
-      align-items: center;
+      min-height: 132px;
+      justify-content: space-between;
+      align-items: flex-start;
     }
     &--post-list{
+
+    }
+    &--fieldset-container{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    &--desctop-form{
 
     }
     &--upload-form{

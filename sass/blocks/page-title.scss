@@ -12,6 +12,11 @@
     &--index-page{
       display: none;
     }
+    &--photo-page,
+    &--form-page{
+      width: 200px;
+    }
+
   }
 }
 @media (min-width: $tablet-width) {
@@ -28,10 +33,12 @@
       &--photo-page{
         width: 620px;
       }
+      &--photo-page{
+        line-height: 60px;
+      }
     }
     &--index-page{
       width: 300px;
-      margin-bottom: 25px;
     }
   }
 }
@@ -42,8 +49,11 @@
     }
     &__text{
       width: 380px;
-      line-height: $line-height-slg70;
+      line-height: $line-height-slg60;
       font-size: $font-size-slg50;
+      &--index-page{
+        padding: 0 30px;
+      }
       &--photo-page{
         width: 780px;
       }

@@ -2,11 +2,19 @@
   &--footer{
     box-sizing: border-box;
     padding-top: 50px;
+    margin-bottom: 10px;
     height: 100px;
     width: 170px;
     background-image: url(../img/logo-pink-blue-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
 
+  }
+}
+@media (min-width: $tablet-width) {
+  .logo{
+    &--footer{
+      background-position: 3px 22px;
+    }
   }
 }

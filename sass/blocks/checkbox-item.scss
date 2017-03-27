@@ -1,5 +1,5 @@
 .checkbox-item{
-  margin-bottom: 42px;
+  margin-bottom: 52px;
   & input{
     visibility: hidden;
     position: relative;
@@ -7,7 +7,7 @@
       position: absolute;
       visibility: visible;
       content: '';
-      left: 0;
+      left: -2px;
       top: -11px;
       width: 37px;
       height: 37px;
@@ -19,14 +19,54 @@
   }
   & label{
     @extend %medium-content-font;
-    margin-left: 45px;
+    position: relative;
+    margin-left: 49px;
+    &::before{
+      position: absolute;
+      content: '';
+      display: none;
+      left: -57px;
+      top: 11px;
+      width: 23px;
+      height: 3px;
+      box-sizing: border-box;
+      background-color: $pink-color;
+      transform: rotate(-45deg)
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      display: none;
+      left: -61px;
+      top: 15px;
+      width: 9px;
+      height: 3px;
+      box-sizing: border-box;
+      background-color: $pink-color;
+      transform: rotate(45deg)
+    }
   }
+}
+input[type="checkbox"]:checked + label::before{
+  display: block;
+}
+input[type="checkbox"]:checked + label::after{
+  display: block;
+}
+.checkbox-item:nth-last-of-type(1){
+  margin-bottom: 49px;
 }
 @media (min-width: $tablet-width) {
   .checkbox-item{
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     & label{
-      margin-left: 105px;
+      margin-left: 103px;
+      &::before{
+        left: -50px;
+      }
+      &::after{
+        left: -54px;
+      }
     }
     & input{
       &::before{
@@ -34,17 +74,46 @@
       }
     }
   }
+  .checkbox-item:nth-last-of-type(1){
+    margin-bottom: 52px;
+  }
 }
 @media (min-width: $desctop-width) {
   .checkbox-item{
-    width: 260px;
+    width: 280px;
+    padding-right: 20px;
+    box-sizing: border-box;
     & label{
       margin-left: 40px;
+      &::before{
+        left: -44px;
+      }
+      &::after{
+        left: -48px;
+      }
     }
     & input{
       &::before{
         left: 0;
       }
     }
+  }
+  .checkbox-item:nth-of-type(1){
+    order: 5;
+  }
+  .checkbox-item:nth-of-type(2){
+    order: 8;
+  }
+  .checkbox-item:nth-of-type(3){
+    order: 6;
+  }
+  .checkbox-item:nth-of-type(4){
+    order: 9;
+  }
+  .checkbox-item:nth-of-type(5){
+    order: 7;
+  }
+  .checkbox-item:nth-of-type(6){
+    order: 10;
   }
 }

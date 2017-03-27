@@ -1,37 +1,43 @@
 .form{
-  &__achivements-title,
-  &__application-title{
-    margin: 40px 25px;
+  &__achivements-title{
+    margin: 20px 25px 43px;
   }
-  &__achivements-list,
-  &__application-kind-list{
+  &__application-title{
+    margin: 20px 25px 38px;
+  }
+  &__achivements,
+  &__application-kind{
     border: 1px solid transparent;
-    &-outer-wrapper{
-      padding-top: 30px;
+    &-wrapper{
+      padding-top: 16px;
       background-color: $section-bg-grey-color;
     }
   }
-  &__person-contacts-list{
+  &__identification{
+    margin-bottom: 44px;
+  }
+  &__person-contacts{
     border: 1px solid transparent;
     box-sizing: border-box;
     padding-top: 20px;
-    padding-bottom: 15px;
-    &-title{
+    padding-bottom: 27px;
+    & h3{
       display: none;
     }
   }
   &__textarea-block{
     border: 1px solid transparent;
-    &-outer-wrapper{
-      padding-top: 35px;
+    &-wrapper{
+      padding-top: 1px;
       box-sizing: border-box;
     }
     &-title{
-      margin: 34px 0 11px 0;
+      margin: 35px 0 13px 0;
     }
     & textarea{
       @extend %medium-content-font;
       display: block;
+      resize: none;
       box-sizing: border-box;
       border: 2px solid $grey-textarea-border-color;
       border-radius: 2px;
@@ -41,7 +47,6 @@
     }
   }
   & h3{
-    display: block;
     font-size: $font-size-sm14;
     font-weight: normal;
     line-height: 18px;
@@ -56,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 0 16px;
     &-button{
       display: block;
       height: 63px;
@@ -72,9 +78,19 @@
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
+      &:hover{
+        background-color: $green-button-color-hover;
+      }
+      &:active{
+        background-color: $green-button-color-hover;
+        color: $body-color-opac-30;
+      }
+      &:disabled{
+        background-color: $input-border-color;
+      }
     }
     &-text{
-      @extend %medium-content-font;
+      @extend %small-content-font-lh30;
       margin-top: 35px;
       text-transform: uppercase;
       text-align: center;
@@ -85,9 +101,9 @@
   .form{
     display: flex;
     flex-direction: column;
-    &__achivements-list,
-    &__application-kind-list,
-    &__person-contacts-list,
+    &__achivements,
+    &__application-kind,
+    &__person-contacts,
     &__textarea-block{
       position: relative;
       display: block;
@@ -96,7 +112,7 @@
       padding-top: 20px;
       margin-bottom: 20px;
       box-sizing: border-box;
-      &-outer-wrapper{
+      &-wrapper{
         background-color: inherit;
       }
     }
@@ -106,21 +122,25 @@
       top: -11px;
       background-color: $body-color;
     }
-    &__identification-data-list{
-      &-outer-wrapper{
+    &__identification{
+      &-wrapper{
         order: 5;
       }
     }
-    &__achivements-list{
-      &-outer-wrapper{
+    &__achivements{
+      padding-top: 55px;
+      padding-bottom: 46px;
+      &-wrapper{
         order: 8;
       }
       & h3{
-        left: 148px;
+        left: 120px;
       }
     }
-    &__person-contacts-list{
-      &-outer-wrapper{
+    &__person-contacts{
+      margin-bottom: 45px;
+      padding-right: 60px;
+      &-wrapper{
         order: 7;
       }
       & h3{
@@ -128,8 +148,9 @@
         left: 208px;
       }
     }
-    &__application-kind-list{
-      &-outer-wrapper{
+    &__application-kind{
+      &-wrapper{
+        padding-top: 19px;
         order: 6;
       }
       & h3{
@@ -137,26 +158,28 @@
       }
     }
     &__textarea-block{
-      &-outer-wrapper{
+      &-wrapper{
         order: 9;
       }
       & h3{
-        left: 208px;
+        left: 216px;
       }
     }
     &__submit{
-      &-outer-wrapper{
+      &-wrapper{
         order: 10;
       }
     }
-    &__application-kind-list{
-      padding-bottom: 55px;
-      padding-left: 100px;
+    &__application-kind{
+      padding-top: 56px;
+      padding-bottom: 58px;
+      padding-left: 61px;
     }
     &__submit{
       flex-direction: row;
       justify-content: space-between;
-      min-height: 180px;
+      min-height: 69px;
+      margin-bottom: 28px;
       &-button{
         display: inline-block;
         height: 63px;
@@ -164,13 +187,15 @@
       }
       &-text{
         display: inline-block;
+        margin-top: 6px;
       }
     }
     &__textarea-block{
-      padding: 50px 60px;
+      padding: 43px 60px;
       box-sizing: border-box;
       & textarea{
         width: 500px;
+        height: 195px;
       }
     }
   }
@@ -180,46 +205,41 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-     &__identification-data-list{
-
-     }
-    &__achivements-list{
+    &__achivements{
       display: flex;
       flex-wrap: wrap;
       align-content: space-around;
       padding-left: 60px;
       padding-top: 55px;
-      &-outer-wrapper{
+      margin-bottom: 29px;
+      &-wrapper{
         width: 100%;
       }
       & h3{
         left: 280px;
       }
-      & div{
-        width: 280px;
-        padding-right: 20px;
-        box-sizing: border-box;
-      }
     }
-    &__achivements-list,
-    &__application-kind-list,
+    &__achivements,
+    &__application-kind,
     &__textarea-block{
       position: relative;
       border: 2px solid $input-border-color;
     }
 
-    &__person-contacts-list{
+    &__person-contacts{
       display: flex;
-      justify-content: space-around;
-      padding-top: 40px;
-      &-outer-wrapper{
+      justify-content: space-between;
+      padding-top: 17px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-bottom: 29px;
+      &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 340px;
+        left: 368px;
       }
       & div{
-        width: 370px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -229,25 +249,26 @@
         order: 5;
       }
     }
-    &__application-kind-list{
+    &__application-kind{
       width: 435px;
-      padding-left: 80px;
-      padding-top: 60px;
+      padding-left: 74px;
+      padding-top: 56px;
       & h3{
-        left: 65px;
+        left: 55px;
       }
-      &-outer-wrapper{
+      &-wrapper{
         padding-top: 0;
       }
     }
     &__textarea-block{
       height: 220px;
       padding: 40px 60px;
-      &-outer-wrapper{
+      margin-bottom: 0;
+      &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 340px;
+        left: 375px;
       }
       & textarea{
         width: 820px;
@@ -255,8 +276,15 @@
       }
     }
     &__submit{
-      &-outer-wrapper{
+      min-height: 110px;
+      align-items: flex-end;
+      padding-top: 11px;
+      margin-bottom: 0;
+      &-wrapper{
         width: 100%;
+      }
+      &-text{
+        margin-top: 0;
       }
     }
   }

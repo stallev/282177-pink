@@ -7,15 +7,16 @@
   }
   &__link{
     display: inline-block;
-    height: 62px;
+    height: 63px;
     width: 100%;
     text-align: center;
     vertical-align: middle;
     font-family: "Open Sans", sans-serif;
     font-size: $font-size-md18;
-    line-height: 61px;
+    line-height: 62px;
     font-weight: bold;
     color: $body-color;
+    border-top: 1px solid $nav-border-top-link-color;
     border-bottom: 1px solid $black-color;
     text-decoration: none;
     text-transform: uppercase;
@@ -26,15 +27,26 @@
     &__list{
       flex-direction: row;
       width: 620px;
-      height: 110px;
       justify-content: space-between;
       align-items: center;
     }
+    &__item{
+      padding: 40px 0;
+    }
     &__link{
       height: auto;
+      line-height: $line-height-lg30;
+      border: 0;
+      border-bottom: 0;
       font-weight: normal;
-      line-height: 110px;
-      text-transform: none;
+      text-transform: capitalize;
+      &:hover{
+        color: $pink-color;
+      }
+      &:active{
+        color: $pink-color;
+        border-bottom: 2px solid $pink-color;
+      }
     }
   }
 }

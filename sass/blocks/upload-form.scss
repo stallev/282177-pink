@@ -1,5 +1,9 @@
 .upload-form{
-  &__inner-wrapper{
+  @extend %flex-column;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  &__actions-block{
     @extend %flex-column;
     padding: 0;
     border: 0;
@@ -19,16 +23,26 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 11px;
+    padding-left: 17px;
+    padding-right: 25px;
   }
-  &__control img{
-    display: inline-block;
-    line-height: 50px;
+  &__control {
+    &-btn{
+      fill: $grey-icon-color;
+      :hover{
+        fill: $grey-icon-color-hover;
+      }
+      :active{
+        fill: $pink-color;
+      }
+    }
   }
   &__scale-control{
     position: relative;
     display: block;
     height: 40px;
+    margin-bottom: 55px;
     &::before{
       position: absolute;
       content: "";
@@ -53,6 +67,7 @@
   &__action{
     display: flex;
     flex-direction: column;
+    padding-bottom: 24px;
     &-submit-link,
     &-reset-link{
       display: block;
@@ -60,7 +75,6 @@
       height: 54px;
       margin-bottom: 15px;
       box-sizing: border-box;
-      color: $pink-color;
       line-height: 50px;
       font-weight: bold;
       font-size: $font-size-md18;
@@ -68,12 +82,41 @@
       text-decoration: none;
       border: 3px solid $pink-color;
       border-radius: 25px;
+      -webkit-appearance: none;
+    }
+    &-submit-link{
+      color: $pink-color;
+      &:hover{
+        background-color: $pink-color;
+        color: $body-color;
+      }
+      &:active{
+        background-color: $pink-color;
+        color: $body-color-opac-30;
+      }
+    }
+    &-reset-link{
+      color: $content-font-colorRGBA10;
+      border-color: $grey-border-control-color;
+      &:hover{
+        border-color: $grey-icon-color;
+        color: $content-font-colorRGBA30;
+      }
+      &:active{
+        background-color: $grey-icon-color;
+        border-color: $grey-icon-color;
+        color: $body-color;
+      }
     }
   }
 }
 @media (min-width: $tablet-width) {
   .upload-form{
-    &__inner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-between;
+    &__actions-block{
       display: flex;
       flex-wrap: wrap;
       height: 400px;
@@ -90,58 +133,120 @@
       display: flex;
       flex-direction: column;
       width: auto;
-      height: 200px;
       padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+      padding-right: 0;
     }
     &__control{
+      position: relative;
       display: block;
-      height: 70px;
       width: 100%;
-      padding: 25px 0;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 2px;
+        top: 17px;
+        left: 54px;
+        background-color: $content-font-color;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: 13px;
+        left: 180px;
+        border: 2px solid $pink-color;
+        border-radius: 50%;
+        background-color: $section-bg-grey-color;
+        &:active{
+          background-color: $pink-color;
+        }
+      }
+      & svg{
+        position: relative;
+        top: -8px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 25px;
+        height: auto;
+      }
     }
     &__control img{
       display: block;
-      width: 25px;
-      height: 25px;
+      width: 27px;
+      height: 27px;
     }
     &__scale-control{
       display: none;
     }
     &__action{
       width: auto;
-      min-height: 140px;
+      min-height: 133px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      padding-right: 10px;
+      padding-bottom: 0;
       &-submit-link,
       &-reset-link{
         width: 260px;
         margin: 0;
+        padding-right: 5px;
+        line-height: 45px;
       }
     }
   }
 }
 @media (min-width: $desctop-width) {
   .upload-form{
-    &__inner-wrapper{
-      padding: 60px 80px;
-      background-color: $section-bg-grey-color;
+    padding: 56px 48px 55px 80px;
+    background-color: $section-bg-grey-color;
+    &__actions-block{
+
+    }
+    &__span-upload-image{
+      margin-right: 47px;
+    }
+    &__edit-controls-list{
     }
     &__control{
       display: block;
-      height: 70px;
       width: 100%;
-      padding: 12.5px 0;
+      padding: 0;
+      padding-top: 0px;
+      padding-bottom: 13px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
-    }
-    &__control img{
-      display: block;
-      width: 50px;
-      height: 50px;
+      &::before{
+        width: 355px;
+        height: 2px;
+        top: 35px;
+        left: 60px;
+      }
+      &::after{
+        width: 8px;
+        height: 8px;
+        top: 31px;
+        left: 180px;
+        border: 2px solid $pink-color;
+        border-radius: 50%;
+      }
+      & svg{
+        margin-top: 15px;
+        margin-bottom: 0;
+        top: 0;
+        width: 35px;
+        height: auto;
+      }
     }
     &__action{
       flex-direction: row;

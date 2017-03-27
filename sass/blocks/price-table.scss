@@ -1,19 +1,19 @@
 .price-table{
-  width: 840px;
   margin: 40px 0;
+  padding-bottom: 32px;
+  width: 799px;
   left: 50%;
   border-collapse: collapse;
-  transform: translateX(-33%);
+  transform: translateX(-32%);
   overflow: hidden;
   &__column-titles{
     height: 100px;
-    width: 840px;
   }
   &__column-title{
     position: relative;
-    width: 840px;
+    width: 300px;
     box-sizing: border-box;
-    padding: 18px 0;
+    padding: 9px 0 18px;
     background-color: #283645;
     &--hit{
       &::before{
@@ -21,7 +21,7 @@
         content: "";
         width: 60px;
         height: 60px;
-        right: 233px;
+        right: 223px;
         top: 0px;
         background-image: url("../img/bg-hit.svg");
         background-size: auto;
@@ -30,7 +30,7 @@
       &::after{
         position: absolute;
         content: "Хит";
-        right: 250px;
+        right: 239px;
         top: 16px;
         text-transform: uppercase;
         color: #ffffff;
@@ -54,16 +54,16 @@
     box-sizing: border-box;
     background-color: $body-color;
     padding: 15px 20px;
-    background-size: 30px auto;
+    background-size: 28px auto;
     background-repeat: no-repeat;
-    background-position: 210px 15px;
+    background-position: 232px 15px;
     &::before{
       position: absolute;
       display: block;
       width: 150px;
       height: 30px;
-      top: 17px;
-      left: 30px;
+      top: 11px;
+      left: 25px;
       text-transform: uppercase;
     }
   }
@@ -84,9 +84,11 @@
   }
   &--flag-yes{
     background-image: url("../img/icon-yes.svg");
+    background-position: 231px 15px;
   }
   &--flag-no{
     background-image: url("../img/icon-no.svg");
+    background-position: 230px 7px;
   }
   &__version-name{
     display: block;
@@ -94,9 +96,11 @@
     line-height: $line-height-lg30;
     font-weight: bold;
     color: $body-color;
+    text-transform: uppercase;
   }
   &__version-price{
     display: block;
+    padding-top: 3px;
     font-size: $font-size-md24;
     line-height: $line-height-lg30;
     font-weight: 300;
@@ -106,6 +110,7 @@
 @media (min-width: $tablet-width) {
   .price-table{
     width: 100%;
+    padding-bottom: 22px;
     transform: translateX(0);
     & td,
     & th{
@@ -117,7 +122,13 @@
       box-sizing: border-box;
       font-size: $font-size-sm14;
       line-height: $line-height-lg30;
-      padding: 7px 0 7px 15px;
+      padding: 2px 0 7px 12px;
+    }
+    &--flag-yes{
+      background-position: 62px 10px;
+    }
+    &--flag-no{
+      background-position: 62px 10px;
     }
     &__column-titles{
       height: 80px;
@@ -127,9 +138,14 @@
       &--hit{
         &::before{
           right: 92px;
+          top: -11px;
+          width: 59px;
+          height: 119px;
         }
         &::after{
-          right: 111px;
+          right: 119px;
+          top: 11px;
+          font-size: $font-size-sm14;
         }
       }
     }
@@ -138,10 +154,12 @@
       line-height: $line-height-lg30;
     }
     &__version-price{
+      padding-top: 0;
       font-size: $font-size-md18;
       line-height: $line-height-lg30;
     }
     &__column-title{
+      overflow: hidden;
       &--hidden{
         display: block;
         visibility: hidden;
@@ -154,7 +172,6 @@
     &__feature-smiley,
     &__feature-comments{
       background-size: 25px auto;
-      background-position: 54px 10px;
       &::before{
         display: none;
       }
@@ -164,6 +181,7 @@
 @media (min-width: $desctop-width) {
   .price-table{
     width: 100%;
+    margin: 102px 0 66px;
     transform: translateX(0);
     & td,
     & th{
@@ -173,7 +191,15 @@
       height: 60px;
       font-size: $font-size-md18;
       line-height: $line-height-lg30;
-      padding: 15px 0 15px 25px;
+      padding: 11px 0 15px 18px;
+    }
+    &--flag-yes{
+      background-size: 32px auto;
+      background-position: 101px 16px;
+    }
+    &--flag-no{
+      background-size: 25px auto;
+      background-position: 100px 12px;
     }
     &__column-titles{
       height: 100px;
@@ -197,11 +223,6 @@
       font-size: $font-size-md24;
       line-height: $line-height-lg30;
     }
-    &__feature-filtr,
-    &__feature-smiley,
-    &__feature-comments{
-      background-size: 30px auto;
-      background-position: 99px 20px;
-    }
+
   }
 }

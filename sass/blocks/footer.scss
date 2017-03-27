@@ -1,27 +1,34 @@
 .footer{
   min-height: 285px;
+  padding-top: 10px;
   &__social{
     display: flex;
     justify-content: space-between;
   }
   &__develop{
     height: 85px;
-    width: 130px;
+    width: 120px;
     display: flex;
     box-sizing: border-box;
-    padding-top: 35px;
+    padding-top: 38px;
     justify-content: space-between;
     &-text{
       display: block;
       @extend %small-content-font-lh24;
     }
-    &-image{
+    & svg{
       display: block;
-      width: 29px;
-      height: 36px;
-      background-image: url(../img/htmlacademy.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
+      width: 27px;
+      height: 34px;
+    }
+    &-image{
+      fill: $pink-color;
+      &:hover{
+        fill: $content-font-color;
+      }
+      &:active{
+        fill: $slider-toggle-control;
+      }
     }
   }
   &--index-page{
@@ -32,14 +39,34 @@
   .footer{
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 15px;
+    min-height: 130px;
+    &--photo-page{
+      padding-top: 8px;
+    }
     &--index-page{
       display: block;
+    }
+    &__develop{
+      padding-top: 29px;
     }
   }
 }
 @media (min-width: $desctop-width) {
   .footer{
-    padding-top: 60px;
+    padding-top: 40px;
+    &--photo-page{
+      padding-top: 75px;
+    }
+    &--form-page{
+      padding-top: 30px;
+    }
+    &__develop{
+      width: 150px;
+      &-text{
+        font-size: $font-size-md18;
+        line-height: $line-height-sm18;
+      }
+    }
   }
 }
