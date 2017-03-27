@@ -6,6 +6,7 @@
     position: relative;
     display: block;
     margin-left: 66px;
+    min-width: 150px;
     &::before{
       position: absolute;
       content: "";
@@ -24,7 +25,7 @@
       content: "";
       display: none;
       top: 8px;
-      left: calc(-50% - 4.5px);
+      left: calc(-50% + 16.5px);
       width: 15px;
       height: 15px;
       box-sizing: border-box;
@@ -40,6 +41,12 @@
 input[name="OS-variant"]:checked + label::after{
   display: block;
 }
+label:hover::before{
+  border-color: $content-font-color;
+}
+label:hover::before{
+  border-color: $pink-color;
+}
 @media (min-width: $tablet-width) {
   .radio-item{
     margin-bottom: 45px;
@@ -49,7 +56,7 @@ input[name="OS-variant"]:checked + label::after{
         left: -58px;
       }
       &::after{
-        left: calc(-50% + 7.5px);
+        left: calc(-50% + 28.5px);
       }
     }
   }

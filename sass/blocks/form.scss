@@ -78,6 +78,16 @@
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
+      :hover{
+        background-color: $green-button-color-hover;
+      }
+      :active{
+        background-color: $green-button-color-hover;
+        color: $body-color-opac-30;
+      }
+      :disabled{
+        background-color: $input-border-color;
+      }
     }
     &-text{
       @extend %small-content-font-lh30;
