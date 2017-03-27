@@ -29,7 +29,13 @@
   }
   &__control {
     &-btn{
-      fill: $pink-color;
+      fill: $grey-icon-color;
+      :hover{
+        fill: $grey-icon-color-hover;
+      }
+      :active{
+        fill: $pink-color;
+      }
     }
   }
   &__scale-control{
@@ -69,7 +75,6 @@
       height: 54px;
       margin-bottom: 15px;
       box-sizing: border-box;
-      color: $pink-color;
       line-height: 50px;
       font-weight: bold;
       font-size: $font-size-md18;
@@ -77,7 +82,30 @@
       text-decoration: none;
       border: 3px solid $pink-color;
       border-radius: 25px;
-      -webkit-appearance: none;
+    }
+    &-submit-link{
+      color: $pink-color;
+      &:hover{
+        background-color: $pink-color;
+        color: $body-color;
+      }
+      &:active{
+        background-color: $pink-color;
+        color: $body-color-opac-30;
+      }
+    }
+    &-reset-link{
+      color: $content-font-colorRGBA10;
+      border-color: $grey-border-control-color;
+      &:hover{
+        border-color: $grey-icon-color;
+        color: $content-font-colorRGBA30;
+      }
+      &:active{
+        background-color: $grey-icon-color;
+        border-color: $grey-icon-color;
+        color: $body-color;
+      }
     }
   }
 }
@@ -110,11 +138,45 @@
       padding-right: 0;
     }
     &__control{
+      position: relative;
       display: block;
       width: 100%;
-      padding-top: 0;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 2px;
+        top: 17px;
+        left: 54px;
+        background-color: $content-font-color;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: 13px;
+        left: 180px;
+        border: 2px solid $pink-color;
+        border-radius: 50%;
+        background-color: $section-bg-grey-color;
+        &:active{
+          background-color: $pink-color;
+        }
+      }
+      & svg{
+        position: relative;
+        top: -8px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 25px;
+        height: auto;
+      }
     }
     &__control img{
       display: block;
@@ -137,6 +199,8 @@
       &-reset-link{
         width: 260px;
         margin: 0;
+        padding-right: 5px;
+        line-height: 40px;
       }
     }
   }
@@ -154,7 +218,6 @@
     &__edit-controls-list{
     }
     &__control{
-      position: relative;
       display: block;
       width: 100%;
       padding: 0;
@@ -163,27 +226,23 @@
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
       &::before{
-        position: absolute;
-        content: "";
         width: 355px;
         height: 2px;
         top: 35px;
         left: 60px;
-        background-color: $content-font-color;
       }
       &::after{
-        position: absolute;
-        content: "";
         width: 8px;
         height: 8px;
         top: 31px;
         left: 180px;
         border: 2px solid $pink-color;
         border-radius: 50%;
-        background-color: $section-bg-grey-color;
       }
       & svg{
         margin-top: 15px;
+        margin-bottom: 0;
+        top: 0;
         width: 35px;
         height: auto;
       }
