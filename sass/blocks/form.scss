@@ -78,14 +78,14 @@
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
-      :hover{
+      &:hover{
         background-color: $green-button-color-hover;
       }
-      :active{
+      &:active{
         background-color: $green-button-color-hover;
         color: $body-color-opac-30;
       }
-      :disabled{
+      &:disabled{
         background-color: $input-border-color;
       }
     }
