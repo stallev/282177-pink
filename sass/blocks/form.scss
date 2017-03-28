@@ -120,6 +120,8 @@
       position: absolute;
       margin: 0;
       top: -11px;
+      padding-right: 27px;
+      padding-left: 27px;
       background-color: $body-color;
     }
     &__identification{
@@ -129,12 +131,12 @@
     }
     &__achivements{
       padding-top: 55px;
-      padding-bottom: 46px;
+      margin-bottom: 66px;
       &-wrapper{
         order: 8;
       }
       & h3{
-        left: 120px;
+        left: 122px;
       }
     }
     &__person-contacts{
@@ -211,12 +213,12 @@
       align-content: space-around;
       padding-left: 60px;
       padding-top: 55px;
-      margin-bottom: 29px;
+      margin-bottom: 73px;
       &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 280px;
+        left: 255px;
       }
     }
     &__achivements,
@@ -225,19 +227,23 @@
       position: relative;
       border: 2px solid $input-border-color;
     }
-
+    h3{
+      padding-right: 27px;
+      padding-left: 27px;
+    }
     &__person-contacts{
       display: flex;
       justify-content: space-between;
       padding-top: 17px;
       padding-left: 60px;
       padding-right: 60px;
-      margin-bottom: 29px;
+      margin-bottom: 51px;
+      padding-bottom: 5px;
       &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 368px;
+        left: 344px;
       }
       & div{
         display: flex;
@@ -253,38 +259,42 @@
       width: 435px;
       padding-left: 74px;
       padding-top: 56px;
+      padding-bottom: 14px;
+      margin-bottom: 65px;
       & h3{
-        left: 55px;
+        left: 30px;
       }
       &-wrapper{
         padding-top: 0;
       }
     }
     &__textarea-block{
-      height: 220px;
-      padding: 40px 60px;
+      padding: 41px 60px;
       margin-bottom: 0;
       &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 375px;
+        left: 350px;
       }
       & textarea{
         width: 820px;
         height: 130px;
+        padding: 15px 20px;
       }
     }
     &__submit{
-      min-height: 110px;
       align-items: flex-end;
-      padding-top: 11px;
+      margin-top: 58px;
+      padding-top: 0;
       margin-bottom: 0;
       &-wrapper{
         width: 100%;
       }
       &-text{
         margin-top: 0;
+        margin-bottom: 13px;
+
       }
     }
   }

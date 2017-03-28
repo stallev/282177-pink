@@ -44,19 +44,19 @@ input[name="OS-variant"]:checked + label::after{
 label:hover::before{
   border-color: $content-font-color;
 }
-label:hover::before{
+label:active:before{
   border-color: $pink-color;
 }
 @media (min-width: $tablet-width) {
   .radio-item{
     margin-bottom: 45px;
     & label{
-      margin-left: 57px;
+      margin-left: 61px;
       &::before{
-        left: -58px;
+        left: -62px;
       }
       &::after{
-        left: calc(-50% + 28.5px);
+        left: calc(-50% + 26.5px);
       }
     }
   }

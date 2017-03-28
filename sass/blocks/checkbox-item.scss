@@ -1,21 +1,7 @@
 .checkbox-item{
   margin-bottom: 52px;
   & input{
-    visibility: hidden;
-    position: relative;
-    &::before{
-      position: absolute;
-      visibility: visible;
-      content: '';
-      left: -2px;
-      top: -11px;
-      width: 37px;
-      height: 37px;
-      box-sizing: border-box;
-      border: 2px solid $input-border-color;
-      border-radius: 2px;
-      background-color: $body-color;
-    }
+    display: none;
   }
   & label{
     @extend %medium-content-font;
@@ -24,31 +10,29 @@
     &::before{
       position: absolute;
       content: '';
-      display: none;
-      left: -57px;
-      top: 11px;
-      width: 23px;
-      height: 3px;
+      display: block;
+      left: -63px;
+      top: -6px;
+      width: 37px;
+      height: 37px;
       box-sizing: border-box;
-      background-color: $pink-color;
-      transform: rotate(-45deg)
+      border: 2px solid $input-border-color;
+      border-radius: 2px;
+      background-color: $body-color;
     }
     &::after{
       position: absolute;
       content: '';
       display: none;
-      left: -61px;
-      top: 15px;
-      width: 9px;
-      height: 3px;
+      left: -54px;
+      top: 4px;
+      width: 23px;
+      height: 23px;
       box-sizing: border-box;
-      background-color: $pink-color;
-      transform: rotate(45deg)
+      background-image: url(../img/icon-yes.svg);
+      background-repeat: no-repeat;
     }
   }
-}
-input[type="checkbox"]:checked + label::before{
-  display: block;
 }
 input[type="checkbox"]:checked + label::after{
   display: block;
@@ -60,17 +44,12 @@ input[type="checkbox"]:checked + label::after{
   .checkbox-item{
     margin-bottom: 52px;
     & label{
-      margin-left: 103px;
+      margin-left: 101px;
       &::before{
-        left: -50px;
+        left: -58px;
       }
       &::after{
-        left: -54px;
-      }
-    }
-    & input{
-      &::before{
-        left: 60px;
+        left: -50px;
       }
     }
   }
@@ -80,21 +59,15 @@ input[type="checkbox"]:checked + label::after{
 }
 @media (min-width: $desctop-width) {
   .checkbox-item{
-    width: 280px;
-    padding-right: 20px;
+    width: 260px;
     box-sizing: border-box;
     & label{
-      margin-left: 40px;
+      margin-left: 60px;
       &::before{
-        left: -44px;
+        left: -60px;
       }
       &::after{
         left: -48px;
-      }
-    }
-    & input{
-      &::before{
-        left: 0;
       }
     }
   }

@@ -15,7 +15,7 @@
     margin-top: 5px;
     box-sizing: border-box;
     height: 63px;
-    padding: 16px 17px;
+    padding: 16px 21px;
     border: 2px solid $input-border-color;
     border-radius: 2px;
     &:hover{
@@ -47,6 +47,7 @@
       padding-top: 21px;
       margin-bottom: -3px;
       & input{
+        padding: 16px 8px;
         margin-bottom: 9px;
       }
       & label{
@@ -64,21 +65,21 @@
       border: 1px solid $input-border-color;
       border-radius: 2px;
       background-color: $input-border-color;
-      right: calc(0%);
+      right: calc(-1%);
       top: 25px;
       background-position: center center;
-      background-size: 28px auto;
+      background-size: 22px auto;
       background-repeat: no-repeat;
     }
   }
   .field-item--contacts:nth-of-type(1){
     &::before{
-      background-image: url(../img/phone.svg);
+      background-image: url(../img/icon-phone.svg);
     }
   }
   .field-item--contacts:nth-of-type(2){
     &::before{
-      background-image: url(../img/icon_mail.svg);
+      background-image: url(../img/icon-mail.svg);
     }
   }
 }
@@ -99,6 +100,7 @@
       & input{
         margin-bottom: 9px;
         width: 312px;
+        padding-left: 15PX;
       }
       & label{
         margin-left: 18px;
