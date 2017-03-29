@@ -17,6 +17,9 @@
     width: 280px;
     height: 374px;
     background-image: url(../img/photo-7-mobile@1x.jpg);
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/photo-7-mobile@2x.jpg);
+    };
   }
   &__edit-controls-list{
     display: flex;
@@ -128,6 +131,10 @@
       background-repeat: no-repeat;
       background-size: contain;
       margin-right: 40px;
+      background-image: url(../img/photo-7-tablet@1x.jpg);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/photo-7-tablet@2x.jpg);
+      };
     }
     &__edit-controls-list{
       display: flex;
@@ -215,6 +222,10 @@
     }
     &__span-upload-image{
       margin-right: 47px;
+      background-image: url(../img/photo-7-desktop@1x.jpg);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/photo-7-desktop@2x.jpg);
+      };
     }
     &__edit-controls-list{
     }
