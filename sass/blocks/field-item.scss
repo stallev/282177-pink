@@ -29,16 +29,19 @@
 }
 @media (min-width: $tablet-width) {
   .field-item{
+    display: flex;
     margin-bottom: 47px;
     & label{
       display: inline-block;
       width: auto;
       margin-right: 17px;
       margin-left: 1px;
+      padding-top: 22px;
+      box-sizing: border-box;
     }
     & input{
       display: inline-block;
-      width: auto;
+      width: 100%;
     }
     &--contacts{
       position: relative;
@@ -49,10 +52,12 @@
       margin-bottom: -3px;
       & input{
         padding: 16px 8px;
+        padding-right: 60px;
         margin-bottom: 9px;
       }
       & label{
         margin-left: 18px;
+        padding-top: 0;
       }
     }
   }
@@ -60,14 +65,14 @@
     &::before{
       position: absolute;
       content: "";
-      width: 60px;
-      height: 63px;
+      width: 58px;
+      height: 58px;
       box-sizing: border-box;
       border: 1px solid $input-border-color;
       border-radius: 2px;
       background-color: $input-border-color;
-      right: calc(-1%);
-      top: 25px;
+      right: calc(0%);
+      top: 28px;
       background-position: center center;
       background-size: 22px auto;
       background-repeat: no-repeat;
@@ -86,17 +91,13 @@
 }
 @media (min-width: $desctop-width) {
   .field-item{
-    display: flex;
     margin-bottom: 47px;
     & label{
       display: block;
       margin-right: 19px;
-      padding-top: 22px;
-      box-sizing: border-box;
     }
     & input{
       display: block;
-      width: 100%;
       word-spacing: 1.8px;
     }
     &--contacts{
