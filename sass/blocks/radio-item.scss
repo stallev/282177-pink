@@ -61,3 +61,12 @@ label:active:before{
     }
   }
 }
+@media (min-width: $desctop-width) {
+  .radio-item{
+    & label{
+      &::before{
+        left: -61px;
+      }
+    }
+  }
+}

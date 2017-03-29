@@ -86,13 +86,18 @@
 }
 @media (min-width: $desctop-width) {
   .field-item{
+    display: flex;
     margin-bottom: 47px;
     & label{
-      display: inline-block;
-      margin-right: 14px;
+      display: block;
+      margin-right: 19px;
+      padding-top: 22px;
+      box-sizing: border-box;
     }
     & input{
-      display: inline-block;
+      display: block;
+      width: 100%;
+      word-spacing: 1.8px;
     }
     &--contacts{
       padding: 20px 0 0;
@@ -105,6 +110,7 @@
       }
       & label{
         margin-left: 18px;
+        padding-top: 0;
       }
     }
   }
