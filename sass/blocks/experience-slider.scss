@@ -92,15 +92,18 @@
 @media (min-width: $desctop-width) {
   .experience-slider{
     position: relative;
-    min-height: 400px;
     box-sizing: border-box;
-    padding: 208px 75px 0;
+    padding: 156px 75px 0;
     &::before{
       position: absolute;
       content: '';
-      left: 150px;
-      top: 50px;
-      font-size: $font-size-lg40;
+      left: 433px;
+      top: 73px;
+
+      width: 79px;
+      height: 64px;
+      background-image: url(../img/icon-quotes.svg);
+      background-repeat: no-repeat;
     }
     &__item{
       margin-bottom: 46px;
@@ -119,6 +122,7 @@
       line-height: $line-height-lg30;
     }
     &__controls{
+      display: none;
       top: 323px;
       left: 446px;
       width: 100px;

@@ -1,3 +1,9 @@
 .effect{
   z-index: 3;
 }
+@media (min-width: $desctop-width) {
+  .effect{
+    padding-bottom: 52px;
+    background-color: $timer-color;
+  }
+}
