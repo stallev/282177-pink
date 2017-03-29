@@ -1,6 +1,6 @@
 .form{
   &__achivements-title{
-    margin: 20px 25px 43px;
+    margin: 20px 25px 40px;
   }
   &__application-title{
     margin: 20px 25px 38px;
@@ -19,7 +19,7 @@
   &__person-contacts{
     border: 1px solid transparent;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 29px;
     padding-bottom: 27px;
     & h3{
       display: none;
@@ -136,7 +136,7 @@
         order: 8;
       }
       & h3{
-        left: 122px;
+        left: 95px;
       }
     }
     &__person-contacts{
@@ -147,16 +147,20 @@
       }
       & h3{
         display: block;
-        left: 208px;
+        left: 185px;
       }
     }
     &__application-kind{
+      padding-top: 56px;
+      padding-bottom: 11px;
+      padding-left: 61px;
+      margin-bottom: 66px;
       &-wrapper{
         padding-top: 19px;
         order: 6;
       }
       & h3{
-        left: 148px;
+        left: 123px;
       }
     }
     &__textarea-block{
@@ -164,7 +168,7 @@
         order: 9;
       }
       & h3{
-        left: 216px;
+        left: 190px;
       }
     }
     &__submit{
@@ -172,11 +176,7 @@
         order: 10;
       }
     }
-    &__application-kind{
-      padding-top: 56px;
-      padding-bottom: 58px;
-      padding-left: 61px;
-    }
+
     &__submit{
       flex-direction: row;
       justify-content: space-between;

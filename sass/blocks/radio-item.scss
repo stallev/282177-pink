@@ -25,7 +25,7 @@
       content: "";
       display: none;
       top: 8px;
-      left: calc(-50% + 16.5px);
+      left: calc(-50% + 17px);
       width: 15px;
       height: 15px;
       box-sizing: border-box;
@@ -51,7 +51,7 @@ label:active:before{
   .radio-item{
     margin-bottom: 45px;
     & label{
-      margin-left: 61px;
+      margin-left: 58px;
       &::before{
         left: -62px;
       }
