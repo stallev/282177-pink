@@ -1,4 +1,5 @@
 .nav{
+  display: none;
   &__list{
     @extend %flex-column;
   }
@@ -24,6 +25,7 @@
 }
 @media (min-width: $desctop-width) {
   .nav{
+    display: block;
     &__list{
       flex-direction: row;
       width: 620px;
