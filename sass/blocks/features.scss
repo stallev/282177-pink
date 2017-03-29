@@ -29,7 +29,6 @@
       position: relative;
       width: 160px;
       height: 200px;
-      min-height: 275px;
       align-self: center;
       overflow: hidden;
     }
@@ -43,7 +42,6 @@
   .features__item:nth-last-child(1)>div.features__item-image{
     display: block;
     width: 270px;
-    height: 486px;
     right: 347px;
     bottom: -28px;
   }
@@ -62,6 +60,7 @@
       }
       &-image{
         position: absolute;
+        height: 487px;
         & img{
           width: 100%;
         }
@@ -72,10 +71,9 @@
 @media (min-width: $desctop-width) {
   .features__item:nth-last-child(1)>div.features__item-image{
     display: block;
-    width: 190px;
-    right: 59px;
-    bottom: 308px;
-    height: 200px;
+    width: 289px;
+    right: 7px;
+    bottom: 89px;
     overflow: hidden;
   }
   .features{
@@ -101,12 +99,10 @@
       }
       &-image{
         display: block;
-        width: 190px;
-        right: 59px;
-        bottom: 308px;
+        width: 289px;
+        right: 7px;
+        bottom: 89px;
         & img{
-          width: 190px;
-
         }
       }
     }
