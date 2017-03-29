@@ -8,19 +8,35 @@
     min-height: 400px;
     padding: 73px 0 90px;
     box-sizing: border-box;
-    & img{
+    &__image{
       position: absolute;
       display: block;
       width: 240px;
-      height: 200px;
-      background-color: #dddddd;
+      top: 58px;
+      &::before{
+        position: absolute;
+        content: "24";
+        display: block;
+        width: 205px;
+        height: 205px;
+        top: 54px;
+        left: 17px;
+        box-sizing: border-box;
+        color: $pink-color;
+        font-size: 95px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 171px;
+        border: 14px solid $pink-color;
+        border-radius: 50%;
+      }
     }
     &__post{
       display: flex;
       flex-direction: column;
-      margin-left: 312px;
+      margin-left: 307px;
       &-title {
-        width: 55%;
+        width: 51%;
         &-text {
           margin-top: 20px;
           margin-bottom: 0;
@@ -45,6 +61,22 @@
 @media (min-width: $desctop-width) {
   .effect-research{
     padding: 40px;
+    &__image{
+      width: 300px;
+      top: 42px;
+      left: -4px;
+      &::before{
+        width: 255px;
+        height: 255px;
+        top: 70px;
+        left: 24px;
+        font-size: 118px;
+        font-weight: bold;
+        line-height: 201px;
+        background-color: $timer-color;
+        border: 17px solid $pink-color;
+      }
+    }
     &__post{
       margin-left: 327px;
       padding-top: 71px;
