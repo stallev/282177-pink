@@ -56,9 +56,11 @@
   .post{
     &__comment-aria{
       height: calc(100% - 300px);
+      min-height: 150px;
       padding: 23px 15px 24px 28px;
       &--panorama{
         position: relative;
+        min-height: 0;
         padding: 26px 15px 10px 28px;
         & .post__likes{
           position: absolute;
@@ -76,7 +78,7 @@
     &__likes{
       margin-left: 0;
       &::before{
-        left: 2225px;
+        left: 228px;
       }
     }
   }

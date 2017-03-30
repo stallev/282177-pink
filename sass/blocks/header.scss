@@ -115,7 +115,7 @@
         padding: 68px 0 80px;
       }
       &--photo-page{
-        padding: 26px 0 19px;
+        padding: 69px 0 33px;
       }
     }
     &__image-hand{
@@ -129,6 +129,7 @@
       };
     }
     &__logo{
+      padding: 0 0 0;
       &-tablet{
         display: block;
         width: 155px;
@@ -143,8 +144,12 @@
       &-desktop{
         display: none;
       }
+      &-toggle{
+        padding: 2px 36px 43px;
+      }
     }
     &__toggle{
+      padding-top: 14px;
       background-position: 0 2px;
     }
   }
