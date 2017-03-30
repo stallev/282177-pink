@@ -25,12 +25,14 @@
 @media (min-width: $tablet-width) {
   .main{
     &__panorama{
+      margin-bottom: 25px;
       & img{
         height: 510px;
       }
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .main{
     &__panorama{
