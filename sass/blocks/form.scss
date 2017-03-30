@@ -213,9 +213,10 @@
     &__achivements{
       display: flex;
       flex-wrap: wrap;
-      align-content: space-around;
+      justify-content: space-between;
       padding-left: 60px;
       padding-top: 55px;
+      padding-right: 46px;
       margin-bottom: 73px;
       &-wrapper{
         width: 100%;

@@ -69,17 +69,17 @@
   }
   &__feature-filtr{
     &::before{
-      content: 'Розовый фильтр';
+      content: "Розовый фильтр";
     }
   }
   &__feature-smiley{
     &::before{
-      content: 'Смайлики';
+      content: "Смайлики";
     }
   }
   &__feature-comments{
     &::before{
-      content: 'Комментарии';
+      content: "Комментарии";
     }
   }
   &--flag-yes{
