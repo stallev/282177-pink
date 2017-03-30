@@ -23,6 +23,7 @@
     font-size: 12px;
     font-weight: 300;
     line-height: $line-height-sm24;
+    text-transform: uppercase;
   }
   &__blockquote{
     @extend %small-content-font-lh24;
@@ -54,27 +55,33 @@
 @media (min-width: $tablet-width) {
   .post{
     &__comment-aria{
-      padding: 20px 15px 23px 28px;
+      height: calc(100% - 300px);
+      padding: 23px 15px 24px 28px;
       &--panorama{
         position: relative;
+        padding: 26px 15px 10px 28px;
         & .post__likes{
           position: absolute;
-          top: 22px;
-          right: 57px;
+          top: 26px;
+          right: 61px;
           &::before{
             left: 106px;
           }
         }
       }
     }
+    &__blockquote{
+      margin-bottom: 14px;
+    }
     &__likes{
       margin-left: 0;
       &::before{
-        left: 240px;
+        left: 2225px;
       }
     }
   }
 }
+
 @media (min-width: $desctop-width) {
   .post{
     &__comment-aria{
