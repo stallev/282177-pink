@@ -55,9 +55,8 @@
       left: 20px;
       background-color: $content-font-color;
     }
-    &::after{
+    &-value{
       position: absolute;
-      content: "";
       width: 8px;
       height: 8px;
       top: 16px;
@@ -65,6 +64,9 @@
       border: 2px solid $pink-color;
       border-radius: 50%;
       background-color: $section-bg-grey-color;
+      &:active{
+        background-color: $pink-color;
+      }
     }
   }
   &__action{
@@ -163,9 +165,8 @@
         left: 54px;
         background-color: $content-font-color;
       }
-      &::after{
+      &-value{
         position: absolute;
-        content: "";
         width: 10px;
         height: 10px;
         top: 13px;
@@ -233,7 +234,6 @@
       display: block;
       width: 100%;
       padding: 0;
-      padding-top: 0px;
       padding-bottom: 13px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
@@ -243,13 +243,8 @@
         top: 35px;
         left: 60px;
       }
-      &::after{
-        width: 8px;
-        height: 8px;
-        top: 31px;
-        left: 180px;
-        border: 2px solid $pink-color;
-        border-radius: 50%;
+      &-value{
+        top: 29px;
       }
       & svg{
         margin-top: 15px;
