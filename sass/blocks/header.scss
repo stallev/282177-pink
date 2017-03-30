@@ -37,12 +37,12 @@
     border-color: transparent;
     border-style: none;
     &-hamburger{
-      display: block;
+      display: none;
       width: 50px;
       height: 25px;
     }
     &-cross{
-      display: none;
+      display: block;
       width: 26px;
       height: 26px;
     }
@@ -57,7 +57,7 @@
     }
   }
   &__upper{
-    background: $content-font-colorRGBA30;
+    background: $upper_header-color;
   }
   &__bottom{
     position: relative;
