@@ -1,15 +1,9 @@
 .features{
   @extend %flex-column;
   background: $section-bg-grey-color;
-  position: relative;
-  &::before{
-    position: absolute;
-    content: "";
-    background-image: url("../img/bg-triangle-white.svg");
-    width: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
+  background-image: url(../img/bg-triangle-white.svg);
+  background-size: 100vw 7.85vw;
+  background-repeat: no-repeat;
   &__item{
     @extend %flex-column;
     position: relative;

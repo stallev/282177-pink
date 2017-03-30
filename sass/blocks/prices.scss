@@ -2,6 +2,9 @@
   overflow: hidden;
   background: $section-bg-grey-color;
   padding-top: 50px;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-size: 100vw 7.85vw;
+  background-repeat: no-repeat;
 }
 #prices-slide1:checked ~ .price-table {
   transform: translateX(0);
