@@ -43,6 +43,8 @@
     display: none;
     top: 90%;
     padding-top: 46px;
+    animation-name: messageOK-animation;
+    animation-duration: 3s;
     & .message__button-aria{
       padding-top: 50px;
       padding-bottom: 54px;
@@ -55,6 +57,24 @@
   &--error{
     display: none;
     padding-top: 46px;
+    animation-name: messageError-animation;
+    animation-duration: 3s;
+  }
+}
+@keyframes messageOK-animation {
+  0%{
+    top: -500px;
+  }
+  100%{
+    top: 1000px;
+  }
+}
+@keyframes messageError-animation {
+  0%{
+    top: -500px;
+  }
+  100%{
+    top: 1000px;
   }
 }
 @media (min-width: $tablet-width) {
