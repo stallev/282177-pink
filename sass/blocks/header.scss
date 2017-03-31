@@ -57,7 +57,7 @@
     }
   }
   &__upper{
-    background: $upper_header-color;
+    background: rgba(28, 37, 48, 0.5);
   }
   &__bottom{
     position: relative;
@@ -163,7 +163,6 @@
     };
     background-size: cover;
     &__upper{
-      background: rgba(0, 0, 0, 0.5);
       &-wrapper{
         display: flex;
         justify-content: space-between;
