@@ -59,7 +59,7 @@ input[type="checkbox"]:checked + label::after{
 }
 @media (min-width: $desctop-width) {
   .checkbox-item{
-    width: 208px;
+    width: 242px;
     box-sizing: border-box;
     & label{
       margin-left: 59px;
