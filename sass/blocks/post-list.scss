@@ -15,9 +15,10 @@
 }
 @media (min-width: $desctop-width) {
   .post-list{
-    margin-bottom: 0;
+    margin-bottom: -24px;
     &__item{
       width: 300px;
+      margin-bottom: 32px;
     }
   }
 }

@@ -203,11 +203,12 @@
     &__bottom{
       &--index-page{
         display: flex;
-        padding-top: 61px;
+        padding-top: 57px;
         padding-bottom: 92px;
       }
       &--photo-page{
-        margin-top: 61px;
+        padding: 6px 0 4px;
+        margin-top: 56px;
         min-height: 216px;
       }
       &--form-page{
