@@ -1,7 +1,8 @@
 .message{
-  position: absolute;
+  position: fixed;
   width: 320px;
   box-sizing: border-box;
+  background-color: $body-color;
   &__title{
     margin: 0;
     margin-bottom: 50px;
@@ -24,7 +25,7 @@
   &__button-close{
     display: block;
     width: 100%;
-    padding: 5px 0;
+    padding: 10px 0;
     background-color: $green-button-color;
     color: $body-color;
     text-transform: uppercase;
@@ -63,10 +64,10 @@
 }
 @keyframes messageOK-animation {
   0%{
-    top: -500px;
+    bottom: -500px;
   }
   100%{
-    top: 1000px;
+    bottom: 800px;
   }
 }
 @keyframes messageError-animation {
@@ -74,7 +75,7 @@
     top: -500px;
   }
   100%{
-    top: 1000px;
+    top: 800px;
   }
 }
 @media (min-width: $tablet-width) {
@@ -101,10 +102,27 @@
       padding-bottom: 52px;
     }
   }
+  @keyframes messageOK-animation {
+    0%{
+      bottom: -500px;
+    }
+    100%{
+      bottom: 800px;
+    }
+  }
+  @keyframes messageError-animation {
+    0%{
+      top: -500px;
+    }
+    100%{
+      top: 800px;
+    }
+  }
 }
 @media (min-width: $desctop-width) {
   .message{
     width: 460px;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
     &__title{
       font-size: $font-size-lg30;
       line-height: $line-height-lg40;
@@ -133,6 +151,22 @@
     }
     &--error{
       padding-bottom: 52px;
+    }
+  }
+  @keyframes messageOK-animation {
+    0%{
+      bottom: -500px;
+    }
+    100%{
+      bottom: 800px;
+    }
+  }
+  @keyframes messageError-animation {
+    0%{
+      top: -500px;
+    }
+    100%{
+      top: 800px;
     }
   }
 }
