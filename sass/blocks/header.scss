@@ -99,7 +99,7 @@
 }
 @media (min-width: $tablet-width) {
   .header{
-    padding-bottom: 107px;
+    padding-bottom: 50px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
@@ -112,7 +112,7 @@
         box-sizing: border-box;
       }
       &--form-page{
-        padding: 68px 0 80px;
+        padding: 68px 0 30px;
       }
       &--photo-page{
         padding: 69px 0 33px;
