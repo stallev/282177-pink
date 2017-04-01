@@ -35,6 +35,7 @@
 @media (min-width: $desctop-width) {
   .logo{
     &__footer{
+      padding-top: 14px;
       &-mobile{
         display: none;
       }
