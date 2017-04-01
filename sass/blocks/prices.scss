@@ -5,7 +5,11 @@
   background-image: url(../img/bg-triangle-white.svg);
   background-size: 100vw 7.85vw;
   background-repeat: no-repeat;
+  &__radio-item{
+    visibility: hidden;
+  }
 }
+
 #prices-slide1:checked ~ .price-table {
   transform: translateX(0);
 }
