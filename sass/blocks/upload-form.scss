@@ -232,17 +232,18 @@
     }
     &__control{
       display: block;
-      width: 100%;
+      width: 97%;
+      left: -10px;
       height: 54px;
       padding: 0;
       padding-bottom: 13px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
       &::before{
-        width: 355px;
+        width: 289px;
         height: 2px;
         top: 16px;
-        left: 60px;
+        left: 94px;
       }
       &-value{
         top: 12px;
@@ -251,7 +252,7 @@
         margin-top: 0;
         margin-bottom: 0;
         top: 0;
-        width: 35px;
+        width: 39px;
         height: auto;
       }
     }
@@ -260,10 +261,12 @@
       align-items: center;
       justify-content: space-between;
       min-height: 0;
+      padding-right: 15px;
       &-submit-link,
       &-reset-link{
         width: 185px;
         margin: 0;
+        padding-right: 0;
       }
     }
   }
