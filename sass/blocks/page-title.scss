@@ -12,9 +12,11 @@
     &--index-page{
       display: none;
     }
-    &--photo-page,
-    &--form-page{
+    &--photo-page{
       width: 200px;
+    }
+    &--form-page{
+      width: 228px;
     }
 
   }
