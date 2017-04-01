@@ -1,17 +1,17 @@
 .price-table{
   margin: 40px 0;
-  padding-bottom: 32px;
-  width: 799px;
+  padding-bottom: 47px;
+  width: 773px;
   left: 50%;
   border-collapse: collapse;
-  transform: translateX(-32%);
+  transform: translateX(-31%);
   overflow: hidden;
   &__column-titles{
-    height: 100px;
+    height: 98px;
   }
   &__column-title{
     position: relative;
-    width: 300px;
+    width: 310px;
     box-sizing: border-box;
     padding: 9px 0 18px;
     background-color: #283645;
@@ -22,7 +22,7 @@
         width: 60px;
         height: 60px;
         right: 223px;
-        top: 0px;
+        top: 0;
         background-image: url("../img/bg-hit.svg");
         background-size: auto;
         background-repeat: no-repeat;
@@ -49,7 +49,7 @@
   &__feature-comments{
     @extend %small-content-font-lh30;
     position: relative;
-    height: 60px;
+    height: 58px;
     width: 840px;
     box-sizing: border-box;
     background-color: $body-color;
@@ -62,8 +62,8 @@
       display: block;
       width: 150px;
       height: 30px;
-      top: 11px;
-      left: 25px;
+      top: 14px;
+      left: 22px;
       text-transform: uppercase;
     }
   }
@@ -84,11 +84,11 @@
   }
   &--flag-yes{
     background-image: url("../img/icon-yes-price.svg");
-    background-position: 231px 15px;
+    background-position: 231px 18px;
   }
   &--flag-no{
     background-image: url("../img/icon-no-price.svg");
-    background-position: 230px 7px;
+    background-position: 230px 13px;
   }
   &__version-name{
     display: block;

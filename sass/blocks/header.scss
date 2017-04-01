@@ -62,7 +62,7 @@
   &__bottom{
     position: relative;
     &--index-page{
-      margin-top: 400px;
+      margin-top: 398px;
       background-color: $header-bottob-color;
     }
     &--photo-page{
@@ -78,9 +78,9 @@
     }
     position: absolute;
     content: "";
-    width: 250px;
-    height: 290px;
-    bottom: -14px;
+    width: 258px;
+    height: 305px;
+    bottom: -19px;
     left: -20px;
     background-image: url(../img/iphone-hand-mobile@1x.png);
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
