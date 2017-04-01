@@ -29,10 +29,11 @@
     @extend %small-content-font-lh24;
     width: 100%;
     margin: 0;
+    margin-bottom: 5px;
   }
   &__likes{
     position: relative;
-    margin-left: 30px;
+    margin-left: 35px;
     align-self: flex-end;
     font-size: 12px;
     line-height: $line-height-sm24;
@@ -45,7 +46,7 @@
       width: 14px;
       height: 13px;
       top: 7px;
-      left: -25px;
+      left: -32px;
       background-image: url(../img/icon-heart.svg);
       background-size: auto;
       background-repeat: no-repeat;

@@ -9,7 +9,6 @@
     margin: 0;
     &--post-list{
       @extend %small-content-font-lh30;
-      padding: 0 9px;
     }
     &--form-page{
       font-size: $font-size-sm14;
@@ -28,10 +27,11 @@
     font-size: $font-size-md24;
   }
   &--before-post-list{
-    min-height: 185px;
+    padding: 45px 23px 49px;
   }
   &--after-post-list{
     margin-bottom: 44px;
+    padding: 0 69px;
   }
   &--before-form{
     min-height: 169px;
