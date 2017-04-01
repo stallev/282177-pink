@@ -1,15 +1,9 @@
 .features{
   @extend %flex-column;
   background: $section-bg-grey-color;
-  position: relative;
-  &::before{
-    position: absolute;
-    content: "";
-    background-image: url("../img/bg-triangle-white.svg");
-    width: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
+  background-image: url(../img/bg-triangle-white.svg);
+  background-size: 100vw 7.85vw;
+  background-repeat: no-repeat;
   &__item{
     @extend %flex-column;
     position: relative;
@@ -28,8 +22,7 @@
       display: none;
       position: relative;
       width: 160px;
-      height: 200px;
-      min-height: 275px;
+      height: 281px;
       align-self: center;
       overflow: hidden;
     }
@@ -43,7 +36,6 @@
   .features__item:nth-last-child(1)>div.features__item-image{
     display: block;
     width: 270px;
-    height: 486px;
     right: 347px;
     bottom: -28px;
   }
@@ -62,6 +54,7 @@
       }
       &-image{
         position: absolute;
+        height: 487px;
         & img{
           width: 100%;
         }
@@ -72,10 +65,9 @@
 @media (min-width: $desctop-width) {
   .features__item:nth-last-child(1)>div.features__item-image{
     display: block;
-    width: 190px;
-    right: 59px;
-    bottom: 308px;
-    height: 200px;
+    width: 289px;
+    right: 7px;
+    bottom: 89px;
     overflow: hidden;
   }
   .features{
@@ -101,12 +93,10 @@
       }
       &-image{
         display: block;
-        width: 190px;
-        right: 59px;
-        bottom: 308px;
+        width: 289px;
+        right: 7px;
+        bottom: 89px;
         & img{
-          width: 190px;
-
         }
       }
     }

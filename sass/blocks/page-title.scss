@@ -12,9 +12,11 @@
     &--index-page{
       display: none;
     }
-    &--photo-page,
-    &--form-page{
+    &--photo-page{
       width: 200px;
+    }
+    &--form-page{
+      width: 228px;
     }
 
   }
@@ -36,6 +38,11 @@
       &--photo-page{
         line-height: 60px;
       }
+      &--form-page{
+        width: 488px;
+        line-height: 60px;
+        font-size: 50px;
+      }
     }
     &--index-page{
       width: 300px;
@@ -55,7 +62,10 @@
         padding: 0 30px;
       }
       &--photo-page{
-        width: 780px;
+        width: 640px;
+      }
+      &--form-page{
+        width: 790px;
       }
     }
   }

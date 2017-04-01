@@ -8,7 +8,7 @@
       content: "Панорама дня";
       width: 140px;
       height: 35px;
-      padding: 5px 20px;
+      padding: 5px 19px;
       right: 20px;
       box-sizing: border-box;
       background-color: $pink-color;
@@ -16,6 +16,7 @@
       font-weight: bold;
       font-size: 12px;
       line-height: $line-height-sm24;
+      text-transform: uppercase;
     }
   }
   &__panorama img{
@@ -25,9 +26,16 @@
 @media (min-width: $tablet-width) {
   .main{
     &__panorama{
-      & img{
-        height: 510px;
+      margin-bottom: 30px;
+      &::before{
+        width: 140px;
+        height: 35px;
+        top: 57px;
+        right: 32px;
       }
+    }
+    & img.main__panorama-image{
+      height: 510px;
     }
   }
 }

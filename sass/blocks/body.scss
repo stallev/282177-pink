@@ -1,15 +1,8 @@
 .body{
   min-width: 320px;
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
-.body ul>li{
+.body li{
   list-style: none;
-}
-ul, li{
-  margin: 0;
-  padding: 0;
-}
-div, p, h3{
-  //outline: 1px solid green;
 }

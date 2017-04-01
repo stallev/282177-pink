@@ -17,6 +17,9 @@
     width: 280px;
     height: 374px;
     background-image: url(../img/photo-7-mobile@1x.jpg);
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/photo-7-mobile@2x.jpg);
+    };
   }
   &__edit-controls-list{
     display: flex;
@@ -52,16 +55,18 @@
       left: 20px;
       background-color: $content-font-color;
     }
-    &::after{
+    &-value{
       position: absolute;
-      content: "";
-      width: 8px;
-      height: 8px;
-      top: 16px;
-      left: 180px;
+      width: 10px;
+      height: 10px;
+      top: 13px;
+      left: 210px;
       border: 2px solid $pink-color;
       border-radius: 50%;
       background-color: $section-bg-grey-color;
+      &:active{
+        background-color: $pink-color;
+      }
     }
   }
   &__action{
@@ -86,6 +91,7 @@
     }
     &-submit-link{
       color: $pink-color;
+      background-color: $body-color;
       &:hover{
         background-color: $pink-color;
         color: $body-color;
@@ -128,6 +134,10 @@
       background-repeat: no-repeat;
       background-size: contain;
       margin-right: 40px;
+      background-image: url(../img/photo-7-tablet@1x.jpg);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/photo-7-tablet@2x.jpg);
+      };
     }
     &__edit-controls-list{
       display: flex;
@@ -156,9 +166,8 @@
         left: 54px;
         background-color: $content-font-color;
       }
-      &::after{
+      &-value{
         position: absolute;
-        content: "";
         width: 10px;
         height: 10px;
         top: 13px;
@@ -215,36 +224,36 @@
     }
     &__span-upload-image{
       margin-right: 47px;
+      background-image: url(../img/photo-7-desktop@1x.jpg);
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/photo-7-desktop@2x.jpg);
+      };
     }
     &__edit-controls-list{
     }
     &__control{
       display: block;
-      width: 100%;
+      width: 97%;
+      left: -10px;
+      height: 54px;
       padding: 0;
-      padding-top: 0px;
       padding-bottom: 13px;
       box-sizing: border-box;
       border-bottom: 1px solid $grey-border-control-color;
       &::before{
-        width: 355px;
+        width: 289px;
         height: 2px;
-        top: 35px;
-        left: 60px;
+        top: 16px;
+        left: 94px;
       }
-      &::after{
-        width: 8px;
-        height: 8px;
-        top: 31px;
-        left: 180px;
-        border: 2px solid $pink-color;
-        border-radius: 50%;
+      &-value{
+        top: 12px;
       }
       & svg{
-        margin-top: 15px;
+        margin-top: 0;
         margin-bottom: 0;
         top: 0;
-        width: 35px;
+        width: 39px;
         height: auto;
       }
     }
@@ -253,10 +262,12 @@
       align-items: center;
       justify-content: space-between;
       min-height: 0;
+      padding-right: 15px;
       &-submit-link,
       &-reset-link{
         width: 185px;
         margin: 0;
+        padding-right: 0;
       }
     }
   }

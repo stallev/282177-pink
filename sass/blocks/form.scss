@@ -1,6 +1,7 @@
 .form{
+  position: relative;
   &__achivements-title{
-    margin: 20px 25px 43px;
+    margin: 20px 25px 40px;
   }
   &__application-title{
     margin: 20px 25px 38px;
@@ -19,7 +20,7 @@
   &__person-contacts{
     border: 1px solid transparent;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 29px;
     padding-bottom: 27px;
     & h3{
       display: none;
@@ -44,6 +45,12 @@
       width: 100%;
       height: 200px;
       padding: 18px 20px;
+      &:hover{
+        border-color: $content-font-color;
+      }
+      &:focus{
+        border-color: $pink-color;
+      }
     }
   }
   & h3{
@@ -78,22 +85,24 @@
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
-      &:hover{
-        background-color: $green-button-color-hover;
-      }
-      &:active{
-        background-color: $green-button-color-hover;
-        color: $body-color-opac-30;
-      }
-      &:disabled{
-        background-color: $input-border-color;
-      }
     }
     &-text{
       @extend %small-content-font-lh30;
       margin-top: 35px;
       text-transform: uppercase;
       text-align: center;
+    }
+  }
+  & button{
+    &:hover{
+      background-color: $green-button-color-hover;
+    }
+    &:active{
+      background-color: $green-button-color-hover;
+      color: $body-color-opac-30;
+    }
+    &:disabled{
+      background-color: $input-border-color;
     }
   }
 }
@@ -110,7 +119,6 @@
       border: 2px solid $input-border-color;
       border-radius: 3px;
       padding-top: 20px;
-      margin-bottom: 20px;
       box-sizing: border-box;
       &-wrapper{
         background-color: inherit;
@@ -120,6 +128,8 @@
       position: absolute;
       margin: 0;
       top: -11px;
+      padding-right: 27px;
+      padding-left: 27px;
       background-color: $body-color;
     }
     &__identification{
@@ -129,12 +139,12 @@
     }
     &__achivements{
       padding-top: 55px;
-      padding-bottom: 46px;
+      margin-bottom: 66px;
       &-wrapper{
         order: 8;
       }
       & h3{
-        left: 120px;
+        left: 95px;
       }
     }
     &__person-contacts{
@@ -145,16 +155,20 @@
       }
       & h3{
         display: block;
-        left: 208px;
+        left: 185px;
       }
     }
     &__application-kind{
+      padding-top: 56px;
+      padding-bottom: 11px;
+      padding-left: 61px;
+      margin-bottom: 66px;
       &-wrapper{
         padding-top: 19px;
         order: 6;
       }
       & h3{
-        left: 148px;
+        left: 123px;
       }
     }
     &__textarea-block{
@@ -162,7 +176,7 @@
         order: 9;
       }
       & h3{
-        left: 216px;
+        left: 190px;
       }
     }
     &__submit{
@@ -170,11 +184,7 @@
         order: 10;
       }
     }
-    &__application-kind{
-      padding-top: 56px;
-      padding-bottom: 58px;
-      padding-left: 61px;
-    }
+
     &__submit{
       flex-direction: row;
       justify-content: space-between;
@@ -191,7 +201,8 @@
       }
     }
     &__textarea-block{
-      padding: 43px 60px;
+      padding: 43px 60px 49px;
+      margin-bottom: 15px;
       box-sizing: border-box;
       & textarea{
         width: 500px;
@@ -205,18 +216,22 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    &__identification{
+      width: 435px;
+    }
     &__achivements{
       display: flex;
       flex-wrap: wrap;
-      align-content: space-around;
+      justify-content: space-between;
       padding-left: 60px;
       padding-top: 55px;
-      margin-bottom: 29px;
+      padding-right: 46px;
+      margin-bottom: 67px;
       &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 280px;
+        left: 255px;
       }
     }
     &__achivements,
@@ -225,19 +240,23 @@
       position: relative;
       border: 2px solid $input-border-color;
     }
-
+    h3{
+      padding-right: 27px;
+      padding-left: 27px;
+    }
     &__person-contacts{
       display: flex;
       justify-content: space-between;
       padding-top: 17px;
       padding-left: 60px;
       padding-right: 60px;
-      margin-bottom: 29px;
+      margin-bottom: 52px;
+      padding-bottom: 5px;
       &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 368px;
+        left: 344px;
       }
       & div{
         display: flex;
@@ -253,38 +272,42 @@
       width: 435px;
       padding-left: 74px;
       padding-top: 56px;
+      padding-bottom: 14px;
+      margin-bottom: 65px;
       & h3{
-        left: 55px;
+        left: 30px;
       }
       &-wrapper{
         padding-top: 0;
       }
     }
     &__textarea-block{
-      height: 220px;
-      padding: 40px 60px;
+      padding: 41px 60px;
       margin-bottom: 0;
       &-wrapper{
         width: 100%;
       }
       & h3{
-        left: 375px;
+        left: 350px;
       }
       & textarea{
         width: 820px;
         height: 130px;
+        padding: 15px 20px;
       }
     }
     &__submit{
-      min-height: 110px;
       align-items: flex-end;
-      padding-top: 11px;
+      margin-top: 58px;
+      padding-top: 0;
       margin-bottom: 0;
       &-wrapper{
         width: 100%;
       }
       &-text{
         margin-top: 0;
+        margin-bottom: 13px;
+
       }
     }
   }

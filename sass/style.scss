@@ -1,6 +1,7 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "placeholders.scss";
+@import "global/scaffoldings.scss";
 @import "global/fonts.scss";
 @import "global/forms.scss";
 @import "global/type.scss";
@@ -21,6 +22,7 @@
 @import "blocks/history.scss";
 @import "blocks/logo.scss";
 @import "blocks/main.scss";
+@import "blocks/message.scss";
 @import "blocks/nav.scss";
 @import "blocks/page-title.scss";
 @import "blocks/post.scss";

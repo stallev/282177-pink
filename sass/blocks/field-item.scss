@@ -15,29 +15,33 @@
     margin-top: 5px;
     box-sizing: border-box;
     height: 63px;
-    padding: 16px 17px;
+    padding: 16px 21px;
     border: 2px solid $input-border-color;
     border-radius: 2px;
+    outline: none;
     &:hover{
       border-color: $content-font-color;
     }
-    &:active{
+    &:focus{
       border-color: $pink-color;
     }
   }
 }
 @media (min-width: $tablet-width) {
   .field-item{
+    display: flex;
     margin-bottom: 47px;
     & label{
       display: inline-block;
       width: auto;
       margin-right: 17px;
       margin-left: 1px;
+      padding-top: 22px;
+      box-sizing: border-box;
     }
     & input{
       display: inline-block;
-      width: auto;
+      width: 100%;
     }
     &--contacts{
       position: relative;
@@ -47,38 +51,44 @@
       padding-top: 21px;
       margin-bottom: -3px;
       & input{
+        padding: 16px 18px;
+        padding-right: 60px;
         margin-bottom: 9px;
       }
       & label{
         margin-left: 18px;
+        padding-top: 0;
       }
     }
   }
   .field-item--contacts{
+    & input{
+      height: 62px;
+    }
     &::before{
       position: absolute;
       content: "";
-      width: 60px;
-      height: 63px;
+      width: 58px;
+      height: 58px;
       box-sizing: border-box;
       border: 1px solid $input-border-color;
       border-radius: 2px;
       background-color: $input-border-color;
       right: calc(0%);
-      top: 25px;
+      top: 26.5px;
       background-position: center center;
-      background-size: 28px auto;
+      background-size: 18px auto;
       background-repeat: no-repeat;
     }
   }
   .field-item--contacts:nth-of-type(1){
     &::before{
-      background-image: url(../img/phone.svg);
+      background-image: url(../img/icon-phone.svg);
     }
   }
   .field-item--contacts:nth-of-type(2){
     &::before{
-      background-image: url(../img/icon_mail.svg);
+      background-image: url(../img/icon-mail.svg);
     }
   }
 }
@@ -86,22 +96,25 @@
   .field-item{
     margin-bottom: 47px;
     & label{
-      display: inline-block;
-      margin-right: 14px;
+      display: block;
+      margin-right: 19px;
     }
     & input{
-      display: inline-block;
+      display: block;
+      word-spacing: 1.8px;
     }
     &--contacts{
       padding: 20px 0 0;
       width: 370px;
-      margin-bottom: -3px;
+      margin-bottom: -5px;
       & input{
         margin-bottom: 9px;
-        width: 312px;
+        width: 372px;
+        padding-left: 15px;
       }
       & label{
         margin-left: 18px;
+        padding-top: 0;
       }
     }
   }

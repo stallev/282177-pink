@@ -1,6 +1,7 @@
 .social{
   width: 180px;
   height: 55px;
+  margin-right: -5px;
   & a{
     display: block;
     box-sizing: border-box;
@@ -33,11 +34,13 @@
 }
 @media (min-width: $tablet-width) {
   .social{
-    margin-right: 54px;
+    margin-right: 15px;
   }
 }
 @media (min-width: $desctop-width) {
   .social{
-    margin-right: 33px;
+    height: 43px;
+    margin-right: -1px;
   }
+
 }

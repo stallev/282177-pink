@@ -1,14 +1,18 @@
 .checkbox-item{
   margin-bottom: 52px;
   & input{
-    visibility: hidden;
+    display: none;
+  }
+  & label{
+    @extend %medium-content-font;
     position: relative;
+    margin-left: 68px;
     &::before{
       position: absolute;
-      visibility: visible;
-      content: '';
-      left: -2px;
-      top: -11px;
+      content: "";
+      display: block;
+      left: -69px;
+      top: -6px;
       width: 37px;
       height: 37px;
       box-sizing: border-box;
@@ -16,39 +20,19 @@
       border-radius: 2px;
       background-color: $body-color;
     }
-  }
-  & label{
-    @extend %medium-content-font;
-    position: relative;
-    margin-left: 49px;
-    &::before{
-      position: absolute;
-      content: '';
-      display: none;
-      left: -57px;
-      top: 11px;
-      width: 23px;
-      height: 3px;
-      box-sizing: border-box;
-      background-color: $pink-color;
-      transform: rotate(-45deg)
-    }
     &::after{
       position: absolute;
-      content: '';
+      content: "";
       display: none;
-      left: -61px;
-      top: 15px;
-      width: 9px;
-      height: 3px;
+      left: -60px;
+      top: 4px;
+      width: 23px;
+      height: 23px;
       box-sizing: border-box;
-      background-color: $pink-color;
-      transform: rotate(45deg)
+      background-image: url(../img/icon-yes.svg);
+      background-repeat: no-repeat;
     }
   }
-}
-input[type="checkbox"]:checked + label::before{
-  display: block;
 }
 input[type="checkbox"]:checked + label::after{
   display: block;
@@ -60,17 +44,12 @@ input[type="checkbox"]:checked + label::after{
   .checkbox-item{
     margin-bottom: 52px;
     & label{
-      margin-left: 103px;
+      margin-left: 119px;
       &::before{
-        left: -50px;
+        left: -58px;
       }
       &::after{
-        left: -54px;
-      }
-    }
-    & input{
-      &::before{
-        left: 60px;
+        left: -50px;
       }
     }
   }
@@ -80,40 +59,42 @@ input[type="checkbox"]:checked + label::after{
 }
 @media (min-width: $desctop-width) {
   .checkbox-item{
-    width: 280px;
-    padding-right: 20px;
+    width: 263px;
     box-sizing: border-box;
     & label{
-      margin-left: 40px;
+      margin-left: 59px;
+      width: calc(100% - 60px);
       &::before{
-        left: -44px;
+        left: -60px;
       }
       &::after{
-        left: -48px;
-      }
-    }
-    & input{
-      &::before{
-        left: 0;
+        left: -51px;
       }
     }
   }
   .checkbox-item:nth-of-type(1){
     order: 5;
+    margin-right: 51px;
   }
   .checkbox-item:nth-of-type(2){
     order: 8;
+    margin-right: 51px;
   }
   .checkbox-item:nth-of-type(3){
     order: 6;
+    margin-right: 42px;
   }
   .checkbox-item:nth-of-type(4){
     order: 9;
+    margin-right: 42px;
+    margin-bottom: 59px;
   }
   .checkbox-item:nth-of-type(5){
     order: 7;
+    width: 211px;
   }
   .checkbox-item:nth-of-type(6){
     order: 10;
+    width: 211px;
   }
 }

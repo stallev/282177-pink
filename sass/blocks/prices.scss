@@ -2,21 +2,53 @@
   overflow: hidden;
   background: $section-bg-grey-color;
   padding-top: 50px;
-}
-#prices-slide1:checked ~ .price-table {
-  transform: translateX(0);
-}
-#prices-slide2:checked ~ .price-table {
-  transform: translateX(-33%);
-}
-#prices-slide3:checked ~ .price-table {
-  transform: translateX(-67%);
+  background-image: url(../img/bg-triangle-white.svg);
+  background-size: 100vw 7.85vw;
+  background-repeat: no-repeat;
+  &__controls{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    left: 135px;
+    bottom: 40px;
+    border: 3px solid $content-font-color;
+    border-radius: 50%;
+    background-color: $body-color;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      left: 22px;
+      box-sizing: border-box;
+      border: 1px solid $grey-border-control-color;
+      background-color: $grey-border-control-color;
+      border-radius: 50%;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      right: 25px;
+      box-sizing: border-box;
+      border: 1px solid $grey-border-control-color;
+      background-color: $grey-border-control-color;
+      border-radius: 50%;
+    }
+  }
+  &__radio-item{
+    visibility: hidden;
+  }
 }
 @media (min-width: $tablet-width) {
   .prices{
     padding-top: 45px;
     &__radio-item{
       display: none;
+    }
+    &__controls{
+      visibility: hidden;
     }
   }
 }

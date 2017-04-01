@@ -10,15 +10,15 @@
     width: 120px;
     display: flex;
     box-sizing: border-box;
-    padding-top: 38px;
+    padding-top: 33px;
     justify-content: space-between;
     &-text{
       display: block;
+      padding-top: 5px;
       @extend %small-content-font-lh24;
     }
     & svg{
       display: block;
-      width: 27px;
       height: 34px;
     }
     &-image{
@@ -42,13 +42,18 @@
     padding-top: 15px;
     min-height: 130px;
     &--photo-page{
-      padding-top: 8px;
+      padding-top: 13px;
     }
     &--index-page{
       display: block;
     }
     &__develop{
+      width: 129px;
       padding-top: 29px;
+      & svg{
+        height: 39px;
+        margin-top: -8px;
+      }
     }
   }
 }
@@ -63,9 +68,13 @@
     }
     &__develop{
       width: 150px;
+      padding-top: 32px;
       &-text{
         font-size: $font-size-md18;
         line-height: $line-height-sm18;
+      }
+      &-image{
+
       }
     }
   }

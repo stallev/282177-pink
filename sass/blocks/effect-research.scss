@@ -8,19 +8,43 @@
     min-height: 400px;
     padding: 73px 0 90px;
     box-sizing: border-box;
-    & img{
+    &__image{
       position: absolute;
       display: block;
       width: 240px;
-      height: 200px;
-      background-color: #dddddd;
+      top: 58px;
+      &-tablet{
+        position: absolute;
+      }
+      &-desktop{
+        position: absolute;
+        display: none;
+      }
+      &::before{
+        position: absolute;
+        content: "24";
+        display: block;
+        width: 205px;
+        height: 205px;
+        top: 54px;
+        left: 17px;
+        box-sizing: border-box;
+        color: $pink-color;
+        font-size: 95px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 171px;
+        border: 14px solid $pink-color;
+        border-radius: 50%;
+        z-index: 4;
+      }
     }
     &__post{
       display: flex;
       flex-direction: column;
-      margin-left: 312px;
+      margin-left: 307px;
       &-title {
-        width: 55%;
+        width: 56%;
         &-text {
           margin-top: 20px;
           margin-bottom: 0;
@@ -30,6 +54,7 @@
         }
       }
       &-description{
+        width: 313px;
         font-size: $font-size-sm14;
         line-height: $line-height-sm24;
         font-weight: normal;
@@ -45,6 +70,28 @@
 @media (min-width: $desctop-width) {
   .effect-research{
     padding: 40px;
+    &__image{
+      width: 300px;
+      top: 42px;
+      left: -4px;
+      &-tablet{
+        display: none;
+      }
+      &-desktop{
+        display: block;
+      }
+      &::before{
+        width: 255px;
+        height: 255px;
+        top: 70px;
+        left: 24px;
+        font-size: 118px;
+        font-weight: bold;
+        line-height: 201px;
+        background-color: $timer-color;
+        border: 17px solid $pink-color;
+      }
+    }
     &__post{
       margin-left: 327px;
       padding-top: 71px;
@@ -52,6 +99,7 @@
         width: 70%;
       }
       &-description{
+        width: 540px;
         padding: 4px 1px;
         font-size: $font-size-md18;
         line-height: $line-height-lg30;

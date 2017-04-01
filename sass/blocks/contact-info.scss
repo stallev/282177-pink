@@ -29,7 +29,7 @@
   }
   &__map{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 200px;
     margin-top: 24px;
     & iframe{
@@ -40,10 +40,10 @@
   &__map::before{
     position: absolute;
     content: "";
-    width: 100%;
-    height: 35px;
-    background-image: url(../img/bg-triangle-white-footer.svg);
-    background-position: 50% 35px;
+    border: 10vw solid transparent;
+    border-left-width: 50vw;
+    border-right-width: 50vw;
+    border-top-color: #fff;
   }
 }
 @media (min-width: $tablet-width) {
@@ -56,18 +56,10 @@
       padding: 0 40px;
     }
     &__map{
-      width: 700px;
       height: 380px;
       margin: 0 auto;
       & iframe{
         height: 380px;
-      }
-      &::before{
-        width: 100%;
-        height: 50px;
-        background-image: url(../img/bg-triangle-white-footer.svg);
-        background-position: 50% 50px;
-        background-repeat: no-repeat;
       }
     }
   }
@@ -89,17 +81,10 @@
       padding: 21px 0 0;
     }
     &__map{
-      width: 1200px;
       min-height: 511px;
       margin: 0 auto;
       & iframe{
         min-height: 504px;
-      }
-      &::before{
-        width: 100%;
-        height: 50px;
-        background-image: url(../img/bg-triangle-white-footer.svg);
-        background-position: 50% 50px;
       }
     }
   }
