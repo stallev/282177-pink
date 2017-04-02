@@ -91,6 +91,7 @@
     }
     &-submit-link{
       color: $pink-color;
+      background-color: $body-color;
       &:hover{
         background-color: $pink-color;
         color: $body-color;
