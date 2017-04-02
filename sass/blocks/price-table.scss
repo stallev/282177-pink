@@ -59,6 +59,7 @@
   &__feature-smiley,
   &__feature-comments{
     @extend %small-content-font-lh30;
+    position: relative;
     height: 58px;
     width: 840px;
     box-sizing: border-box;
@@ -67,6 +68,7 @@
     background-size: 28px auto;
     background-repeat: no-repeat;
     background-position: 232px 15px;
+    background-color: $body-color;
     &::before{
       position: absolute;
       display: block;
