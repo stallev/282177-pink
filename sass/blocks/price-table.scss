@@ -10,6 +10,7 @@
   }
   & table{
     border-collapse: collapse;
+    border-spacing: 0;
   }
   & td{
 
@@ -23,7 +24,6 @@
     box-sizing: border-box;
     padding: 9px 0 18px;
     background-color: #283645;
-    border-width: 0;
     &--hit{
       &::before{
         position: absolute;
