@@ -46,9 +46,7 @@
     visibility: hidden;
   }
 }
-#slide1:checked ~ .experience-slider__label-item:nth-of-type(1)::before,
-#slide2:checked ~ .experience-slider__label-item:nth-of-type(2)::before,
-#slide3:checked ~ .experience-slider__label-item:nth-of-type(3)::before {
+.experience-slider__label-item:nth-of-type(1)::before{
   width: 6px;
   height: 6px;
   background-color: $grey-textarea-border-color;
