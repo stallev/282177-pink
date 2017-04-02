@@ -10,7 +10,7 @@
   var messageOk = document.querySelector('.message--ok');
   var closeBtnError = document.querySelector('.message--error button');
   var closeBtnOk = document.querySelector('.message--ok button');
-  
+
   hamburger.addEventListener('click', onDisplayNav);
   cross.addEventListener('click', onCloseNav);
   competitionBtnSubmit.addEventListener('click', messageDisplay);
