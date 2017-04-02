@@ -53,6 +53,9 @@
     &__radio-item{
       display: none;
     }
+    &__controls{
+      visibility: hidden;
+    }
   }
 }
 @media (min-width: $desctop-width) {

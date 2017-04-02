@@ -6,6 +6,9 @@
   border-collapse: collapse;
   transform: translateX(-31%);
   overflow: hidden;
+  & td:nth-of-type(2){
+    background-position-x: 195px;
+  }
   &__column-titles{
     height: 98px;
   }
@@ -113,6 +116,9 @@
     margin: 47px 0 29px;
     padding-bottom: 22px;
     transform: translateX(0);
+    & td:nth-of-type(2){
+      background-position-x: 62px;
+    }
     & td,
     & th{
       width: 153px;
@@ -184,6 +190,9 @@
     width: 100%;
     margin: 102px 0 54px;
     transform: translateX(0);
+    & td:nth-of-type(2){
+      background-position-x: 101px;
+    }
     & td,
     & th{
       width: 234px;
