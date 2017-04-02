@@ -17,20 +17,23 @@
   }
   &__column-titles{
     height: 98px;
+    position: relative;
   }
   &__column-title{
-    position: relative;
     width: 310px;
     box-sizing: border-box;
     padding: 9px 0 18px;
     background-color: #283645;
+
     &--hit{
+      border-right: 2px solid $input-border-color;
+      border-left: 2px solid $input-border-color;
       &::before{
         position: absolute;
         content: "";
-        width: 60px;
-        height: 60px;
-        right: 223px;
+        width: 83px;
+        height: 73px;
+        right: 451px;
         top: 0;
         background-image: url("../img/bg-hit.svg");
         background-size: auto;
@@ -39,8 +42,10 @@
       &::after{
         position: absolute;
         content: "Хит";
-        right: 239px;
-        top: 16px;
+        right: 496px;
+        top: 12px;
+        font-size: $font-size-sm14;
+        line-height: $line-height-lg30;
         text-transform: uppercase;
         color: #ffffff;
         transform: rotate(-45deg);
@@ -156,14 +161,15 @@
       padding: 0;
       &--hit{
         &::before{
-          right: 92px;
-          top: -11px;
-          width: 59px;
-          height: 119px;
+          width: 79px;
+          height: 71px;
+          right: 232px;
+          top: 0;
+          background-image: url("../img/bg-hit-tablet.svg");
         }
         &::after{
-          right: 119px;
-          top: 11px;
+          right: 277px;
+          top: 6px;
           font-size: $font-size-sm14;
         }
       }
@@ -235,10 +241,10 @@
       padding: 0;
       &--hit{
         &::before{
-          right: 172px;
+          right: 390px;
         }
         &::after{
-          right: 189px;
+          right: 435px;
         }
       }
     }
