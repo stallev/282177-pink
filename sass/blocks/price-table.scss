@@ -59,11 +59,9 @@
   &__feature-smiley,
   &__feature-comments{
     @extend %small-content-font-lh30;
-    position: relative;
     height: 58px;
     width: 840px;
     box-sizing: border-box;
-    background-color: $body-color;
     padding: 15px 20px;
     border: 2px solid $input-border-color;
     background-size: 28px auto;
