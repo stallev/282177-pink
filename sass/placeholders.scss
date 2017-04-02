@@ -35,13 +35,13 @@
 }
 @media (min-width: $tablet-width) {
   %container{
-    width: 700px;
-    padding: 0 40px;
+    width: 660px;
+    padding: 0 20px;
   }
 }
 @media (min-width: $desctop-width) {
   %container{
-    width: 1200px;
-    padding: 0 130px;
+    width: 960px;
+    padding: 0 10px;
   }
 }

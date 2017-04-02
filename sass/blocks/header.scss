@@ -219,10 +219,11 @@
       }
     }
     &__image-hand{
-      height: 754px;
-      width: 1049px;
-      bottom: -528px;
+      height: 642px;
+      width: 882px;
+      bottom: -418px;
       left: 20px;
+      background-size: cover;
       background-image: url(../img/iphone-hand-desktop@1x.png);
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url(../img/iphone-hand-desktop@2x.png);
