@@ -168,6 +168,11 @@
         }
       }
     }
+    &__feature-filtr,
+    &__feature-smiley,
+    &__feature-comments{
+      position: static;
+    }
     &__version-name{
       font-size: $font-size-sm16;
       line-height: $line-height-lg30;
