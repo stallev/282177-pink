@@ -4,7 +4,7 @@
   & img{
     display: block;
   }
-  &__comment-aria{
+  &__comment-area{
     height: 100%;
     box-sizing: border-box;
     padding: 20px 15px 23px 15px;
@@ -55,7 +55,7 @@
 }
 @media (min-width: $tablet-width) {
   .post{
-    &__comment-aria{
+    &__comment-area{
       height: calc(100% - 300px);
       min-height: 150px;
       padding: 23px 15px 24px 28px;
@@ -82,14 +82,14 @@
       }
     }
   }
-  div.post__comment-aria--panorama{
+  div.post__comment-area--panorama{
     min-height: 75px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .post{
-    &__comment-aria{
+    &__comment-area{
       height: calc(100% - 400px);
       &--panorama{
         & .post__likes{
