@@ -33,6 +33,7 @@
   &__label-item{
     margin-right: 19px;
     display: inline-block;
+    vertical-align: bottom;
     &::before{
       position: absolute;
       content: "";
@@ -59,7 +60,7 @@
 @media (min-width: $tablet-width) {
   .experience-slider{
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     &__radio-item{
       display: none;
     }
