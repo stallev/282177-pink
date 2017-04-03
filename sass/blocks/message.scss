@@ -41,6 +41,7 @@
     padding-right: 22px;
   }
   &--ok{
+    display: none;
     top: 90%;
     padding-top: 46px;
     animation-name: messageOK-animation;
@@ -55,6 +56,7 @@
     }
   }
   &--error{
+    display: none;
     padding-top: 46px;
     animation-name: messageError-animation;
     animation-duration: 3s;
