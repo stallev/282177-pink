@@ -31,7 +31,7 @@
         width: 140px;
         height: 35px;
         top: 57px;
-        right: 32px;
+        right: 19px;
       }
     }
     & img.main__panorama-image{
@@ -42,6 +42,10 @@
 @media (min-width: $tablet-width) {
   .main{
     &__panorama{
+      &::before{
+        top: 59px;
+        right: 10px;
+      }
       & img{
         height: 510px;
       }
