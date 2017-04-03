@@ -131,7 +131,7 @@
   .price-table{
     width: 100%;
     margin: 47px 0 29px;
-    padding-bottom: 22px;
+    padding-bottom: 30px;
     transform: translateX(0);
     & td:nth-of-type(2){
       background-position-x: 62px;
@@ -149,9 +149,11 @@
       padding: 2px 0 7px 12px;
     }
     &--flag-yes{
+      background-size: 30px auto;
       background-position: 62px 10px;
     }
     &--flag-no{
+      background-size: 25px auto;
       background-position: 62px 10px;
     }
     &__column-titles{
@@ -201,7 +203,6 @@
     &__feature-filtr,
     &__feature-smiley,
     &__feature-comments{
-      background-size: 25px auto;
       &::before{
         display: none;
       }

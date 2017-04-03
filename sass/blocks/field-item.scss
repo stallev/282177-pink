@@ -33,6 +33,7 @@
     margin-bottom: 47px;
     & label{
       display: inline-block;
+      vertical-align: middle;
       width: auto;
       margin-right: 17px;
       margin-left: 1px;
@@ -74,8 +75,8 @@
       border: 1px solid $input-border-color;
       border-radius: 2px;
       background-color: $input-border-color;
-      right: calc(0%);
-      top: 26.5px;
+      right: 2px;
+      top: 27.5px;
       background-position: center center;
       background-size: 18px auto;
       background-repeat: no-repeat;
@@ -107,6 +108,10 @@
       padding: 20px 0 0;
       width: 370px;
       margin-bottom: -5px;
+      &::before{
+        right: 0;
+        top: 26.5px;
+      }
       & input{
         margin-bottom: 9px;
         width: 372px;

@@ -88,9 +88,21 @@
     }
     &-text{
       @extend %small-content-font-lh30;
+      position: relative;
       margin-top: 35px;
       text-transform: uppercase;
       text-align: center;
+      &::before{
+        position: absolute;
+        content: "*";
+        left: -13px;
+        top: 1px;
+        width: 10px;
+        height: 30px;
+        font-size: $font-size-sm14;
+        line-height: $line-height-lg30;
+        color: $pink-color;
+      }
     }
   }
   & button{

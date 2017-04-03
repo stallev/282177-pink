@@ -36,29 +36,31 @@
     -webkit-appearance: normal;
     border: 0;
   }
-  &__button-aria{
+  &__button-area{
     padding-left:22px;
     padding-right: 22px;
   }
   &--ok{
+    display: none;
     top: 90%;
     padding-top: 46px;
     animation-name: messageOK-animation;
     animation-duration: 3s;
-    & .message__button-aria{
+    & .message__button-area{
       padding-top: 50px;
       padding-bottom: 54px;
       background-color: $timer-color;
     }
-    & .message__button-aria{
+    & .message__button-area{
       padding-bottom: 50px;
     }
   }
   &--error{
+    display: none;
     padding-top: 46px;
     animation-name: messageError-animation;
     animation-duration: 3s;
-    & .message__button-aria{
+    & .message__button-area{
       padding-bottom: 50px;
     }
   }
@@ -92,7 +94,7 @@
       font-size: $font-size-md21;
       line-height: $line-height-sm26;
     }
-    &__button-aria{
+    &__button-area{
       padding-left:83px;
       padding-right: 82px;
       padding-bottom: 54px;
@@ -129,7 +131,7 @@
       font-size: $font-size-md21;
       line-height: $line-height-sm26;
     }
-    &__button-aria{
+    &__button-area{
       padding-left:82px;
       padding-right: 82px;
     }
@@ -140,7 +142,7 @@
         padding-left: 193px;
         padding-right: 195px;
       }
-      & .message__button-aria{
+      & .message__button-area{
         padding-left: 162px;
         padding-right: 162px;
       }

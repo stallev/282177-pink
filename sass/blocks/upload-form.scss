@@ -87,11 +87,11 @@
       text-decoration: none;
       border: 3px solid $pink-color;
       border-radius: 25px;
+      background-color: transparent;
       -webkit-appearance: none;
     }
     &-submit-link{
       color: $pink-color;
-      background-color: $body-color;
       &:hover{
         background-color: $pink-color;
         color: $body-color;
@@ -170,7 +170,7 @@
         position: absolute;
         width: 10px;
         height: 10px;
-        top: 13px;
+        top: 11px;
         left: 180px;
         border: 2px solid $pink-color;
         border-radius: 50%;
@@ -247,7 +247,7 @@
         left: 94px;
       }
       &-value{
-        top: 12px;
+        top: 11px;
       }
       & svg{
         margin-top: 0;
