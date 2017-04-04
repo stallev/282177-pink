@@ -32,7 +32,7 @@
   }
   &__control {
     &-btn{
-      fill: $pink-color;
+      fill: $grey-icon-color;
       :hover{
         fill: $grey-icon-color-hover;
       }
@@ -87,11 +87,11 @@
       text-decoration: none;
       border: 3px solid $pink-color;
       border-radius: 25px;
+      background-color: transparent;
       -webkit-appearance: none;
     }
     &-submit-link{
       color: $pink-color;
-      background-color: $body-color;
       &:hover{
         background-color: $pink-color;
         color: $body-color;
