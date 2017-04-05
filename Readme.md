@@ -1,5 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-
+*Опубликованный проект:
+  https://stallev.github.io/28177-pink/
 * Студент: [Александр Левшенко](https://up.htmlacademy.ru/adaptive/10/user/282177).
 * Наставник: [Александр Оксанич] (https://htmlacademy.ru/profile/oksanych).
 
