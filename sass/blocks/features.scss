@@ -73,11 +73,10 @@
   .features{
     padding-top: 0;
     &__item{
-      min-height: 560px;
       box-sizing: border-box;
       width: 313px;
       margin: 0;
-      padding-top: 350px;
+      padding-top: 0;
       padding-left: 36px;
       padding-right: 36px;
       &-title{
