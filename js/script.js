@@ -8,13 +8,11 @@
   var competitionBtnSubmit = document.querySelector('.form__submit-button');
   var messageError = document.querySelector('.message--error');
   var messageOk = document.querySelector('.message--ok');
-  var closeBtnError = document.querySelector('.message--error button');
   var closeBtnOk = document.querySelector('.message--ok button');
 
   hamburger.addEventListener('click', onDisplayNav);
   cross.addEventListener('click', onCloseNav);
   competitionBtnSubmit.addEventListener('click', messageDisplay);
-  closeBtnError.addEventListener('click', onHideErrorMessage);
   closeBtnOk.addEventListener('click', onHideOkMessage);
 
   function onDisplayNav() {
@@ -31,12 +29,9 @@
   }
   function messageDisplay(event) {
     event.preventDefault();
-    messageOk.style.display = 'block';
-  }
-  function onHideErrorMessage() {
-    messageError.style.display = 'none';
+    messageOk.classList.add('message--appear');
   }
   function onHideOkMessage() {
-    messageOk.style.display = 'none';
+    messageOk.classList.remove('message--appear');
   }
 })();
