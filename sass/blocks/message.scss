@@ -41,10 +41,10 @@
     padding-right: 22px;
   }
   &--ok{
-    position: absolute;
     display: none;
+    position: fixed;
     padding-top: 46px;
-        & .message__button-area{
+    & .message__button-area{
       padding-top: 50px;
       padding-bottom: 54px;
       background-color: $timer-color;
@@ -64,15 +64,19 @@
   }
 }
 .message--appear{
+  display: block;
+  bottom: 40%;
+  left: calc(50% - 160px);
   animation-name: messageOK-animation;
   animation-duration: 3s;
+  z-index: 10;
 }
 @keyframes messageOK-animation {
   0%{
     bottom: -50%;
   }
   100%{
-    bottom: 50%;
+    bottom: 40%;
   }
 }
 @media (min-width: $tablet-width) {
@@ -93,6 +97,9 @@
       padding-right: 82px;
       padding-bottom: 54px;
     }
+  }
+  .message--appear{
+    left: calc(50% - 230px);
   }
 }
 @media (min-width: $desctop-width) {
@@ -125,5 +132,8 @@
         padding-right: 162px;
       }
     }
+  }
+  .message--appear{
+    left: calc(50% - 390px);
   }
 }

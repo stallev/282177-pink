@@ -29,9 +29,9 @@
   }
   function messageDisplay(event) {
     event.preventDefault();
-    messageOk.classlist.add('message-appear');
+    messageOk.classList.add('message--appear');
   }
   function onHideOkMessage() {
-    messageOk.classlist.remove('message-appear');
+    messageOk.classList.remove('message--appear');
   }
 })();
